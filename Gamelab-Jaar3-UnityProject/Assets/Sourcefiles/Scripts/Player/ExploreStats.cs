@@ -9,4 +9,6 @@ public class ExploreStats : MonoBehaviour
     public float crouchSpeed;
     public float crouchWalkSpeed;
     public float interactRange;
+    public float crouchDrop;
+
 }
