@@ -1,16 +1,37 @@
-﻿using System.Collections;
+﻿//PlayMode by Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayMode : MonoBehaviour {
+public class PlayMode : MonoBehaviour
+{
+    public enum GamePart
+    {
+        FreeTime,
+        Escape,
+        Story
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public enum GameMode
+    {
+        Explore,
+        Conversation,
+        Puzzle,
+        Menu
+    }
+
+    public static GamePart gamePart;
+    public static GameMode gameMode;
+
+
+	public static void ChangeGameMode(GameMode mode)
+    {
+        gameMode = mode;
+    }
+
+    public static void ChangeGamePart(GamePart part)
+    {
+        gamePart = part;
+    }
 }
