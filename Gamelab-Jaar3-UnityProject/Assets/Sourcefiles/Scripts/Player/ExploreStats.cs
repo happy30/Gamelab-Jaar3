@@ -11,9 +11,9 @@ public class ExploreStats : MonoBehaviour
     public float interactRange;
     public float crouchDrop;
 
-    [Range(0.0f, 0.5f)]
+    [Range(0.0f, 0.15f)]
     public float bobSpeed;
 
-    [Range(0.0f, 0.3f)]
+    [Range(0.0f, 0.15f)]
     public float bobAmount;
 }

@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4063408545529208}
   - component: {fileID: 114202003852802582}
+  - component: {fileID: 114742725591005608}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -59,3 +60,15 @@ MonoBehaviour:
   crouchDrop: 0.8
   bobSpeed: 0.105
   bobAmount: 0.026
+--- !u!114 &114742725591005608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753616465413488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2de0ccbd266484da0280861c897849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableHeadBobbing: 1

@@ -11,6 +11,7 @@ public class ExploreController : MonoBehaviour
     float timer;
 
     ExploreStats exploreStats;
+    Settings settings;
     public Transform camTransform;
     Vector3 camPosition;
 
@@ -22,6 +23,7 @@ public class ExploreController : MonoBehaviour
 	void Awake()
     {
         exploreStats = GameObject.Find("GameManager").GetComponent<ExploreStats>();
+        settings = GameObject.Find("GameManager").GetComponent<Settings>();
 	}
 	
 	// Update is called once per frame
@@ -36,9 +38,18 @@ public class ExploreController : MonoBehaviour
         }
 	}
 
+    //Waits for input and makes character move
     void Move()
     {
-        speed = Input.GetKey(KeyCode.LeftShift) ? exploreStats.runSpeed : exploreStats.walkSpeed;
+        if(!Input.GetKey(KeyCode.LeftControl))
+        {
+            speed = Input.GetKey(KeyCode.LeftShift) ? exploreStats.runSpeed : exploreStats.walkSpeed;
+        }
+        else
+        {
+            speed = exploreStats.crouchWalkSpeed;
+        }
+        
 
 
         hVelocity = Input.GetAxis("Horizontal");
@@ -48,6 +59,7 @@ public class ExploreController : MonoBehaviour
         transform.Translate(moveTowardsPos * speed * Time.deltaTime);
     }
 
+    //Checks input for crouching and then fill crouchPos for Camera
     void Crouch()
     {
         if(Input.GetKey(KeyCode.LeftControl) || camTransform.localPosition.y < 0.99f)
@@ -57,39 +69,45 @@ public class ExploreController : MonoBehaviour
         }
     }
 
+    //Checks if we're moving, then fill bobPos for Camera
     void HeadBob()
     {
-        float waveslice = 0.0f;
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        if (Mathf.Abs(horizontal) == 0 && Mathf.Abs(vertical) == 0)
+        if(settings.enableHeadBobbing)
         {
-            timer = 0.0f;
-        }
-        else
-        {
-            waveslice = Mathf.Sin(timer);
-            timer = timer + exploreStats.bobSpeed;
-            if (timer > Mathf.PI * 2)
+            float waveslice = 0.0f;
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+            if (Mathf.Abs(horizontal) == 0 && Mathf.Abs(vertical) == 0)
             {
-                timer = timer - (Mathf.PI * 2);
+                timer = 0.0f;
+            }
+            else
+            {
+                waveslice = Mathf.Sin(timer);
+                timer = timer + exploreStats.bobSpeed;
+                if (timer > Mathf.PI * 2)
+                {
+                    timer = timer - (Mathf.PI * 2);
+                }
+            }
+            if (waveslice != 0)
+            {
+                float translateChange = waveslice * exploreStats.bobAmount;
+                float totalAxes = Mathf.Abs(horizontal) + Mathf.Abs(vertical);
+                totalAxes = Mathf.Clamp(totalAxes, 0.0f, 1.0f);
+                translateChange = totalAxes * translateChange;
+
+                bobPos = new Vector3(camTransform.localPosition.x, 0 + translateChange, camTransform.localPosition.z);
+            }
+            else
+            {
+                bobPos = new Vector3(camTransform.localPosition.x, 0, camTransform.localPosition.z);
             }
         }
-        if (waveslice != 0)
-        {
-            float translateChange = waveslice * exploreStats.bobAmount;
-            float totalAxes = Mathf.Abs(horizontal) + Mathf.Abs(vertical);
-            totalAxes = Mathf.Clamp(totalAxes, 0.0f, 1.0f);
-            translateChange = totalAxes * translateChange;
-
-            bobPos = new Vector3(camTransform.localPosition.x, 0 + translateChange, camTransform.localPosition.z);
-        }
-        else
-        {
-            bobPos = new Vector3(camTransform.localPosition.x, 0, camTransform.localPosition.z);
-        }
+        
     }
 
+    //Add Crouch and Bob together and then set the position of the Camera
     void MoveCamera()
     {
         camPosition = crouchPos + bobPos;
