@@ -57,3 +57,5 @@ MonoBehaviour:
   crouchWalkSpeed: 1
   interactRange: 1
   crouchDrop: 0.8
+  bobSpeed: 0.105
+  bobAmount: 0.026
