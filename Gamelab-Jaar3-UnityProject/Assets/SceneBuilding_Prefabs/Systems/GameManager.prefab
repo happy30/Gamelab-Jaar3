@@ -56,10 +56,12 @@ MonoBehaviour:
   runSpeed: 6
   crouchSpeed: 8
   crouchWalkSpeed: 1
-  interactRange: 1
   crouchDrop: 0.8
-  bobSpeed: 0.105
+  zoomSpeed: 5
+  zoomAmount: 45
+  bobSpeed: 0.0545
   bobAmount: 0.026
+  interactRange: 1
 --- !u!114 &114742725591005608
 MonoBehaviour:
   m_ObjectHideFlags: 1
