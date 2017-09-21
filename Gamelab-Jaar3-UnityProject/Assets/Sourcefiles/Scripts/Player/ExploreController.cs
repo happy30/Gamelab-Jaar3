@@ -43,12 +43,15 @@ public class ExploreController : MonoBehaviour
 
     void Crouch()
     {
-        cameraHeight = Input.GetKey(KeyCode.LeftControl) ? -exploreStats.crouchDrop : 0;
-        Vector3 camPosition = new Vector3(0, cameraHeight, 0);
+        if(Input.GetKey(KeyCode.LeftControl) || camTransform.localPosition.y < 0.99f)
+        {
+            cameraHeight = Input.GetKey(KeyCode.LeftControl) ? -exploreStats.crouchDrop : 0;
+            Vector3 camPosition = new Vector3(0, cameraHeight, 0);
 
-        print(cameraHeight);
+            print(cameraHeight);
 
-        camTransform.localPosition = Vector3.Lerp(new Vector3(0, 1, 0), camPosition, exploreStats.crouchSpeed * Time.deltaTime);
+            camTransform.localPosition = Vector3.Lerp(camTransform.localPosition, camPosition, exploreStats.crouchSpeed * Time.deltaTime);
+        }
     }
 
 }
