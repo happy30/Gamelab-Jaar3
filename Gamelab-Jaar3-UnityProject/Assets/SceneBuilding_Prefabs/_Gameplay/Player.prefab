@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 124534366856978642}
   - component: {fileID: 81220907767819194}
   - component: {fileID: 114009475863303832}
+  - component: {fileID: 114968931531558990}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758885642662222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.238, y: 0.207, z: 0.864}
+  m_LocalPosition: {x: -0.238, y: -0.168, z: 0.864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4626313854694652}
@@ -135,7 +136,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
+  m_HDR: 0
   m_AllowMSAA: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -162,7 +163,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!81 &81220907767819194
 AudioListener:
@@ -202,6 +203,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 4550249984257770}
+--- !u!114 &114968931531558990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236447707403274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a879e317c20b0d41a9a56f1a97f4cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyMethod: 0
+  SampleCount: 1
+  PerPixelNormals: 0
+  Intensity: 0.25
+  Tint: {r: 0, g: 0, b: 0, a: 1}
+  Radius: 1
+  PowerExponent: 1.8
+  Bias: 0.05
+  CacheAware: 0
+  Downsample: 0
+  FadeEnabled: 0
+  FadeStart: 100
+  FadeLength: 50
+  FadeToIntensity: 1
+  FadeToRadius: 1
+  FadeToPowerExponent: 1.8
+  BlurEnabled: 1
+  BlurRadius: 2
+  BlurPasses: 1
+  BlurSharpness: 10
 --- !u!124 &124534366856978642
 Behaviour:
   m_ObjectHideFlags: 1
