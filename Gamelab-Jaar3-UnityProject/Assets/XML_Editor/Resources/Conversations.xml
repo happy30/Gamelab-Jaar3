@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element interactionCodeName="CC_01">
+      <lines>
+        <Line>
+          <actor>
+            <actor>Professor</actor>
+          </actor>
+          <text>How are you?</text>
+          <expression>
+            <portraitExpression>Happy</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1>Yes</choice1>
+            <choice2>No</choice2>
+            <choice3>Maybe</choice3>
+            <Destination1>CC_02</Destination1>
+            <Destination2>CC_03</Destination2>
+            <Destination3>CC_04</Destination3>
+          </choice>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="">
+      <lines />
+    </Element>
+  </List>
+</Data>
