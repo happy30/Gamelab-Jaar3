@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class IconPuzzle : MonoBehaviour
 {
-    public bool[] iconOrderArray;
+    public int[] correctOrderArray;
+    public int[] intOrderArray;
     public GameObject[] images;
     private int nextImage = 0;
 	
 	public void CheckOrder (int number)
     {
-        if (number == 2 && !iconOrderArray[3] && iconOrderArray[2])
+        /*if (number == 2 && !iconOrderArray[3] && iconOrderArray[2])
         {
             iconOrderArray[3] = true;
             ActiveImage();
@@ -39,7 +40,13 @@ public class IconPuzzle : MonoBehaviour
             {
                 break;
             }
-        }
+        }*/
+    }
+
+    void FillArray(int number)
+    {
+        intOrderArray[nextImage] = number;
+        ActiveImage();
     }
 
     void ActiveImage()
@@ -48,6 +55,14 @@ public class IconPuzzle : MonoBehaviour
         {
             images[nextImage].SetActive(true);
             nextImage++;
+        }
+    }
+
+    void Reset()
+    {
+        for(int i = 0; i < images.Length; i++)
+        {
+            images[i].SetActive(false);
         }
     }
 }
