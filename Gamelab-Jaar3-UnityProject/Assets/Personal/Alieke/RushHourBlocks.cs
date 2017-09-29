@@ -19,9 +19,11 @@ public class RushHourBlocks : MonoBehaviour
 	}
 	
 	void OnMouseDrag () {
+        //Drag block
         Vector3 v3 = Input.mousePosition;
         v3.z = 10;
         v3 = Camera.main.ScreenToWorldPoint(v3);
+
         if (horizontalBlock)
         {
             for(int x = 0; x < rushHour.gridWidth; x++)
