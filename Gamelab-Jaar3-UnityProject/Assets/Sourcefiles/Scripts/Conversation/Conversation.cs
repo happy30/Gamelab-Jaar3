@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Conversation.cs by Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Xml;

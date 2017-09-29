@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RushHour : MonoBehaviour {
+public class RushHour : MonoBehaviour
+{
     public int gridWidth, gridHeight;
     
     public bool[,] grid;
