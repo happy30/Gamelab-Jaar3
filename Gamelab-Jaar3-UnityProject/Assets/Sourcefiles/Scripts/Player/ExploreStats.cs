@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//ExploreStats.cs by Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

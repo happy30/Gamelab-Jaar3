@@ -7,7 +7,53 @@
           <actor>
             <actor>Professor</actor>
           </actor>
-          <text>How are you?</text>
+          <text>Im a prof</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+        </Line>
+        <Line>
+          <actor>
+            <actor>Professor</actor>
+          </actor>
+          <text>Hello!!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="CC_02">
+      <lines>
+        <Line>
+          <actor>
+            <actor>Professor</actor>
+          </actor>
+          <text>Another line!</text>
           <expression>
             <portraitExpression>Happy</portraitExpression>
             <voiceActing>true</voiceActing>
@@ -16,18 +62,36 @@
             <move>Middle</move>
           </cameraPosition>
           <choice>
-            <choice1>Yes</choice1>
-            <choice2>No</choice2>
-            <choice3>Maybe</choice3>
-            <Destination1>CC_02</Destination1>
-            <Destination2>CC_03</Destination2>
-            <Destination3>CC_04</Destination3>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+        </Line>
+        <Line>
+          <actor>
+            <actor>Anastasia</actor>
+          </actor>
+          <text>Stupid</text>
+          <expression>
+            <portraitExpression>Happy</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
           </choice>
         </Line>
       </lines>
-    </Element>
-    <Element interactionCodeName="">
-      <lines />
     </Element>
   </List>
 </Data>
