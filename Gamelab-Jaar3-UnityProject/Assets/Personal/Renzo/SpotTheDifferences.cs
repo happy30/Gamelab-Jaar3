@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class SpotTheDifferences : MonoBehaviour {
     /*
+     * New
+     * 1 list met objects, elk object heeft een child die aan de mirror kant zit
+     * 
+     * Old
      * 2 list, 1 voor links ander voor rechts
      * on mouse down, zet render op active, bij de geclickte en de mirror
      */
-
-    public List<GameObject> leftItems = new List<GameObject>();
-    public List<GameObject> rightItems = new List<GameObject>();
-
+     
+    
     private int listIndex;
 
 	void Start () {
@@ -39,6 +41,6 @@ public class SpotTheDifferences : MonoBehaviour {
 
     private void OnMouseDown()
     { // private int = i. i = list.index. get mirror list & index, do same action
-        
+        print("Mouse is here");
     }
 }
