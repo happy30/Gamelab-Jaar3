@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IPuzzleController : MonoBehaviour
+﻿interface IPuzzleController
 {
-    public void Reset() { }
-    public void OnSolve() { }
-    public void OnFail() { }
+    void Reset();
+    void OnSolve();
+    void OnFail();
 }

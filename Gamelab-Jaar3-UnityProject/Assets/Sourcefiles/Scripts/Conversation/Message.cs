@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Message : MonoBehaviour {
+using System.Xml;
+using System.Xml.Serialization;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class Message 
+{
+    [XmlElement("actor")]
+    public string actor;
+
+    [XmlElement("text")]
+    public string text;
+
 }
