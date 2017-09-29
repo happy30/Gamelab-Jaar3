@@ -39,7 +39,11 @@ GameObject:
   - component: {fileID: 33369226127060526}
   - component: {fileID: 23924942422832440}
   m_Layer: 0
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ITEM_CC_Desk_Prefab.prefab
+  m_Name: 3D_ITEM_CC_Desk_Prefab
+=======
   m_Name: RH 2 block up 2
+>>>>>>> 69e72750e887ad4bb7fa8a80fbc3767de8609d81:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ITEM_CC_Desk.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
