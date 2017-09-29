@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Closet
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
+  m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 34a549517ab52d641a2115e3ae66956d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 823a4f4a1bf861b46a832248a1b78869, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -35,15 +35,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: f6449bcb6b47d6c41a787f3b15878e29, type: 3}
+        m_Texture: {fileID: 2800000, guid: f71ddd4f2e0852042aee08651aabc6ce, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 000bc1ddfff658b4293789c8c5cd2075, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61cf6144c0ce32a40b4c14566adfae7f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: ec9e68ff8c4e0cc47bf232f89ed17699, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -59,10 +59,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0.74
-    - _Glossiness: 0.5
+    - _GlossMapScale: 0.623
+    - _Glossiness: 0.6
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.5
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -72,5 +72,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7941176, g: 0.7941176, b: 0.7941176, a: 1}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 2.5, g: 2.5, b: 2.5, a: 1}

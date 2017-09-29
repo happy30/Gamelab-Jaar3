@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4692404812193704}
   - component: {fileID: 95094669111647842}
   m_Layer: 0
-  m_Name: Desk Full 1
+  m_Name: 3D_ITEM_CC_Desk_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
