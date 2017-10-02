@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?>
   <List>
     <Element interactionCodeName="CC_01">
       <lines>
         <Line>
-          <actor>
+          <actors>
             <actor>Professor</actor>
-          </actor>
+          </actors>
           <text>Im a prof</text>
           <expression>
             <portraitExpression>Neutral</portraitExpression>
@@ -23,11 +22,12 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect />
         </Line>
         <Line>
-          <actor>
+          <actors>
             <actor>Professor</actor>
-          </actor>
+          </actors>
           <text>Hello!!</text>
           <expression>
             <portraitExpression>None</portraitExpression>
@@ -44,15 +44,13 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect />
         </Line>
       </lines>
     </Element>
     <Element interactionCodeName="CC_02">
       <lines>
         <Line>
-          <actor>
-            <actor>Professor</actor>
-          </actor>
           <text>Another line!</text>
           <expression>
             <portraitExpression>Happy</portraitExpression>
@@ -71,9 +69,6 @@
           </choice>
         </Line>
         <Line>
-          <actor>
-            <actor>Anastasia</actor>
-          </actor>
           <text>Stupid</text>
           <expression>
             <portraitExpression>Happy</portraitExpression>
@@ -94,4 +89,3 @@
       </lines>
     </Element>
   </List>
-</Data>

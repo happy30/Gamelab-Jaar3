@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class ConversationLoader: MonoBehaviour
 {
-    public const string path = "XML_Editor/Resources";
+    public const string path = "Conversations";
 
     void Start()
     {
         ConversationContainer cc = ConversationContainer.Load(path);
+
+        print(cc.messages[0].actor);
     }
 }

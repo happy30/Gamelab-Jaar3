@@ -8,12 +8,12 @@ using System.Xml;
 using System.IO;
 
 [XmlRoot("List")]
-public class ConversationContainer : MonoBehaviour
+public class ConversationContainer
 {
 
-    [XmlArray("Element")]
-    [XmlArrayItem("lines")]
-    public List<Conversation> messages = new List<Conversation>();
+    
+    [XmlArrayItem("Element")]
+    public List<Message> messages = new List<Message>();
 
 
     //Load XML File
