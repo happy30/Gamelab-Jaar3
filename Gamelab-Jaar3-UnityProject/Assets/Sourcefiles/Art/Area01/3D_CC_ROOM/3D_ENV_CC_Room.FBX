@@ -11,10 +11,10 @@ FBXHeaderExtension:  {
 		Year: 2017
 		Month: 10
 		Day: 2
-		Hour: 13
-		Minute: 0
-		Second: 25
-		Millisecond: 867
+		Hour: 14
+		Minute: 28
+		Second: 38
+		Millisecond: 19
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,19 +30,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Gamelab assets\3D_CC_ROOM\3D_ENV_CC_Room.FBX"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Gamelab assets\3D_CC_ROOM\3D_ENV_CC_Room.FBX"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_CC_Room.FBX"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_CC_Room.FBX"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "02/10/2017 11:00:25.864"
-			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\Gamelab assets\3D_CC_ROOM\3D_ENV_CC_Room.FBX"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "02/10/2017 12:28:38.010"
+			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_ENV_CC_Room.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "02/10/2017 11:00:25.864"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "02/10/2017 12:28:38.010"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2396057712, "", "Scene" {
+	Document: 1788726352, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -97,7 +97,7 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 6
+	Count: 7
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -221,7 +221,7 @@ Definitions:  {
 		}
 	}
 	ObjectType: "Material" {
-		Count: 1
+		Count: 2
 		PropertyTemplate: "FbxSurfacePhong" {
 			Properties70:  {
 				P: "ShadingModel", "KString", "", "", "Phong"
@@ -255,7 +255,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2396528160, "Geometry::", "Mesh" {
+	Geometry: 2046696560, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.6,0.894117647058823,0.83921568627451
 		}
@@ -336,10 +336,10 @@ Objects:  {
 		LayerElementMaterial: 0 {
 			Version: 101
 			Name: ""
-			MappingInformationType: "AllSame"
+			MappingInformationType: "ByPolygon"
 			ReferenceInformationType: "IndexToDirect"
-			Materials: *1 {
-				a: 0
+			Materials: *229 {
+				a: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 			} 
 		}
 		Layer: 0 {
@@ -362,7 +362,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2403874624, "Model::Client cell", "Mesh" {
+	Model: 2044321648, "Model::Client cell", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -374,7 +374,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 2505308032, "Material::Room CC", "" {
+	Material: 1971054272, "Material::Room CC", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -396,6 +396,28 @@ Objects:  {
 			P: "Reflectivity", "double", "Number", "",0
 		}
 	}
+	Material: 1971058592, "Material::window", "" {
+		Version: 102
+		ShadingModel: "phong"
+		MultiLayer: 0
+		Properties70:  {
+			P: "ShadingModel", "KString", "", "", "phong"
+			P: "EmissiveFactor", "Number", "", "A",0
+			P: "AmbientColor", "Color", "", "A",1,0,0.352941185235977
+			P: "DiffuseColor", "Color", "", "A",1,0,0.352941185235977
+			P: "TransparentColor", "Color", "", "A",1,1,1
+			P: "SpecularColor", "Color", "", "A",0.899999976158142,0.899999976158142,0.899999976158142
+			P: "SpecularFactor", "Number", "", "A",0
+			P: "ShininessExponent", "Number", "", "A",1.99999988079071
+			P: "Emissive", "Vector3D", "Vector", "",0,0,0
+			P: "Ambient", "Vector3D", "Vector", "",1,0,0.352941185235977
+			P: "Diffuse", "Vector3D", "Vector", "",1,0,0.352941185235977
+			P: "Specular", "Vector3D", "Vector", "",0,0,0
+			P: "Shininess", "double", "Number", "",1.99999988079071
+			P: "Opacity", "double", "Number", "",1
+			P: "Reflectivity", "double", "Number", "",0
+		}
+	}
 }
 
 ; Object connections
@@ -404,14 +426,17 @@ Objects:  {
 Connections:  {
 	
 	;Model::Client cell, Model::RootNode
-	C: "OO",2403874624,0
+	C: "OO",2044321648,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1279393360,2573945856
+	C: "OO",1789114880,1788813616
 	
 	;Geometry::, Model::Client cell
-	C: "OO",2396528160,2403874624
+	C: "OO",2046696560,2044321648
 	
 	;Material::Room CC, Model::Client cell
-	C: "OO",2505308032,2403874624
+	C: "OO",1971054272,2044321648
+	
+	;Material::window, Model::Client cell
+	C: "OO",1971058592,2044321648
 }
