@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5499e41c876b60744ae1f6a4cd05907b
+guid: 5b9f5e6edaa17044785b812016cd9158
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -10,7 +10,7 @@ ModelImporter:
     4300000: Client cell
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
