@@ -26,6 +26,17 @@ public class RushHourBlocks : MonoBehaviour
 
         if (horizontalBlock)
         {
+            transform.position = new Vector3(Mathf.Clamp(v3.x, 0, rushHour.gridWidth), Mathf.Clamp(v3.y, yBeginPos, yBeginPos), v3.z);
+
+        }
+        else
+        {
+            transform.position = new Vector3(Mathf.Clamp(v3.x, xBeginPos, xBeginPos), Mathf.Clamp(v3.y, 0, rushHour.gridHeight), v3.z);
+        }
+
+
+        /*if (horizontalBlock)
+        {
             for(int x = 0; x < rushHour.gridWidth; x++)
             {
                 for(int y = 0; y < rushHour.gridHeight; y++)
@@ -42,10 +53,10 @@ public class RushHourBlocks : MonoBehaviour
         } else
         {
             transform.position = new Vector3(Mathf.Clamp(v3.x, xBeginPos, xBeginPos), Mathf.Clamp(v3.y, 0, rushHour.gridHeight) , v3.z);
-        }
+        }*/
 	}
 
-    void OnMouseExit()
+    void OnMouseUpAsDown()
     {
         transform.position = new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), 0);
     }
