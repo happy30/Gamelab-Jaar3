@@ -8,6 +8,7 @@ public class LazerGame : MonoBehaviour
     public enum Direction {North, South, West, East}
     public Direction rightDirection;
     public Direction currentDirection;
+    public GameObject lineRenderer;
 
     void Update ()
     {
@@ -25,12 +26,16 @@ public class LazerGame : MonoBehaviour
         else if (currentDirection == Direction.West)
             currentDirection = Direction.North;
     }
-
+    
     void CheckDirection()
     {
         if(currentDirection == rightDirection)
         {
-            GetComponent<LineRenderer>().enabled = true;
+            GameObject clone;
+            clone = Instantiate(lineRenderer, transform.position, transform.rotation);
+            clone.transform.SetParent(transform);
+            
         }
+        else GetComponent<LineRenderer>().enabled = false;
     }
 }
