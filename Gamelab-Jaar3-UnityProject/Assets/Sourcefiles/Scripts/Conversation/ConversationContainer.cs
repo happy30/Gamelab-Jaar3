@@ -1,4 +1,4 @@
-﻿//ConversationContainer by Jordi
+﻿//ItemContainer.cs by Jordi
 
 using System.Collections;
 using System.Collections.Generic;
@@ -7,14 +7,12 @@ using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
 
-[XmlRoot("List")]
+[XmlRoot("Data")]
 public class ConversationContainer
 {
-
-    
+    [XmlArray("List")]
     [XmlArrayItem("Element")]
-    public List<Message> messages = new List<Message>();
-
+    public List<Conversation> interactions = new List<Conversation>();
 
     //Load XML File
     public static ConversationContainer Load(string path)
@@ -28,10 +26,11 @@ public class ConversationContainer
 
         StringReader reader = new StringReader(_xml.text);
 
-        ConversationContainer messages = serializer.Deserialize(reader) as ConversationContainer;
+        ConversationContainer cc = serializer.Deserialize(reader) as ConversationContainer;
 
         reader.Close();
 
-        return messages;
+        return cc;
     }
+
 }

@@ -2,15 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact : MonoBehaviour {
+[RequireComponent(typeof(ConversationController))]
+public class Interact : MonoBehaviour
+{
+    [Header("Fill These Sascha <3")]
+    public string interactionCodeName;
+    float timer;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+	public enum InteractType
+    {
+        Examine,
+        Conversation
+    };
+
+    public InteractType interactType;
+
+    [HideInInspector]
+    public bool activated;
+
+
+    public void Trigger(bool on)
+    {
+        if(on)
+        {
+            activated = true;
+            PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
+            GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
+            GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
+        }
+        else
+        {
+            activated = false;
+            GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
+            StartCoroutine(EnableCursor());
+
+        }
+    }
+
+    IEnumerator EnableCursor()
+    {
+        yield return new WaitForSeconds(0.5f);
+        PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+        yield break;
+
+    }
 }

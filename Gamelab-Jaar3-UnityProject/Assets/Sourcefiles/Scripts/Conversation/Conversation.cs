@@ -11,21 +11,35 @@ public class Conversation
 {
     [XmlAttribute("interactionCodeName")]
     public string interactionCodeName;
+
+    [XmlArray("lines")]
     public Line[] lines;
 }
 
 public class Line
 {
+    [XmlElement("actors")]
     public Actors actors;
+
+    [XmlElement("text")]
     public string text;
+
+    [XmlElement("expression")]
     public Expression expression;
+
+    [XmlElement("cameraPosition")]
     public Movement cameraPosition;
+
+    [XmlElement("choice")]
     public Choice choice;
+
+    [XmlElement("additionalEffect")]
     public string additionalEffect;
 }
 
 public class Expression
 {
+    
     public enum PortraitExpression
     {
         None,
@@ -39,13 +53,19 @@ public class Expression
         Frightened,
         Serious,
     };
+
+    [XmlEnum("portraitExpression")]
     public PortraitExpression portraitExpression;
+
+    [XmlElement("voiceActing")]
     public bool voiceActing;
 }
 
 public class Movement
 {
+    [XmlEnum("move")]
     public Move move;
+
     public enum Move
     {
         Middle,
@@ -56,10 +76,13 @@ public class Movement
 
 public class Actors
 {
+    [XmlEnum("actor")]
     public Actor actor;
+
     public enum Actor
     {
         Professor,
+        ProfessorMind,
         Anastasia,
         Client1,
         Client2,
@@ -76,11 +99,21 @@ public class Actors
 
 public class Choice
 {
+    [XmlElement("choice1")]
     public string choice1;
+
+    [XmlElement("choice2")]
     public string choice2;
+
+    [XmlElement("choice3")]
     public string choice3;
 
+    [XmlElement("Destination1")]
     public string Destination1;
+
+    [XmlElement("Destination2")]
     public string Destination2;
+
+    [XmlElement("Destination3")]
     public string Destination3;
 }

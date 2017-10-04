@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element interactionCodeName="Box">
+    <Element interactionCodeName="cc_1">
       <lines>
         <Line>
           <actors>
-            <actor>ProfessorMind</actor>
+            <actor>Anastasia</actor>
           </actors>
-          <text>This is a nice box</text>
+          <text>fuck you</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <portraitExpression>Happy</portraitExpression>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -27,11 +27,33 @@
         </Line>
         <Line>
           <actors>
-            <actor>ProfessorMind</actor>
+            <actor>Professor</actor>
           </actors>
-          <text>Farewell, Box.</text>
+          <text>why</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Sad</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Anastasia</actor>
+          </actors>
+          <text>cuz you're dumb</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
