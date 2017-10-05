@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//By Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -190,6 +192,7 @@ public class ConversationController : MonoBehaviour
 
     }
 
+    //If the last effect had black, and the next one hasn't then fade out.
     bool CheckForFadeOut()
     {
         if(currentConversation.lines[currentText].additionalEffect != "Black" && currentText > 0)

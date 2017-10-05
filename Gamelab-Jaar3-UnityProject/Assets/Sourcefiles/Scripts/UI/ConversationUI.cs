@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//By Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,7 +29,7 @@ public class ConversationUI : MonoBehaviour
 
     public void DisplayConversationUI(string act, string txt, string camPos, string portrait)
     {
-        if(port.portraitString != act + "_" + portrait)
+        if(port.portraitString != act + "_" + portrait || portrait != "None")
         {
             port.ChangePortrait(act, act + "_" + portrait);
         }
