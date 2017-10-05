@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33786321129695558}
   - component: {fileID: 23171951596475202}
   m_Layer: 0
-  m_Name: 3D_ENV_CC_TABLE
+  m_Name: 3D_ENV_GEN_TABLE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

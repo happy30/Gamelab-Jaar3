@@ -14,10 +14,15 @@ public class Portrait : MonoBehaviour
         portraitSprite = GetComponent<Image>();
     }
 
-    public void ChangePortrait(string portrait)
+    public void ChangePortrait(string actor, string portrait)
     {
-        Sprite port = (Sprite)Resources.Load(portrait);
+        string path = "Portraits/" + actor + "/" + portrait;
+
+        print(path);
+
+        Sprite port = Resources.Load<Sprite>(path);
         portraitSprite.sprite = port;
         portraitString = portrait;
+        print(portrait);
     }
 }

@@ -11,6 +11,8 @@ public class ConversationUI : MonoBehaviour
 
     public GameObject conversationCanvas;
 
+    public Animator conversationEffectsAnimator;
+
     public void ActivateConversationUI()
     {
         conversationCanvas.SetActive(true);
@@ -27,13 +29,26 @@ public class ConversationUI : MonoBehaviour
     {
         if(port.portraitString != act + "_" + portrait)
         {
-            port.ChangePortrait(act + "_" + portrait);
+            port.ChangePortrait(act, act + "_" + portrait);
         }
         
         actor.text = act;
         text.text = txt;
     }
 
-    
+    public void Strobe()
+    {
+        conversationEffectsAnimator.SetTrigger("Strobe");
+    }
+
+    public void Black()
+    {
+        conversationEffectsAnimator.SetBool("BlackScreen", true);
+    }
+
+    public void FadeOutBlack()
+    {
+        conversationEffectsAnimator.SetBool("BlackScreen", false);
+    }
 
 }

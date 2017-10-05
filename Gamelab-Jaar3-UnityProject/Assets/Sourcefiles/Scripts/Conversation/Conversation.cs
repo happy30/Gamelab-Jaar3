@@ -35,6 +35,9 @@ public class Line
 
     [XmlElement("additionalEffect")]
     public string additionalEffect;
+
+    [XmlElement("additionalEffectParameter")]
+    public string effectParameter;
 }
 
 public class Expression
@@ -94,6 +97,7 @@ public class Actors
         Doctor1,
         Assistant1,
         Assistant2,
+        Chiaki
     };
 }
 
