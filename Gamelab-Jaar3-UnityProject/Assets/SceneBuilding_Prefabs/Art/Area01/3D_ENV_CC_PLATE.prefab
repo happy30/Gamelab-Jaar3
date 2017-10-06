@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23854665305054334}
   - component: {fileID: 95408266761239894}
   m_Layer: 0
-  m_Name: Plate
+  m_Name: 3D_ENV_CC_PLATE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
