@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpotTheDifferences : MonoBehaviour {
-    /*
-     * New
-     * 1 list met objects, elk object heeft een child die aan de mirror kant zit
-     * 
-     * Old
-     * 2 list, 1 voor links ander voor rechts
-     * on mouse down, zet render op active, bij de geclickte en de mirror
-     */
-     
     
-    private int listIndex;
+    private bool isFound;
+    private ParticleSystem pS;
 
 	void Start () {
     #region 2ListMethod
@@ -32,7 +24,8 @@ public class SpotTheDifferences : MonoBehaviour {
         }
         */
     #endregion
-
+        if (pS.isEmitting)
+            pS.Stop();
     }
 	
 	void Update () {
@@ -40,7 +33,12 @@ public class SpotTheDifferences : MonoBehaviour {
 	}
 
     private void OnMouseDown()
-    { // private int = i. i = list.index. get mirror list & index, do same action
+    {
+        GetComponent<ParticleSystem>().Play();
+        isFound = true;
+        
+        //onclick,Get list van ander script, check de index, do stuff from there (zoals play PS, 
+
         print("Mouse is here");
     }
 }

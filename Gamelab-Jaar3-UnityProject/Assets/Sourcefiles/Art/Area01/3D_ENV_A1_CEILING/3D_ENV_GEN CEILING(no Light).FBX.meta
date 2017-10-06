@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 49175441efc50984ab82fd5eab37d988
-timeCreated: 1507138711
+guid: 49a4383e08c7a8d4f8a986206517fc49
+timeCreated: 1507118292
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -11,7 +11,7 @@ ModelImporter:
     3300000: //RootNode
     4300000: cieiling
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

@@ -22,7 +22,11 @@ GameObject:
   - component: {fileID: 33786321129695558}
   - component: {fileID: 23171951596475202}
   m_Layer: 0
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ENV_CC_TABLE.prefab
+  m_Name: 3D_ENV_CC_TABLE
+=======
   m_Name: 3D_ENV_GEN_TABLE
+>>>>>>> 361834d2f505b20ac32f7cb1acb13e3f07bacb89:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/General/3D_ENV_GEN_TABLE.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

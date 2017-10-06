@@ -23,7 +23,11 @@ GameObject:
   - component: {fileID: 23854665305054334}
   - component: {fileID: 95408266761239894}
   m_Layer: 0
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ENV_CC_PLATE.prefab
+  m_Name: 3D_ENV_CC_PLATE
+=======
   m_Name: 3D_ENV_GEN_PLATE
+>>>>>>> 361834d2f505b20ac32f7cb1acb13e3f07bacb89:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/General/3D_ENV_GEN_PLATE.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
