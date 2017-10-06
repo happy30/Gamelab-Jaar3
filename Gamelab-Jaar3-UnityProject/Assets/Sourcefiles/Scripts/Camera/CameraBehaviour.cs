@@ -11,14 +11,10 @@ public class CameraBehaviour : MonoBehaviour
     float rotateSpeed;
     float fieldOfView;
 
-    public enum CameraMode
-    {
-        Left,
-        Middle,
-        Right
-    };
+    float yRotOffset;
+    float yRot;
 
-    public CameraMode camMode;
+    public float conversationYRotation;
 
     private void Awake()
     {
@@ -69,10 +65,23 @@ public class CameraBehaviour : MonoBehaviour
         }
     }
 
+    public void SetCameraOffset()
+    {
+        yRotOffset = player.transform.eulerAngles.y; 
+        
+    }
+
+    public void SetCameraRotation()
+    {
+        yRot = yRotOffset + conversationYRotation;
+    }
+
+
     void ConversationCamera()
     {
         Cursor.lockState = CursorLockMode.Locked;
         transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, rotateSpeed * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
+        player.transform.eulerAngles = new Vector3(player.transform.eulerAngles.x, Mathf.Lerp(player.transform.eulerAngles.y, yRot, rotateSpeed * Time.deltaTime), player.transform.eulerAngles.z);
     }
 
     void SetFieldOfView()

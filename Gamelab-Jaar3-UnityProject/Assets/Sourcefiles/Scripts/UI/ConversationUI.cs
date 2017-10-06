@@ -24,14 +24,18 @@ public class ConversationUI : MonoBehaviour
     public void DeactivateConversationUI()
     {
         conversationCanvas.SetActive(false);
+    }
 
+    public void RefreshPortrait(bool left)
+    {
+        port.Refresh(left);
     }
 
     public void DisplayConversationUI(string act, string txt, string camPos, string portrait)
     {
         if(port.portraitString != act + "_" + portrait || portrait != "None")
         {
-            port.ChangePortrait(act, act + "_" + portrait);
+            StartCoroutine(port.ChangePortrait(act, act + "_" + portrait));
         }
         
         actor.text = act;
