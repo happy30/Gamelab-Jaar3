@@ -11,6 +11,15 @@ public class CameraBehaviour : MonoBehaviour
     float rotateSpeed;
     float fieldOfView;
 
+    public enum CameraMode
+    {
+        Left,
+        Middle,
+        Right
+    };
+
+    public CameraMode camMode;
+
     private void Awake()
     {
         exploreStats = GameObject.Find("GameManager").GetComponent<ExploreStats>();

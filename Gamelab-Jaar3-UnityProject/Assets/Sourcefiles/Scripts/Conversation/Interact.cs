@@ -16,7 +16,9 @@ public class Interact : MonoBehaviour
 	public enum InteractType
     {
         Examine,
-        Conversation
+        Conversation,
+        Use
+            
     };
 
     public InteractType interactType;
@@ -27,22 +29,35 @@ public class Interact : MonoBehaviour
 
     public void Trigger(bool on)
     {
-        if(on)
+
+        switch(interactType)
         {
-            activated = true;
-            PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
-            GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
-            GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
-            hideObject.SetActive(false);
-        }
-        else
-        {
-            activated = false;
-            GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
-            StartCoroutine(EnableCursor());
-            hideObject.SetActive(true);
+            case InteractType.Conversation:
+
+                if (on)
+                {
+                    activated = true;
+                    PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
+                    GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
+                    GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
+                    hideObject.SetActive(false);
+                }
+                else
+                {
+                    activated = false;
+                    GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
+                    StartCoroutine(EnableCursor());
+                    hideObject.SetActive(true);
+                }
+                break;
+
+            case InteractType.Use:
+                GetComponent<AnimationTrigger>().Activate();
+                break;
 
         }
+
+
     }
 
     IEnumerator EnableCursor()
