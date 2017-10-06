@@ -11,78 +11,113 @@ public class Conversation
 {
     [XmlAttribute("interactionCodeName")]
     public string interactionCodeName;
+
+    [XmlArray("lines")]
     public Line[] lines;
+}
 
-    public class Line
+public class Line
+{
+    [XmlElement("actors")]
+    public Actors actors;
+
+    [XmlElement("text")]
+    public string text;
+
+    [XmlElement("expression")]
+    public Expression expression;
+
+    [XmlElement("cameraPosition")]
+    public Movement cameraPosition;
+
+    [XmlElement("choice")]
+    public Choice choice;
+
+    [XmlElement("additionalEffect")]
+    public string additionalEffect;
+
+    [XmlElement("additionalEffectParameter")]
+    public string effectParameter;
+}
+
+public class Expression
+{
+    
+    public enum PortraitExpression
     {
-        public Actors actor;
-        public string text;
-        public Expression expression;
-        public Movement cameraPosition;
-        public Choice choice;
-        
+        None,
+        Neutral,
+        Happy,
+        Sad,
+        Smirk,
+        Thinking,
+        Angry,
+        Enraged,
+        Frightened,
+        Serious,
+    };
 
+    [XmlEnum("portraitExpression")]
+    public PortraitExpression portraitExpression;
 
-        public class Expression
-        {
-            public enum PortraitExpression
-            {
-                None,
-                Neutral,
-                Happy,
-                Sad,
-                Smirk,
-                Thinking,
-                Angry,
-                Enraged,
-                Frightened,
-                Serious,
-            };
-            public PortraitExpression portraitExpression;
-            public bool voiceActing;
-        }
+    [XmlElement("voiceActing")]
+    public bool voiceActing;
+}
 
-        public class Movement
-        {
-            public Move move;
-            public enum Move
-            {
-                Middle,
-                Left,
-                Right,
-            };
-        }
+public class Movement
+{
+    [XmlEnum("move")]
+    public Move move;
 
-        public class Actors
-        {
-            public Actor actor;
-            public enum Actor
-            {
-                Professor,
-                Anastasia,
-                Client1,
-                Client2,
-                Client3,
-                Client4,
-                Client5,
-                Client6,
-                Client7,
-                Doctor1,
-                Assistant1,
-                Assistant2,
-            };
-        }
+    public enum Move
+    {
+        Middle,
+        Left,
+        Right,
+    };
+}
 
-        public class Choice
-        {
-            public string choice1;
-            public string choice2;
-            public string choice3;
+public class Actors
+{
+    [XmlEnum("actor")]
+    public Actor actor;
 
-            public string Destination1;
-            public string Destination2;
-            public string Destination3;
-        }
-    }
+    public enum Actor
+    {
+        Professor,
+        ProfessorMind,
+        Anastasia,
+        Client1,
+        Client2,
+        Client3,
+        Client4,
+        Client5,
+        Client6,
+        Client7,
+        Doctor1,
+        Assistant1,
+        Assistant2,
+        Chiaki
+    };
+}
 
+public class Choice
+{
+    [XmlElement("choice1")]
+    public string choice1;
+
+    [XmlElement("choice2")]
+    public string choice2;
+
+    [XmlElement("choice3")]
+    public string choice3;
+
+    [XmlElement("Destination1")]
+    public string Destination1;
+
+    [XmlElement("Destination2")]
+    public string Destination2;
+
+    [XmlElement("Destination3")]
+    public string Destination3;
 }
