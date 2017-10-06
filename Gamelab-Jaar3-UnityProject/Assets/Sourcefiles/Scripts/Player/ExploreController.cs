@@ -18,11 +18,14 @@ public class ExploreController : MonoBehaviour
     Vector3 crouchPos;
     Vector3 bobPos;
 
+    ExploreUI exploreUI;
+
 
 	// Use this for initialization
 	void Awake()
     {
         exploreStats = GameObject.Find("GameManager").GetComponent<ExploreStats>();
+        exploreUI = GameObject.Find("Canvas").GetComponent<ExploreUI>();
         settings = GameObject.Find("GameManager").GetComponent<Settings>();
 	}
 	
@@ -35,6 +38,7 @@ public class ExploreController : MonoBehaviour
             Crouch();
             HeadBob();
             MoveCamera();
+            CheckForInteraction();
         }
 	}
 
@@ -112,6 +116,24 @@ public class ExploreController : MonoBehaviour
     {
         camPosition = crouchPos + bobPos;
         camTransform.localPosition = Vector3.Lerp(camTransform.localPosition, camPosition, exploreStats.crouchSpeed * Time.deltaTime);
+    }
+
+    void CheckForInteraction()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(camTransform.position, camTransform.forward, out hit, exploreStats.interactRange))
+        {
+            if(hit.collider.tag == "Interact")
+            {
+                exploreUI.ShowInteractCursor(true);
+                if(Input.GetButtonDown("Fire1"))
+                {
+                    hit.collider.GetComponent<Interact>().Trigger(true);
+                }
+                return;
+            }
+        }
+        exploreUI.ShowInteractCursor(false);
     }
 
 }

@@ -32,6 +32,10 @@ public class CameraBehaviour : MonoBehaviour
                 SetFieldOfView();
                 break;
 
+            case PlayMode.GameMode.Conversation:
+                ConversationCamera();
+                break;
+
         }
 
 
@@ -54,6 +58,12 @@ public class CameraBehaviour : MonoBehaviour
         {
             fieldOfView = 60;
         }
+    }
+
+    void ConversationCamera()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, rotateSpeed * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
     }
 
     void SetFieldOfView()

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element interactionCodeName="CC_01">
+    <Element interactionCodeName="cc_01">
       <lines>
         <Line>
-          <actor>
-            <actor>Professor</actor>
-          </actor>
-          <text>Im a prof</text>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Hey hey, what is this place?</text>
           <expression>
             <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -23,12 +23,129 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
         </Line>
         <Line>
-          <actor>
-            <actor>Professor</actor>
-          </actor>
-          <text>Hello!!</text>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>You wanna see me flash?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Well here I go...</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>... Flash</text>
+          <expression>
+            <portraitExpression>Happy</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect>Strobe</additionalEffect>
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>......</text>
+          <expression>
+            <portraitExpression>Frightened</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Black!!!</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect>Black</additionalEffect>
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>STILL BLACK</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -44,19 +161,17 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect>Black</additionalEffect>
+          <additionalEffectParameter />
         </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="CC_02">
-      <lines>
         <Line>
-          <actor>
-            <actor>Professor</actor>
-          </actor>
-          <text>Another line!</text>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>LAST BLACK</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>true</voiceActing>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -69,18 +184,20 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect>Black</additionalEffect>
+          <additionalEffectParameter />
         </Line>
         <Line>
-          <actor>
-            <actor>Anastasia</actor>
-          </actor>
-          <text>Stupid</text>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>NO MORE BLACK</text>
           <expression>
             <portraitExpression>Happy</portraitExpression>
-            <voiceActing>true</voiceActing>
+            <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Left</move>
+            <move>Middle</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -90,6 +207,8 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect>Strobe</additionalEffect>
+          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>
