@@ -30,6 +30,7 @@ public class ConversationController : MonoBehaviour
 
     ConversationStats stats;
     ConversationEffects effects;
+    CameraBehaviour cam;
     public const string path = "Conversations";
     ConversationContainer cc;
 
@@ -42,6 +43,7 @@ public class ConversationController : MonoBehaviour
         cUI = GameObject.Find("Canvas").GetComponent<ConversationUI>();
         interact = GetComponent<Interact>();
         effects = GameObject.Find("GameManager").GetComponent<ConversationEffects>();
+        cam = Camera.main.GetComponent<CameraBehaviour>();
     }
 
     void Start()
@@ -123,6 +125,8 @@ public class ConversationController : MonoBehaviour
                 }
             }
 
+            cam.SetCameraOffset();
+
             //Here starts the first line of conversation
             NextLine();
             
@@ -154,9 +158,61 @@ public class ConversationController : MonoBehaviour
         displayLine = "";
         fullLine = currentConversation.lines[currentText].text;
         actor = currentConversation.lines[currentText].actors.actor.ToString();
+
+
+        SetCameraPosition();
         CheckEffect();
         activated = true;
     }
+
+
+
+    void SetCameraPosition()
+    {
+        if(currentText > 0)
+        {
+            if(currentConversation.lines[currentText].cameraPosition.move != currentConversation.lines[currentText - 1].cameraPosition.move)
+            {
+                if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Left)
+                {
+                    cUI.RefreshPortrait(true);
+                }
+                else if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Right)
+                {
+                    cUI.RefreshPortrait(false);
+                }
+                else
+                {
+                    if(currentConversation.lines[currentText].cameraPosition.move == Movement.Move.Left)
+                    {
+                        cUI.RefreshPortrait(false);
+                    }
+                    else
+                    {
+                        cUI.RefreshPortrait(true);
+                    }
+                }
+            }
+        }
+
+        switch (currentConversation.lines[currentText].cameraPosition.move)
+        {
+            case Movement.Move.Left:
+                cam.conversationYRotation = -30;
+                break;
+
+            case Movement.Move.Right:
+                cam.conversationYRotation = 30;
+                break;
+
+            case Movement.Move.Middle:
+                cam.conversationYRotation = 0;
+                break;
+        }
+        cam.SetCameraRotation();
+    }
+
+
 
     //Get the next character in our line
     void NextChar()

@@ -547,6 +547,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 92.787, z: 0}
+--- !u!1 &754416113 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1913196251047734, guid: c542839162c2fa044843d4bc68fbcc06,
+    type: 2}
+  m_PrefabInternal: {fileID: 2118141685}
+--- !u!95 &754416118
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754416113}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ede690b884665144ab1e5d36e546a81b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &811702792
 Prefab:
   m_ObjectHideFlags: 0
@@ -968,7 +990,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1297368308091570, guid: c542839162c2fa044843d4bc68fbcc06, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224417344438611492, guid: c542839162c2fa044843d4bc68fbcc06,
         type: 2}
@@ -994,6 +1016,16 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.24264705
+      objectReference: {fileID: 0}
+    - target: {fileID: 224694934534524956, guid: c542839162c2fa044843d4bc68fbcc06,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114300532607515440, guid: c542839162c2fa044843d4bc68fbcc06,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c542839162c2fa044843d4bc68fbcc06, type: 2}
