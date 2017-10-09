@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4939420812517902}
   - component: {fileID: 95987412362338848}
   m_Layer: 0
-  m_Name: 3D_ENV_CC_STAFFDESK
+  m_Name: 3D_ENV_GEN_STAFFDESK_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

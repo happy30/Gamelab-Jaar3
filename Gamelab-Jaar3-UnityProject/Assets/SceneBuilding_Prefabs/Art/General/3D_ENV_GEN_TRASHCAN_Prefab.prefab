@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4511961163635984}
   - component: {fileID: 95733494368975704}
   m_Layer: 0
-  m_Name: 3D_ENV_TRASHCAN_Prefab
+  m_Name: 3D_ENV_GEN_TRASHCAN_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
