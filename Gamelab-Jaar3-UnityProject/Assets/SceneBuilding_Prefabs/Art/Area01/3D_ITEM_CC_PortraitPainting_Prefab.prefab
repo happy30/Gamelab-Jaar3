@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33260876976517290}
   - component: {fileID: 23786569693805508}
   m_Layer: 0
-  m_Name: 3D_ITEM_CC_PORTRAITPAINTING_Prefab
+  m_Name: 3D_ITEM_CC_PortraitPainting_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
