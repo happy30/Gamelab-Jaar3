@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2017
 		Month: 10
-		Day: 3
-		Hour: 9
-		Minute: 21
-		Second: 29
-		Millisecond: 986
+		Day: 9
+		Hour: 12
+		Minute: 36
+		Second: 2
+		Millisecond: 230
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -30,19 +30,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HALL_WALL(LP).FBX"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\3D_ENV_HALL_WALL(LP).FBX"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Walls\Straight\3D_ENV_GEN_STRAIGHTWALL.FBX"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\Marc\Desktop\Walls\Straight\3D_ENV_GEN_STRAIGHTWALL.FBX"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "03/10/2017 07:21:29.986"
-			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\3D_ENV_HALL_WALL(LP).FBX"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "09/10/2017 10:36:02.228"
+			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\Walls\Straight\3D_ENV_GEN_STRAIGHTWALL.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "03/10/2017 07:21:29.986"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "09/10/2017 10:36:02.228"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1854922608, "", "Scene" {
+	Document: 1086660736, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -226,18 +226,18 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2226723232, "Geometry::", "Mesh" {
+	Geometry: 2060610240, "Geometry::", "Mesh" {
 		Properties70:  {
-			P: "Color", "ColorRGB", "Color", "",0.525490196078431,0.0235294117647059,0.0235294117647059
+			P: "Color", "ColorRGB", "Color", "",0.517647058823529,0.0235294117647059,0.0235294117647059
 		}
 		Vertices: *30 {
-			a: 50,150,0,-50,150,0,-50,-59.2683868408203,45.3425559997559,-50,-150,45.3425636291504,50,-150,45.3425636291504,50,-59.2683868408203,45.3425559997559,50,-26.7002868652344,45.3429641723633,-50,-26.7002868652344,45.3429641723633,-50,45.8146820068359,1.25526690483093,50,45.8146820068359,1.25526690483093
+			a: 49.9778633117676,150.000030517578,-0.346143245697021,-51.5520095825195,150.000045776367,-0.0115277767181396,-51.5520095825195,-59.2683906555176,44.8539695739746,-51.5520095825195,-150.000030517578,45.1495780944824,49.9778633117676,-150.000030517578,45.1495780944824,49.9778633117676,-59.2683906555176,44.8539695739746,49.9778633117676,-26.7002868652344,44.9628219604492,-51.5520095825195,-26.7002868652344,44.9628219604492,-51.5520095825195,45.5674057006836,-0.0562922954559326,49.9778633117676,45.5674057006836,-0.39090633392334
 		} 
 		PolygonVertexIndex: *16 {
 			a: 7,2,5,-7,0,1,8,-10,8,7,6,-10,3,4,5,-3
 		} 
 		Edges: *13 {
-			a: 15,14,0,2,3,4,5,6,7,8,10,12,13
+			a: 0,1,2,3,4,5,6,7,8,10,12,13,15
 		} 
 		GeometryVersion: 124
 		LayerElementNormal: 0 {
@@ -289,17 +289,17 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1124833728, "Model::wall", "Mesh" {
+	Model: 2059116208, "Model::wall", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",0,1.07929416515162e-008,1.65436112649844e-024
-			P: "Lcl Rotation", "Lcl Rotation", "", "A",90.0000093346673,-0,0
+			P: "Lcl Translation", "Lcl Translation", "", "A",64.6042785644531,-19.9058399200439,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",90.0000093346673,-0,-89.9999888441003
 			P: "Lcl Scaling", "Lcl Scaling", "", "A",0.100000001490116,0.100000001490116,0.100000001490116
 			P: "UDP3DSMAX", "KString", "", "U", "MapChannel:1 = UVChannel_1&cr;&lf;"
-			P: "MaxHandle", "int", "Integer", "UH",1
+			P: "MaxHandle", "int", "Integer", "UH",11
 		}
 		Shading: T
 		Culling: "CullingOff"
@@ -312,11 +312,11 @@ Objects:  {
 Connections:  {
 	
 	;Model::wall, Model::RootNode
-	C: "OO",1124833728,0
+	C: "OO",2059116208,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",1296545008,2226433520
+	C: "OO",1095274544,920905408
 	
 	;Geometry::, Model::wall
-	C: "OO",2226723232,1124833728
+	C: "OO",2060610240,2059116208
 }
