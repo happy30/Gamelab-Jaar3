@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8584631e0de2d1a4f966794de714ad41
-timeCreated: 1507113455
+guid: 3da5cd22aa1518340bb69337452d4a88
+timeCreated: 1507554280
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: wall
+    4300000: Lamp
   materials:
     importMaterials: 1
     materialName: 0
