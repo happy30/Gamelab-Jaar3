@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23907631367068988}
   - component: {fileID: 95301197449861968}
   m_Layer: 0
-  m_Name: 3D_ITEM_CC_Sink_Prefab
+  m_Name: 3D_ITEM_CC_SINK_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
