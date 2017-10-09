@@ -1,4 +1,4 @@
-﻿//Made by ALieke
+﻿//Made by Alieke
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +9,10 @@ public class MenuUI : MonoBehaviour
     public GameObject pausePanel;
     public GameObject activePanel;
 
+    void Start()
+    {
+        activePanel = pausePanel;
+    }
 	
 	void Update () {
         if (Input.GetButtonDown("Cancel"))
@@ -16,14 +20,13 @@ public class MenuUI : MonoBehaviour
             if (paused)
             {
                 Time.timeScale = 1;
-                pausePanel.SetActive(false);
+                activePanel.SetActive(false);
                 paused = false;
             }
             else
             {
                 Time.timeScale = 0;
-                pausePanel.SetActive(true);
-                activePanel = pausePanel;
+                activePanel.SetActive(true);
                 paused = true;
             }
         }
