@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Innercorner/3D_ENV_GEN_INNERWALL.FBX.meta
 guid: 4e90a613df35d83409e4398bad040e4c
 timeCreated: 1507549636
+=======
+guid: 0e3e7486084a1f4468117ed10aa12c03
+timeCreated: 1507547105
+>>>>>>> 094e6b7bb40a048292a164ed250266fcda89c1b6:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Innercorner/3D_ENV_GEN_INNERWALL.FBX.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 21

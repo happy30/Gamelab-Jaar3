@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Door/3D_ENV_GEN_DOORWALL.FBX.meta
 guid: f0cfc17496ce9b346976ec8c02e4ba9d
 timeCreated: 1507549637
+=======
+guid: 8340c08be1784384b865e0f376b6ba0a
+timeCreated: 1507547106
+>>>>>>> 094e6b7bb40a048292a164ed250266fcda89c1b6:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Door/3D_ENV_GEN_DOORWALL.FBX.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 21

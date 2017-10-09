@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Straight/3D_ENV_GEN_STRAIGHTWALL.FBX.meta
 guid: fdbe1185b60fe824d83b0049ea1595a1
 timeCreated: 1507549638
+=======
+guid: 2b104a818833d3c46849c819fef7ed96
+timeCreated: 1507547106
+>>>>>>> 094e6b7bb40a048292a164ed250266fcda89c1b6:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Straight/3D_ENV_GEN_STRAIGHTWALL.FBX.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
