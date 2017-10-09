@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 81220907767819194}
   - component: {fileID: 114009475863303832}
   - component: {fileID: 114968931531558990}
+  - component: {fileID: 114636905422334796}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -73,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758885642662222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.238, y: -0.168, z: 0.864}
+  m_LocalPosition: {x: 0.195, y: 1, z: -0.823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4626313854694652}
@@ -123,8 +124,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 1000
+  near clip plane: 0.01
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -132,12 +133,12 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -163,7 +164,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!81 &81220907767819194
 AudioListener:
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4302409585213338}
+  camMode: 0
 --- !u!114 &114516828888885842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,6 +205,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camTransform: {fileID: 4550249984257770}
+--- !u!114 &114636905422334796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236447707403274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 70e4cd98d3148154ca9694d46b3954eb, type: 2}
 --- !u!114 &114968931531558990
 MonoBehaviour:
   m_ObjectHideFlags: 1
