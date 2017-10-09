@@ -12,6 +12,7 @@ public class ConversationUI : MonoBehaviour
     public Text actor;
 
     public GameObject conversationCanvas;
+    public GameObject actorBox;
 
     public Animator conversationEffectsAnimator;
 
@@ -31,6 +32,7 @@ public class ConversationUI : MonoBehaviour
         port.Refresh(left);
     }
 
+    /*
     public void DisplayConversationUI(string act, string txt, string camPos, string portrait)
     {
         if(port.portraitString != act + "_" + portrait || portrait != "None")
@@ -41,6 +43,42 @@ public class ConversationUI : MonoBehaviour
         actor.text = act;
         text.text = txt;
     }
+
+    */
+
+    public void DisplayConversationUI(string act, string txt)
+    {
+        if(act == "Mind")
+        {
+            actorBox.SetActive(false);
+            text.gameObject.GetComponent<Outline>().enabled = true;
+            actor.text = "";
+            text.text = txt;
+            
+        }
+        else
+        {
+            actorBox.SetActive(true);
+            text.gameObject.GetComponent<Outline>().enabled = false;
+            actor.text = act;
+            text.text = txt;
+            
+        }
+    }
+
+    public void UpdatePortrait(string act, string portrait)
+    {
+        print(portrait);
+        if (port.portraitString != act + "_" + portrait && portrait != "None")
+        {
+            port.ChangePortrait(act, act + "_" + portrait);
+        }
+        else
+        {
+            print("There is no sprite change");
+        }
+    }
+
 
     public void Strobe()
     {

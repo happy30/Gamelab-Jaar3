@@ -8,7 +8,7 @@ public class CameraBehaviour : MonoBehaviour
 {
     ExploreStats exploreStats;
     public Transform player;
-    float rotateSpeed;
+
     float fieldOfView;
 
     float yRotOffset;
@@ -23,7 +23,7 @@ public class CameraBehaviour : MonoBehaviour
 
     void Start()
     {
-        rotateSpeed = 3;
+
     }
 
     void Update()
@@ -52,8 +52,8 @@ public class CameraBehaviour : MonoBehaviour
     void ExploreCamera()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        player.transform.Rotate(0, Input.GetAxis("Mouse X") * rotateSpeed, 0);
-        float rotationX = ClampAngle((-Input.GetAxis("Mouse Y") * rotateSpeed) + transform.eulerAngles.x, -80, 90);
+        player.transform.Rotate(0, Input.GetAxis("Mouse X") * exploreStats.mouseSensivity, 0);
+        float rotationX = ClampAngle((-Input.GetAxis("Mouse Y") * exploreStats.mouseSensivity) + transform.eulerAngles.x, -80, 90);
         transform.rotation = Quaternion.Euler(new Vector3(rotationX, transform.eulerAngles.y, transform.eulerAngles.z));
         if (Input.GetButton("Fire2"))
         {
@@ -80,8 +80,8 @@ public class CameraBehaviour : MonoBehaviour
     void ConversationCamera()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, rotateSpeed * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
-        player.transform.eulerAngles = new Vector3(player.transform.eulerAngles.x, Mathf.Lerp(player.transform.eulerAngles.y, yRot, rotateSpeed * Time.deltaTime), player.transform.eulerAngles.z);
+        transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, 5f * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
+        player.transform.eulerAngles = new Vector3(player.transform.eulerAngles.x, Mathf.Lerp(player.transform.eulerAngles.y, yRot, 7f * Time.deltaTime), player.transform.eulerAngles.z);
     }
 
     void SetFieldOfView()

@@ -84,8 +84,8 @@ public class Actors
 
     public enum Actor
     {
+        Mind,
         Professor,
-        ProfessorMind,
         Anastasia,
         Client1,
         Client2,
@@ -97,7 +97,9 @@ public class Actors
         Doctor1,
         Assistant1,
         Assistant2,
-        Chiaki
+        Chiaki,
+        Hiyoko,
+        Junko
     };
 }
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element interactionCodeName="Box">
+    <Element interactionCodeName="NEW">
       <lines>
         <Line>
           <actors>
-            <actor>ProfessorMind</actor>
+            <actor>Chiaki</actor>
           </actors>
-          <text>This is a nice box</text>
+          <text>Helloo!!</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -24,12 +24,13 @@
             <Destination3 />
           </choice>
           <additionalEffect />
+          <additionalEffectParameter />
         </Line>
         <Line>
           <actors>
-            <actor>ProfessorMind</actor>
+            <actor>Professor</actor>
           </actors>
-          <text>Farewell, Box.</text>
+          <text>Hey...</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -46,6 +47,30 @@
             <Destination3 />
           </choice>
           <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Who is this?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>

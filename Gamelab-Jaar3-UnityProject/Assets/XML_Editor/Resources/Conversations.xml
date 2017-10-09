@@ -7,9 +7,55 @@
           <actors>
             <actor>Chiaki</actor>
           </actors>
-          <text>Hey~</text>
+          <text>Helloo!!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>Hey...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Who is this?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -30,59 +76,36 @@
           <actors>
             <actor>Chiaki</actor>
           </actors>
-          <text>LEFT!</text>
+          <text>I am Chiaki... Sorry I just read your mind.</text>
           <expression>
-            <portraitExpression>Enraged</portraitExpression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Hiyoko</actor>
+          </actors>
+          <text>Shut up</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
             <move>Left</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>RIGHT</text>
-          <expression>
-            <portraitExpression>Frightened</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Right</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Strobe</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>MIDDLE!</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
           </cameraPosition>
           <choice>
             <choice1 />

@@ -12,31 +12,42 @@ public class Portrait : MonoBehaviour
     public string portraitString;
     Animator anim;
 
+    public bool waiting;
+    public string newActor;
+    public string newPortrait;
+
     void Awake()
     {
         portraitSprite = GetComponent<Image>();
         anim = GetComponent<Animator>();
     }
 
-    public IEnumerator ChangePortrait(string actor, string portrait)
+    public void ChangePortrait(string actor, string portrait)
     {
-        while(!anim.GetCurrentAnimatorStateInfo(0).IsName("Empty"))
-        {
-            yield return new WaitForEndOfFrame();
-        }
+        
 
         string path = "Portraits/" + actor + "/" + portrait;
 
-        print(path);
 
         Sprite port = Resources.Load<Sprite>(path);
         portraitSprite.sprite = port;
         portraitString = portrait;
-        print(portrait);
 
-        yield break;
     }
 
+    public void AnimationPortraitRefreshTrigger()
+    {
+        ChangePortraitWaitForFadeOut();
+    }
+
+    public void ChangePortraitWaitForFadeOut()
+    {
+        if(waiting)
+        {
+                ChangePortrait(newActor, newActor + "_" + newPortrait);
+                waiting = false;
+        }
+    }
 
     public void Refresh(bool left)
     {

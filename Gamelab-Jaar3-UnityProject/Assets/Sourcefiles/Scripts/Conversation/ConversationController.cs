@@ -126,7 +126,7 @@ public class ConversationController : MonoBehaviour
             }
 
             cam.SetCameraOffset();
-
+            //currentConversation.lines[currentText].expression.portraitExpression.ToString();
             //Here starts the first line of conversation
             NextLine();
             
@@ -145,10 +145,10 @@ public class ConversationController : MonoBehaviour
     {
         cUI.DisplayConversationUI(
                     actor,
-                    displayLine,
-                    currentConversation.lines[currentText].cameraPosition.move.ToString(),
-                    currentConversation.lines[currentText].expression.portraitExpression.ToString());
+                    displayLine);
     }
+
+    
 
     //Get the next line in our conversation
     void NextLine()
@@ -159,42 +159,27 @@ public class ConversationController : MonoBehaviour
         fullLine = currentConversation.lines[currentText].text;
         actor = currentConversation.lines[currentText].actors.actor.ToString();
 
+        
 
-        SetCameraPosition();
+        if(SetCameraPosition())
+        {
+            cUI.port.newPortrait = currentConversation.lines[currentText].expression.portraitExpression.ToString();
+            cUI.port.newActor = actor;
+            cUI.port.waiting = true;
+        }
+        else
+        {
+            cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+        }
+
         CheckEffect();
         activated = true;
     }
 
 
 
-    void SetCameraPosition()
+    bool SetCameraPosition()
     {
-        if(currentText > 0)
-        {
-            if(currentConversation.lines[currentText].cameraPosition.move != currentConversation.lines[currentText - 1].cameraPosition.move)
-            {
-                if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Left)
-                {
-                    cUI.RefreshPortrait(true);
-                }
-                else if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Right)
-                {
-                    cUI.RefreshPortrait(false);
-                }
-                else
-                {
-                    if(currentConversation.lines[currentText].cameraPosition.move == Movement.Move.Left)
-                    {
-                        cUI.RefreshPortrait(false);
-                    }
-                    else
-                    {
-                        cUI.RefreshPortrait(true);
-                    }
-                }
-            }
-        }
-
         switch (currentConversation.lines[currentText].cameraPosition.move)
         {
             case Movement.Move.Left:
@@ -209,7 +194,43 @@ public class ConversationController : MonoBehaviour
                 cam.conversationYRotation = 0;
                 break;
         }
+
         cam.SetCameraRotation();
+
+        if (currentText > 0)
+        {
+            if(currentConversation.lines[currentText].cameraPosition.move != currentConversation.lines[currentText - 1].cameraPosition.move)
+            {
+                if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Left)
+                {
+                    cUI.RefreshPortrait(true);
+                    return true;
+ 
+                }
+                else if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Right)
+                {
+                    cUI.RefreshPortrait(false);
+                    return true;
+
+                }
+                else
+                {
+                    if(currentConversation.lines[currentText].cameraPosition.move == Movement.Move.Left)
+                    {
+                        cUI.RefreshPortrait(false);
+                        return true;
+
+                    }
+                    else
+                    {
+                        cUI.RefreshPortrait(true);
+                        return true;
+                    }
+                }
+            }
+
+        }
+        return false;
     }
 
 
