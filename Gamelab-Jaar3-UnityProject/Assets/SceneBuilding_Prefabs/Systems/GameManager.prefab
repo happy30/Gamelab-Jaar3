@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1753616465413488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,13 +56,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensivity: 3
-  walkSpeed: 4
-  runSpeed: 6
+  walkSpeed: 2
+  runSpeed: 4
   crouchSpeed: 8
   crouchWalkSpeed: 1
   crouchDrop: 0.8
   zoomSpeed: 5
-  zoomAmount: 45
+  zoomAmount: 20
   bobSpeed: 0.0545
   bobAmount: 0.026
   interactRange: 3
