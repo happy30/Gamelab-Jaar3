@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_ENV_GEN_LAMP/3D_ENV_GEN_LAMP.FBX.meta
 guid: 5b43e8b8b9c8b4540afbddfa4809dbc3
-timeCreated: 1507555760
-=======
-guid: 3da5cd22aa1518340bb69337452d4a88
-timeCreated: 1507554280
->>>>>>> 094e6b7bb40a048292a164ed250266fcda89c1b6:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_ENV_GEN_LAMP/3D_ENV_GEN_LAMP.FBX.meta
-licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -15,6 +8,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Lamp
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -84,7 +78,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
