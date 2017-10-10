@@ -19,14 +19,14 @@ public class RushHour : MonoBehaviour
                 grid[(int)blocksArray[x].transform.position.x , (int)blocksArray[x].transform.position.y] = true;
         }
 
-        CheckArray();
+        //CheckArray();
 	}
 
-    void CheckArray()
+    /*void CheckArray()
     {
         foreach (bool value in grid)
         {
             print(value);
         }
-    }
+    }*/
 }

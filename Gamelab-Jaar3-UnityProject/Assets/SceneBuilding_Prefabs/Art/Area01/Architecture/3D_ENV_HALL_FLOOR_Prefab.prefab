@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1834005025381086}
   m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -8.789532, y: 0.64675784, z: 20.306236}
-  m_LocalScale: {x: 1, y: 0.93000096, z: 1}
+  m_LocalPosition: {x: -10.79, y: 0.64676, z: 14.726}
+  m_LocalScale: {x: 1.000001, y: 0.9300004, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9eb29c55ac1b9264ca08f171ff3bdd74, type: 2}
+  - {fileID: 2100000, guid: e20c448e46bc5a043bf4530ae7119a82, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,7 +80,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1834005025381086}
-  m_Mesh: {fileID: 4300000, guid: a2c74def6d065c447a7d3259f1b23927, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 3c77ed929b76ad24b878eefbfa6e84b9, type: 3}
 --- !u!65 &65291831952785588
 BoxCollider:
   m_ObjectHideFlags: 1
