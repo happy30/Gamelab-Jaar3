@@ -8,6 +8,7 @@ public class RushHourBlocks : MonoBehaviour
     private float xBeginPos, yBeginPos;
     public bool horizontalBlock;
     public Vector2 blockPosition;
+    Vector2 size;
 
     RushHour rushHour;
 
@@ -29,7 +30,6 @@ public class RushHourBlocks : MonoBehaviour
         if (horizontalBlock)
         {
             transform.position = new Vector3(Mathf.Clamp(v3.x, 0, rushHour.gridWidth), Mathf.Clamp(v3.y, yBeginPos, yBeginPos), v3.z);
-
         }
         else
         {
