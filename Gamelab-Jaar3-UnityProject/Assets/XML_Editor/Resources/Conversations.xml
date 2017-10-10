@@ -7,7 +7,7 @@
           <actors>
             <actor>Chiaki</actor>
           </actors>
-          <text>Hey hey, what is this place?</text>
+          <text>Helloo!!</text>
           <expression>
             <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -28,11 +28,34 @@
         </Line>
         <Line>
           <actors>
-            <actor>Chiaki</actor>
+            <actor>Professor</actor>
           </actors>
-          <text>You wanna see me flash?</text>
+          <text>Hey...</text>
           <expression>
-            <portraitExpression>Thinking</portraitExpression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Who is this?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -53,7 +76,7 @@
           <actors>
             <actor>Chiaki</actor>
           </actors>
-          <text>Well here I go...</text>
+          <text>I am Chiaki... Sorry I just read your mind.</text>
           <expression>
             <portraitExpression>Smirk</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -74,38 +97,15 @@
         </Line>
         <Line>
           <actors>
-            <actor>Chiaki</actor>
+            <actor>Hiyoko</actor>
           </actors>
-          <text>... Flash</text>
+          <text>Shut up</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Angry</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Strobe</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>......</text>
-          <expression>
-            <portraitExpression>Frightened</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
+            <move>Left</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -116,98 +116,6 @@
             <Destination3 />
           </choice>
           <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>Black!!!</text>
-          <expression>
-            <portraitExpression>Serious</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Black</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>STILL BLACK</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Black</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>LAST BLACK</text>
-          <expression>
-            <portraitExpression>Neutral</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Black</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>NO MORE BLACK</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Strobe</additionalEffect>
           <additionalEffectParameter />
         </Line>
       </lines>

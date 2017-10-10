@@ -11,14 +11,16 @@ public class RushHourBlocks : MonoBehaviour
 
     RushHour rushHour;
 
-	void Start () {
+	void Start ()
+    {
         blockPosition = new Vector2(transform.position.x, transform.position.y);
         xBeginPos = transform.localPosition.x;
         yBeginPos = transform.localPosition.y;
         rushHour = GameObject.Find("RushHour").GetComponent<RushHour>();
 	}
 	
-	void OnMouseDrag () {
+	void OnMouseDrag ()
+    {
         //Drag block
         Vector3 v3 = Input.mousePosition;
         v3.z = 10;

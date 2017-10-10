@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class ExploreStats : MonoBehaviour
 {
+    [Header("View")]
+    public float mouseSensivity;
+
     [Header("Move")]
     public float walkSpeed;
     public float runSpeed;

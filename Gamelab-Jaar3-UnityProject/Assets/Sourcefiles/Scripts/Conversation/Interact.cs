@@ -9,14 +9,16 @@ public class Interact : MonoBehaviour
 {
     [Header("Fill These Sascha <3")]
     public string interactionCodeName;
-    public GameObject hideObject;
+    public GameObject[] hideObjects;
     float timer;
 
 
 	public enum InteractType
     {
         Examine,
-        Conversation
+        Conversation,
+        Use
+            
     };
 
     public InteractType interactType;
@@ -27,22 +29,47 @@ public class Interact : MonoBehaviour
 
     public void Trigger(bool on)
     {
-        if(on)
+
+        switch(interactType)
         {
-            activated = true;
-            PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
-            GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
-            GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
-            hideObject.SetActive(false);
-        }
-        else
-        {
-            activated = false;
-            GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
-            StartCoroutine(EnableCursor());
-            hideObject.SetActive(true);
+            case InteractType.Conversation:
+
+                if (on)
+                {
+                    activated = true;
+                    PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
+                    GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
+                    GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
+
+                    foreach(GameObject obj in hideObjects)
+                    {
+                        obj.SetActive(false);
+                    }
+
+                    
+                }
+                else
+                {
+                    activated = false;
+                    GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
+                    StartCoroutine(EnableCursor());
+
+                    foreach (GameObject obj in hideObjects)
+                    {
+                        obj.SetActive(true);
+                    }
+
+                    
+                }
+                break;
+
+            case InteractType.Use:
+                GetComponent<AnimationTrigger>().Activate();
+                break;
 
         }
+
+
     }
 
     IEnumerator EnableCursor()
