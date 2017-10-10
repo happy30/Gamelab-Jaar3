@@ -2,7 +2,7 @@
 <XMLManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TestNumber>0</TestNumber>
   <TestPosition>
-    <x>5.845466</x>
+    <x>0</x>
     <y>1</y>
     <z>0</z>
   </TestPosition>
