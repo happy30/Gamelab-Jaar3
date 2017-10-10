@@ -6,31 +6,35 @@ using UnityEngine;
 public class MenuUI : MonoBehaviour
 {
     private bool paused;
-    public GameObject pausePanel;
     public GameObject activePanel;
-
-    void Start()
-    {
-        activePanel = pausePanel;
-    }
 	
 	void Update () {
         if (Input.GetButtonDown("Cancel"))
         {
             if (paused)
             {
-                Time.timeScale = 1;
-                activePanel.SetActive(false);
-                paused = false;
+                Resume();
             }
             else
             {
-                Time.timeScale = 0;
-                activePanel.SetActive(true);
-                paused = true;
+                Pause();
             }
         }
 	}
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        activePanel.SetActive(true);
+        paused = true;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        activePanel.SetActive(false);
+        paused = false;
+    }
 
     public void ChangePanel(GameObject panel)
     {

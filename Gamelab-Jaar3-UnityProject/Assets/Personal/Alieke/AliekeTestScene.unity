@@ -390,7 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d8d185ebb00b434ba4123923b9f1d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1221873788}
   activePanel: {fileID: 0}
 --- !u!1 &317666665
 GameObject:
@@ -2783,8 +2782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d8d185ebb00b434ba4123923b9f1d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1221873788}
-  activePanel: {fileID: 0}
+  activePanel: {fileID: 1221873788}
 --- !u!224 &1565753222
 RectTransform:
   m_ObjectHideFlags: 0
