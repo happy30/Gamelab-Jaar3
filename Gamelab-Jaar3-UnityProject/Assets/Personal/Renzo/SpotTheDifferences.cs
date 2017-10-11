@@ -1,44 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SpotTheDifferences : MonoBehaviour {
-    
+public class SpotTheDifferences : MonoBehaviour
+{
+    public int totalSpots;
+    public int foundSpots;
     private bool isFound;
-    private ParticleSystem pS;
+    public float timer;
+    public float timerSetDuration;
 
-	void Start () {
-    #region 2ListMethod
-        /*
-        if (!leftItems.Contains(gameObject))
-        { // is it in the right list?
-            listIndex = rightItems.IndexOf(gameObject);
-            print("Index in right list = " + listIndex);
-            print(leftItems[listIndex]);
-        }
-        else
-        { // no? then its in the left list.
-            listIndex = leftItems.IndexOf(gameObject);
-            print("Index in left list = " + listIndex);
-            print(rightItems[listIndex]);
-        }
-        */
-    #endregion
-        if (pS.isEmitting)
-            pS.Stop();
-    }
-	
-	void Update () {
-		
-	}
 
-    private void OnMouseDown()
+    void Start ()
     {
-        GetComponent<ParticleSystem>().Play();
-        isFound = true;
-        
-        //onclick,Get list van ander script, check de index, do stuff from there (zoals play PS, 
+        timer = timerSetDuration;
+    }
 
-        print("Mouse is here");
+    private void Update()
+    {
+        if (Input.GetButtonDown("Jump"))
+            StartCoroutine(LevelTimer());
+    }
+
+    public void Clicker(Image img)
+    {
+        isFound = true;
+        foundSpots++;
+        Debug.Log(foundSpots);
+        
+        StartCoroutine(ChangeAlpha(img));
+        if (foundSpots == totalSpots)
+            print("Job's Done");
+    }
+
+    public IEnumerator ChangeAlpha(Image imgg)
+    {
+        for (float f = 0f; f <= 2f; f += .1f)
+        {
+            Color tempColor = imgg.color;
+            tempColor.a = f;
+            imgg.color = tempColor;
+            yield return null;
+        }
+    }
+
+    public IEnumerator LevelTimer()
+    {
+        while(timer > 0)
+        {
+            timer -= Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        // Crash the puzzle
+
+        timer = timerSetDuration;
+        yield break;
     }
 }
