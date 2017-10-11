@@ -89,6 +89,7 @@ public class ConversationController : MonoBehaviour
     {
         if (displayLine == fullLine)
         {
+            cUI.ProgressArrowBox.SetActive(true);
             if (Input.GetButtonDown("Fire1"))
             {
                 if (currentText < currentConversation.lines.Length - 1)
@@ -98,6 +99,7 @@ public class ConversationController : MonoBehaviour
                 }
                 else
                 {
+                    cUI.ProgressArrowBox.SetActive(false);
                     CloseConversation();
                 }
             }
@@ -137,6 +139,7 @@ public class ConversationController : MonoBehaviour
     void CloseConversation()
     {
         currentText = 0;
+        cUI.diaBoxCol.box.color = Color.black;
         interact.Trigger(false);
     }
 
@@ -158,10 +161,10 @@ public class ConversationController : MonoBehaviour
         displayLine = "";
         fullLine = currentConversation.lines[currentText].text;
         actor = currentConversation.lines[currentText].actors.actor.ToString();
+        cUI.RefreshColor(currentConversation.lines[currentText].actors.actor);
+        cUI.ProgressArrowBox.SetActive(false);
 
-        
-
-        if(SetCameraPosition())
+        if (SetCameraPosition())
         {
             cUI.port.newPortrait = currentConversation.lines[currentText].expression.portraitExpression.ToString();
             cUI.port.newActor = actor;
