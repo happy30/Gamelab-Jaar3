@@ -4024,6 +4024,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalSpots: 0
   foundSpots: 0
+  timer: 0
+  timerSetDuration: 0
 --- !u!1 &641979422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,6 +7799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalSpots: 0
   foundSpots: 0
+  timer: 0
+  timerSetDuration: 0
 --- !u!1 &1148265424
 GameObject:
   m_ObjectHideFlags: 0
@@ -11279,6 +11283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalSpots: 0
   foundSpots: 0
+  timer: 0
+  timerSetDuration: 0
 --- !u!1 &1176195208
 GameObject:
   m_ObjectHideFlags: 0
@@ -15886,6 +15892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalSpots: 0
   foundSpots: 0
+  timer: 0
+  timerSetDuration: 0
 --- !u!65 &1641396289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16305,6 +16313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalSpots: 0
   foundSpots: 0
+  timer: 0
+  timerSetDuration: 20
 --- !u!4 &2000636934
 Transform:
   m_ObjectHideFlags: 0
