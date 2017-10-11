@@ -34,6 +34,8 @@ public class ConversationController : MonoBehaviour
     public const string path = "Conversations";
     ConversationContainer cc;
 
+    bool lineDone;
+    bool choicesShown;
 
     public Conversation currentConversation;
 
@@ -57,9 +59,19 @@ public class ConversationController : MonoBehaviour
         {
             WaitForLineToBeFullyDisplayed();
         }
-        else
+        
+        if(lineDone)
         {
-            WaitForInputToGetToNextLine();
+            if(CheckIfChoices() && !choicesShown)
+            {
+                ShowChoices();
+                choicesShown = true;
+            }
+            else if (!choicesShown)
+            {
+                WaitForInputToGetToNextLine();
+            }
+            
         }
 
     }
@@ -80,7 +92,45 @@ public class ConversationController : MonoBehaviour
         else
         {
             SendToUI();
-            activated = false;
+            lineDone = true;
+        }
+    }
+
+
+    bool CheckIfChoices()
+    {
+        if(currentConversation.lines[currentText].choice.choice1 != "")
+        {
+            return true;
+        }
+        return false;
+    }
+
+
+    void ShowChoices()
+    {
+        Choice choices = currentConversation.lines[currentText].choice;
+
+        string choice1Text;
+        string choice2Text;
+        string choice3Text;
+
+        if (choices.choice1 != "")
+        {
+            choice1Text = choices.choice1;
+            cUI.FillChoices(0, choice1Text);
+        }
+
+        if (choices.choice2 != "")
+        {
+            choice2Text = choices.choice2;
+            cUI.FillChoices(1, choice2Text);
+        }
+
+        if (choices.choice3 != "")
+        {
+            choice3Text = choices.choice3;
+            cUI.FillChoices(2, choice3Text);
         }
     }
 
@@ -156,13 +206,26 @@ public class ConversationController : MonoBehaviour
     //Get the next line in our conversation
     void NextLine()
     {
-        print(currentText);
+        //Reset the lien progress
+        lineDone = false;
+        choicesShown = false;
         currentChar = 0;
         displayLine = "";
+
+        //Get the new next line
         fullLine = currentConversation.lines[currentText].text;
+
+        //Get the new actor of that line
         actor = currentConversation.lines[currentText].actors.actor.ToString();
+
+        //Get the color of that actor
         cUI.RefreshColor(currentConversation.lines[currentText].actors.actor);
+
+        //Reset the progressbox
         cUI.ProgressArrowBox.SetActive(false);
+
+        //Reset the choices;
+        cUI.RefreshChoices();
 
         if (SetCameraPosition())
         {

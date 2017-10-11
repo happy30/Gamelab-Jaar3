@@ -7,7 +7,7 @@ public class DialogueBoxColorChanger : MonoBehaviour
 {
 	public Image box;
 	float fadeSpeed;
-    Color newColor;
+    public Color newColor;
 
 	void Awake()
 	{

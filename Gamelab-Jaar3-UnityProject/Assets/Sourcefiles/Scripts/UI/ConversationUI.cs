@@ -14,7 +14,9 @@ public class ConversationUI : MonoBehaviour
     public GameObject conversationCanvas;
     public GameObject actorBox;
     public GameObject ProgressArrowBox;
+    public GameObject[] choices;
     public DialogueBoxColorChanger diaBoxCol;
+    public ChoiceManager choiceManager;
 
     public Animator conversationEffectsAnimator;
 
@@ -37,6 +39,17 @@ public class ConversationUI : MonoBehaviour
     public void RefreshColor(Actors.Actor act)
     {
         diaBoxCol.ChangeColorOnActor(act);
+    }
+
+    public void RefreshChoices()
+    {
+        choiceManager.RefreshChoices();
+    }
+
+    public void FillChoices(int choice, string text)
+    {
+        choiceManager.ActivateChoices();
+        choiceManager.FillChoices(choice, text);
     }
 
     /*
