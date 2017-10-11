@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ENV_STOR_ROOM.prefab.meta
 guid: e2688910f1872e34582b5e5ef4017fdc
 timeCreated: 1507633678
+=======
+guid: d2bf687c14884e94c948cfd8f6e2c202
+timeCreated: 1507633463
+>>>>>>> 12ce46b22834356459a791d781b818f28f9b9737:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ENV_STOR_ROOM.prefab.meta
 licenseType: Free
 NativeFormatImporter:
   mainObjectFileID: 0

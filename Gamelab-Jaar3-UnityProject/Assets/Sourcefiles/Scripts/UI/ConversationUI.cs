@@ -13,6 +13,8 @@ public class ConversationUI : MonoBehaviour
 
     public GameObject conversationCanvas;
     public GameObject actorBox;
+    public GameObject ProgressArrowBox;
+    public DialogueBoxColorChanger diaBoxCol;
 
     public Animator conversationEffectsAnimator;
 
@@ -30,6 +32,11 @@ public class ConversationUI : MonoBehaviour
     public void RefreshPortrait(bool left)
     {
         port.Refresh(left);
+    }
+
+    public void RefreshColor(Actors.Actor act)
+    {
+        diaBoxCol.ChangeColorOnActor(act);
     }
 
     /*
