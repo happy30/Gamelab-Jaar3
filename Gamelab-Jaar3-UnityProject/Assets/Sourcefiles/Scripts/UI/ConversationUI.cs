@@ -17,6 +17,7 @@ public class ConversationUI : MonoBehaviour
     public GameObject[] choices;
     public DialogueBoxColorChanger diaBoxCol;
     public ChoiceManager choiceManager;
+    public AudioSource voiceSource;
 
     public Animator conversationEffectsAnimator;
 
@@ -28,6 +29,7 @@ public class ConversationUI : MonoBehaviour
 
     public void DeactivateConversationUI()
     {
+        conversationCanvas.GetComponent<Animator>().SetBool("Activated", false);
         conversationCanvas.SetActive(false);
     }
 
@@ -88,17 +90,21 @@ public class ConversationUI : MonoBehaviour
 
     public void UpdatePortrait(string act, string portrait)
     {
-        print(portrait);
         if (port.portraitString != act + "_" + portrait && portrait != "None")
         {
             port.ChangePortrait(act, act + "_" + portrait);
         }
-        else
-        {
-            print("There is no sprite change");
-        }
     }
 
+    public void RemovePortrait()
+    {
+        port.ChangePortrait("Mind", "Mind_None");
+    }
+
+    public void PlayVoice(string voice)
+    {
+        voiceSource.PlayOneShot(Resources.Load<AudioClip>("Voices/" + voice));
+    }
 
     public void Strobe()
     {

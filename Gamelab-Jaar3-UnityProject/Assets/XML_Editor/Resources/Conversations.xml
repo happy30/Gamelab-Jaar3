@@ -5,12 +5,12 @@
       <lines>
         <Line>
           <actors>
-            <actor>Chiaki</actor>
+            <actor>Hiyoko</actor>
           </actors>
-          <text>Helloo!!</text>
+          <text>Hey you ugly!</text>
           <expression>
-            <portraitExpression>Neutral</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <portraitExpression>Enraged</portraitExpression>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -28,11 +28,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Professor</actor>
+            <actor>Hiyoko</actor>
           </actors>
-          <text>Hey...</text>
+          <text>kBAAAAI</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Happy</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -49,263 +49,17 @@
           <additionalEffect />
           <additionalEffectParameter />
         </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="ex_cube">
+      <lines>
         <Line>
           <actors>
             <actor>Mind</actor>
           </actors>
-          <text>Who is this?</text>
+          <text>What a nice cube</text>
           <expression>
             <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>I am Chiaki... Sorry I just read your mind.</text>
-          <expression>
-            <portraitExpression>Smirk</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>Shut up</text>
-          <expression>
-            <portraitExpression>Angry</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Left</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>Well, How are ya doin?</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1>Good!</choice1>
-            <choice2>SHIT!</choice2>
-            <choice3>HAHAA</choice3>
-            <Destination1>cc_02</Destination1>
-            <Destination2>cc_03</Destination2>
-            <Destination3>cc_04</Destination3>
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="cc_02">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>That's cool!</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>Are you sure?</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Left</move>
-          </cameraPosition>
-          <choice>
-            <choice1>Yes</choice1>
-            <choice2>No</choice2>
-            <choice3 />
-            <Destination1>Yes</Destination1>
-            <Destination2>No</Destination2>
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="cc_03">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>What did you bark at?</text>
-          <expression>
-            <portraitExpression>Smirk</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Left</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Strobe</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="cc_04">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>What's funny?</text>
-          <expression>
-            <portraitExpression>Thinking</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>YOU PIGBARF</text>
-          <expression>
-            <portraitExpression>Enraged</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Left</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>Strobe</additionalEffect>
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="Yes">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>How boring...</text>
-          <expression>
-            <portraitExpression>Sad</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="No">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>Hahaha Idiot</text>
-          <expression>
-            <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>

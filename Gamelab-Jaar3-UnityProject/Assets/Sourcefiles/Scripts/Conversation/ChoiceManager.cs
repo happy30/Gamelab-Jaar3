@@ -165,7 +165,7 @@ public class ChoiceManager : MonoBehaviour
                         break;
 
                 }
-
+                stats.interactedObject.activated = false;
                 stats.interactedObject.Trigger(true);
                 
             }
