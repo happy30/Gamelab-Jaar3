@@ -33,6 +33,9 @@ public class MenuManager : MonoBehaviour
                 itemsView.SetActive(true);
                 flowView.SetActive(false);
                 systemView.SetActive(false);
+
+                itemsView.GetComponent<ItemMenu>().ShowItems();
+
                 break;
 
             case MenuState.System:

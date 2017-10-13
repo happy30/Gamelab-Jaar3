@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//by the internets
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +13,11 @@ public class RotateItem : MonoBehaviour
     private Vector3 _rotation;
     private bool _isRotating;
 
+    public GameObject selectSprite;
+
     void Start()
     {
+
         _sensitivity = 0.4f;
         _rotation = Vector3.zero;
     }

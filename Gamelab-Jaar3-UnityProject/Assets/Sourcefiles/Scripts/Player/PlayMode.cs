@@ -6,33 +6,41 @@ using UnityEngine;
 
 public class PlayMode : MonoBehaviour
 {
-    public enum GamePart
-    {
-        FreeTime,
-        Escape,
-        Story
-    }
+	public enum GamePart
+	{
+		FreeTime,
+		Escape,
+		Story
+	}
 
-    public enum GameMode
-    {
-        Explore,
-        Conversation,
-        Puzzle,
-        Menu
-    }
+	public enum GameMode
+	{
+		Explore,
+		Conversation,
+		Puzzle,
+		Menu
+	}
 
-    public static GamePart gamePart;
-    public static GameMode gameMode;
+	public enum EscapeRoom
+	{
+		ClientsCell,
+		Morgue,
+		DirectorsOffice
+	};
+
+	public static GamePart gamePart;
+	public static GameMode gameMode;
+    public static EscapeRoom escapeRoom;
 
 
 	public static void ChangeGameMode(GameMode mode)
-    {
-        gameMode = mode;
-        print(mode);
-    }
+	{
+		gameMode = mode;
+		print(mode);
+	}
 
-    public static void ChangeGamePart(GamePart part)
-    {
-        gamePart = part;
-    }
+	public static void ChangeGamePart(GamePart part)
+	{
+		gamePart = part;
+	}
 }
