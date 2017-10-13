@@ -22,12 +22,16 @@ GameObject:
   - component: {fileID: 33117537294506180}
   - component: {fileID: 23409623562094206}
   - component: {fileID: 95209274134595548}
+  - component: {fileID: 65682323067658252}
+  - component: {fileID: 114349976491271060}
+  - component: {fileID: 114754293535161932}
+  - component: {fileID: 114811509218337398}
   m_Layer: 0
   m_Name: Trashcan_Lid
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1376553352146560
 GameObject:
@@ -37,13 +41,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4511961163635984}
-  - component: {fileID: 95733494368975704}
   m_Layer: 0
   m_Name: 3D_ENV_GEN_TRASHCAN_Prefab
-  m_TagString: Untagged
+  m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1594742001662422
 GameObject:
@@ -60,7 +63,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4215340270888744
 Transform:
@@ -87,22 +90,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4511961163635984}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.77706, y: 0, z: 0}
 --- !u!4 &4511961163635984
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1376553352146560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.4326689, y: -1.3306687, z: -2.1041117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4215340270888744}
   - {fileID: 4348289486141894}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &23349350835891978
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -181,6 +184,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1594742001662422}
   m_Mesh: {fileID: 4300000, guid: b46b10ecb342e194db8d57ccb5c8421a, type: 3}
+--- !u!65 &65682323067658252
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365216217198706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5401596, y: 0.28909388, z: 0.7118772}
+  m_Center: {x: -0.00000013801649, y: 0.004652122, z: -0.33120924}
 --- !u!95 &95209274134595548
 Animator:
   serializedVersion: 3
@@ -198,20 +213,47 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95733494368975704
-Animator:
-  serializedVersion: 3
+--- !u!114 &114349976491271060
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1376553352146560}
+  m_GameObject: {fileID: 1365216217198706}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b46b10ecb342e194db8d57ccb5c8421a, type: 3}
-  m_Controller: {fileID: 9100000, guid: d211ab202336e0d46a01c690c65c8969, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a638941d2e1c03d4f9973e2713017567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114754293535161932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365216217198706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCodeName: 
+  hideObjects: []
+  interactType: 2
+  activated: 0
+--- !u!114 &114811509218337398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1365216217198706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cUI: {fileID: 0}
+  activated: 0
+  displayLine: 
+  actor: 
+  currentText: 0
+  lineDone: 0
+  choicesShown: 0
