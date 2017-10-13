@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4477544492745930}
   - component: {fileID: 33428722464946744}
   - component: {fileID: 23525768065280814}
+  - component: {fileID: 65740409907761282}
+  - component: {fileID: 65860450799618278}
   m_Layer: 0
   m_Name: 3D_ENV_HALL_WALLWITHDOOR_Prefab
   m_TagString: Untagged
@@ -34,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1034641472589942}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.256, y: 1.5078, z: -5.648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.542, y: -6.27, z: -3.5254993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23525768065280814
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -79,4 +81,28 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1034641472589942}
-  m_Mesh: {fileID: 4300000, guid: 8584631e0de2d1a4f966794de714ad41, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7ccd48b34eff04e46b6f2672ce77bedd, type: 3}
+--- !u!65 &65740409907761282
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034641472589942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.62266517, y: 3.000001, z: 2.1394749}
+  m_Center: {x: -0.8176019, y: -0.00000023841858, z: -3.0670366}
+--- !u!65 &65860450799618278
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1034641472589942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.62266517, y: 3.000001, z: 2.1552844}
+  m_Center: {x: -0.8176019, y: -0.00000023841858, z: 0.3692224}

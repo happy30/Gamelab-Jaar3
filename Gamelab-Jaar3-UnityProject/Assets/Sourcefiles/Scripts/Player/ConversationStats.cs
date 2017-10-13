@@ -6,5 +6,6 @@ public class ConversationStats : MonoBehaviour
 {
     public float slowTextSpeed;
     public float fastTextSpeed;
+    public Interact interactedObject;
 	
 }

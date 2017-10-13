@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class MenuUI : MonoBehaviour
 {
+    public GameObject menuCanvas;
+    public PlayMode.GameMode lastMode;
+
+
+
     private bool paused;
     public GameObject activePanel;
 	
@@ -24,16 +29,19 @@ public class MenuUI : MonoBehaviour
 
     public void Pause()
     {
-        Time.timeScale = 0;
-        activePanel.SetActive(true);
+        lastMode = PlayMode.gameMode;
+        PlayMode.gameMode = PlayMode.GameMode.Menu;
+        menuCanvas.SetActive(true);
         paused = true;
     }
 
     public void Resume()
     {
-        Time.timeScale = 1;
-        activePanel.SetActive(false);
+        
+        PlayMode.gameMode = lastMode;
+        menuCanvas.SetActive(false);
         paused = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void ChangePanel(GameObject panel)
