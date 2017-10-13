@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: 114541742283986660}
   - component: {fileID: 114662090701703788}
   - component: {fileID: 114615267918542798}
+  - component: {fileID: 114476337191687330}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -836,6 +837,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114476337191687330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1994763907986870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8d185ebb00b434ba4123923b9f1d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 0}
+  lastMode: 0
+  activePanel: {fileID: 0}
 --- !u!114 &114541742283986660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -899,6 +914,7 @@ MonoBehaviour:
   choices: []
   diaBoxCol: {fileID: 114756426528077072}
   choiceManager: {fileID: 114373932022641634}
+  voiceSource: {fileID: 82334927677974358}
   conversationEffectsAnimator: {fileID: 95764007858405080}
 --- !u!114 &114645904661585402
 MonoBehaviour:
@@ -1659,7 +1675,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 620, y: 1000}
+  m_SizeDelta: {x: 890.26, y: 1105.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224755241095260494
 RectTransform:

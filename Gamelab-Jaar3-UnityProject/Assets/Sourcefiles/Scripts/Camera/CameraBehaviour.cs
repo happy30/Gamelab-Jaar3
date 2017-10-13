@@ -47,6 +47,9 @@ public class CameraBehaviour : MonoBehaviour
                 
                 break;
 
+            case PlayMode.GameMode.Menu:
+                MenuCamera();
+                break;
         }
 
 
@@ -70,6 +73,13 @@ public class CameraBehaviour : MonoBehaviour
             fieldOfView = 60;
         }
     }
+
+    void MenuCamera()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+        
+
 
     public void SetCameraOffset()
     {

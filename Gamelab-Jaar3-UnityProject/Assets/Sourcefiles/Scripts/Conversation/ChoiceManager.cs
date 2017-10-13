@@ -84,14 +84,14 @@ public class ChoiceManager : MonoBehaviour
                 choiceArrow.GetComponent<RectTransform>().anchoredPosition, 
                 new Vector2(choiceArrow.GetComponent<RectTransform>().anchoredPosition.x, arrowLoc), arrowSpeed * Time.deltaTime);
 
-            if(Input.GetAxis("Mouse ScrollWheel") > 0)
+            if(Input.GetAxis("Mouse ScrollWheel") > 0 || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if((int)state > 0f)
                 {
                     state--;
                 }
             }
-            if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 if ((int)state < activeChoices())
                 {
