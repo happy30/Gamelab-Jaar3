@@ -15,10 +15,12 @@ public class CameraBehaviour : MonoBehaviour
     float yRot;
 
     public float conversationYRotation;
+    ConversationStats conversationStats;
 
     private void Awake()
     {
         exploreStats = GameObject.Find("GameManager").GetComponent<ExploreStats>();
+        conversationStats = GameObject.Find("GameManager").GetComponent<ConversationStats>();
     }
 
     void Start()
@@ -38,7 +40,11 @@ public class CameraBehaviour : MonoBehaviour
                 break;
 
             case PlayMode.GameMode.Conversation:
-                ConversationCamera();
+                if(conversationStats.interactedObject.interactType == Interact.InteractType.Conversation)
+                {
+                    ConversationCamera();
+                }
+                
                 break;
 
         }

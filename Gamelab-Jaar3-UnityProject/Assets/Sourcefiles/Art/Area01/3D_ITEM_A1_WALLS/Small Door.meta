@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Small Door.meta
 guid: 64b174b2718a1224fa578b09a499b710
 folderAsset: yes
 timeCreated: 1507733896
+=======
+guid: 54d0daac76cc8884db63a21bdf622b31
+folderAsset: yes
+timeCreated: 1507751587
+>>>>>>> 41f9c24a3d35123518445724eb1386339cf675f9:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ITEM_A1_WALLS/Small Door.meta
 licenseType: Free
 DefaultImporter:
   userData: 

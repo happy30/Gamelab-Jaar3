@@ -14,7 +14,7 @@ public class ConversationController : MonoBehaviour
     string code;
     Interact.InteractType type;
 
-    bool activated;
+    public bool activated;
 
     [HideInInspector]
     public string displayLine;
@@ -31,11 +31,11 @@ public class ConversationController : MonoBehaviour
     ConversationStats stats;
     ConversationEffects effects;
     CameraBehaviour cam;
-    public const string path = "Conversations";
+
     ConversationContainer cc;
 
-    bool lineDone;
-    bool choicesShown;
+    public bool lineDone;
+    public bool choicesShown;
 
     public Conversation currentConversation;
 
@@ -50,7 +50,7 @@ public class ConversationController : MonoBehaviour
 
     void Start()
     {
-        cc = ConversationContainer.Load(path);
+        cc = GameObject.Find("SceneSettings").GetComponent<ConversationLoader1>().cc;
     }
 
     void Update()
@@ -160,34 +160,39 @@ public class ConversationController : MonoBehaviour
     //Initializing a conversation. When the player interacts with the object of interest:
     public void ActivateConversation(string interactCode, Interact.InteractType interactType)
     {
+        print("activating");
+        code = interactCode;
+        type = interactType;
+            
+        currentText = 0;
+
+        //Get the right conversation from the XML
+        for (int i = 0; i < cc.interactions.Count; i++)
+        {
+            if (cc.interactions[i].interactionCodeName == code)
+            {
+                currentConversation = cc.interactions[i];
+                break;
+            }
+        }
         if (PlayMode.gameMode == PlayMode.GameMode.Conversation)
         {
-            code = interactCode;
-            type = interactType;
-            
-            currentText = 0;
-
-            //Get the right conversation from the XML
-            for (int i = 0; i < cc.interactions.Count; i++)
-            {
-                if (cc.interactions[i].interactionCodeName == code)
-                {
-                    currentConversation = cc.interactions[i];
-                    break;
-                }
-            }
-
             cam.SetCameraOffset();
-            //currentConversation.lines[currentText].expression.portraitExpression.ToString();
-            //Here starts the first line of conversation
-            NextLine();
-            
         }
+
+        //currentConversation.lines[currentText].expression.portraitExpression.ToString();
+        //Here starts the first line of conversation
+        NextLine();
+            
+
     }
 
     //Bye bye.
     void CloseConversation()
     {
+        lineDone = false;
+        activated = false;
+        choicesShown = false;
         currentText = 0;
         cUI.diaBoxCol.box.color = Color.black;
         interact.Trigger(false);
@@ -227,16 +232,31 @@ public class ConversationController : MonoBehaviour
         //Reset the choices;
         cUI.RefreshChoices();
 
-        if (SetCameraPosition())
+        //Play Audio
+        if(currentConversation.lines[currentText].expression.voiceActing)
         {
-            cUI.port.newPortrait = currentConversation.lines[currentText].expression.portraitExpression.ToString();
-            cUI.port.newActor = actor;
-            cUI.port.waiting = true;
+            cUI.PlayVoice(actor + "/" + "SFX_" + actor + "_" + currentConversation.lines[currentText].expression.portraitExpression);
+            print(actor + "/" + "SFX_" + actor + "_" + currentConversation.lines[currentText].expression.portraitExpression);
         }
-        else
+
+        if(type == Interact.InteractType.Conversation)
         {
-            cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+            if (SetCameraPosition())
+            {
+                cUI.port.newPortrait = currentConversation.lines[currentText].expression.portraitExpression.ToString();
+                cUI.port.newActor = actor;
+                cUI.port.waiting = true;
+            }
+            else
+            {
+                cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+            }
         }
+        else if (type == Interact.InteractType.Examine)
+        {
+            cUI.RemovePortrait();
+        }
+        
 
         CheckEffect();
         activated = true;
