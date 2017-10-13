@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 5bc60ba9dbe0d0a4595ea375a24444a2
+guid: 9eaeb5fefe243b447aa2dec8d0bf00d2
+timeCreated: 1507733921
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -7,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: PoolTable
-    9500000: //RootNode
+    4300000: wall
   materials:
     importMaterials: 1
     materialName: 0
@@ -78,7 +79,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
