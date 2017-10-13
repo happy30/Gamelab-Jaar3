@@ -28,6 +28,7 @@ public class PlayMode : MonoBehaviour
 	public static void ChangeGameMode(GameMode mode)
     {
         gameMode = mode;
+        print(mode);
     }
 
     public static void ChangeGamePart(GamePart part)
