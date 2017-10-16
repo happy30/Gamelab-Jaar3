@@ -7,6 +7,7 @@ public class RushHour : MonoBehaviour
 {
     public int gridWidth, gridHeight;
     
+    
     public bool[,] grid = new bool[6,6];
     public Transform[] blocksArray;
 
@@ -19,6 +20,14 @@ public class RushHour : MonoBehaviour
 
         //CheckArray();
 	}
+
+    void Update()
+    {
+        Debug.DrawLine(new Vector3(0, 0, 0), new Vector3(6, 0, 0), Color.red);
+        Debug.DrawLine(new Vector3(0, 6, 0), new Vector3(6, 6, 0), Color.red);
+        Debug.DrawLine(new Vector3(6, 0, 0), new Vector3(6, 6, 0), Color.red);
+        Debug.DrawLine(new Vector3(0, 6, 0), new Vector3(0, 0, 0), Color.red);
+    }
 
     /*void CheckArray()
     {
