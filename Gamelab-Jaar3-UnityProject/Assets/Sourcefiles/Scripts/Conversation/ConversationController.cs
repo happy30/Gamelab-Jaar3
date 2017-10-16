@@ -164,7 +164,6 @@ public class ConversationController : MonoBehaviour
     //Initializing a conversation. When the player interacts with the object of interest:
     public void ActivateConversation(string interactCode, Interact.InteractType interactType)
     {
-        print("activating");
         code = interactCode;
         type = interactType;
             
