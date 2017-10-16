@@ -95,6 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4646280530845550}
   - component: {fileID: 137867760282641038}
+  - component: {fileID: 65544166387055490}
   m_Layer: 0
   m_Name: Closet
   m_TagString: Untagged
@@ -211,7 +212,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1941406813227384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4433315, y: -1.3484614, z: -5.5661116}
+  m_LocalPosition: {x: 3.119, y: -1.3484614, z: -5.5661116}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4259302906863552}
@@ -231,6 +232,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8694749, y: 1.704956, z: 0.58609486}
   m_Center: {x: 0.016224146, y: 0.89050055, z: 0.03145933}
+--- !u!65 &65544166387055490
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799758222416728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8600982, y: 0.5371876, z: 1.7484698}
+  m_Center: {x: -0.000041908585, y: -0.00016256422, z: 2.1711097}
 --- !u!95 &95824179320149180
 Animator:
   serializedVersion: 3
@@ -286,9 +299,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cUI: {fileID: 0}
+  activated: 0
   displayLine: 
   actor: 
   currentText: 0
+  lineDone: 0
+  choicesShown: 0
 --- !u!137 &137867760282641038
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
