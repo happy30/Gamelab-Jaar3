@@ -55,24 +55,28 @@ public class ConversationController : MonoBehaviour
 
     void Update()
     {
-        if (activated)
+        if(PlayMode.gameMode == PlayMode.GameMode.Conversation)
         {
-            WaitForLineToBeFullyDisplayed();
-        }
-        
-        if(lineDone)
-        {
-            if(CheckIfChoices() && !choicesShown)
+            if (activated)
             {
-                ShowChoices();
-                choicesShown = true;
+                WaitForLineToBeFullyDisplayed();
             }
-            else if (!choicesShown)
+
+            if (lineDone)
             {
-                WaitForInputToGetToNextLine();
+                if (CheckIfChoices() && !choicesShown)
+                {
+                    ShowChoices();
+                    choicesShown = true;
+                }
+                else if (!choicesShown)
+                {
+                    WaitForInputToGetToNextLine();
+                }
+
             }
-            
         }
+
 
     }
 

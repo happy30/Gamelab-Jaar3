@@ -22,12 +22,13 @@ GameObject:
   - component: {fileID: 33989445457704344}
   - component: {fileID: 23700346800183218}
   - component: {fileID: 95250203972287656}
+  - component: {fileID: 65712397589809692}
   m_Layer: 0
   m_Name: 3D_ITEM_CC_BED_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4553909163551192
 Transform:
@@ -35,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793762040060382}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.076575875, y: -0.8704258, z: 0.7825141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793762040060382}
   m_Mesh: {fileID: 4300000, guid: fd32a9e733e9fa343af59b292f95124b, type: 3}
+--- !u!65 &65712397589809692
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1793762040060382}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.92592704, y: 2.0104103, z: 0.32584238}
+  m_Center: {x: 0.0007414669, y: -0.0052053644, z: 0.16292146}
 --- !u!95 &95250203972287656
 Animator:
   serializedVersion: 3
