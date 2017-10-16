@@ -7,38 +7,74 @@ public class MenuUI : MonoBehaviour
 {
     public GameObject menuCanvas;
     public PlayMode.GameMode lastMode;
+    public MenuManager.MenuState menuState;
+
+    public GameObject conversation;
+    public GameObject explore;
 
 
 
     private bool paused;
     public GameObject activePanel;
 	
-	void Update () {
-        if (Input.GetButtonDown("Cancel"))
+	void Update ()
+    {
+        if (!paused)
         {
-            if (paused)
+            if (Input.GetButtonDown("Cancel") || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.F))
             {
-                Resume();
+                if (Input.GetButtonDown("Cancel"))
+                {
+                    menuState = MenuManager.MenuState.System;
+                }
+                if (Input.GetKeyDown(KeyCode.I))
+                {
+                    menuState = MenuManager.MenuState.Items;
+                }
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    menuState = MenuManager.MenuState.Flow;
+                }
+                
+                Pause(menuState);
             }
-            else
-            {
-                Pause();
-            }
+           
         }
+        else if (Input.GetButtonDown("Cancel") || Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.F))
+        {
+            Resume();
+        }
+
 	}
 
-    public void Pause()
+    public void Pause(MenuManager.MenuState state)
     {
+        //GetComponent<CanvasGroup>().alpha = 0;
+        conversation.SetActive(false);
+        explore.SetActive(false);
+
         lastMode = PlayMode.gameMode;
-        PlayMode.gameMode = PlayMode.GameMode.Menu;
+        PlayMode.ChangeGameMode(PlayMode.GameMode.Menu);
         menuCanvas.SetActive(true);
+        menuCanvas.GetComponent<MenuManager>().SetMenu(state);
         paused = true;
     }
 
     public void Resume()
     {
-        
-        PlayMode.gameMode = lastMode;
+        GetComponent<CanvasGroup>().alpha = 1;
+        PlayMode.ChangeGameMode(lastMode);
+        if(lastMode == PlayMode.GameMode.Conversation)
+        {
+            explore.SetActive(true);
+            conversation.SetActive(true);
+        }
+        else if(lastMode == PlayMode.GameMode.Explore)
+        {
+            explore.SetActive(true);
+        }
+
+
         menuCanvas.SetActive(false);
         paused = false;
         Cursor.lockState = CursorLockMode.Locked;

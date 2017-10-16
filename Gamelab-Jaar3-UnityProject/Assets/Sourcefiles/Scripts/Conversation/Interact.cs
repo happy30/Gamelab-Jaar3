@@ -117,8 +117,14 @@ public class Interact : MonoBehaviour
 
 	IEnumerator EnableCursor()
 	{
-		yield return new WaitForSeconds(0.5f);
-		PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+		yield return new WaitForSeconds(0.1f);
+
+        if(PlayMode.gameMode == PlayMode.GameMode.Conversation)
+        {
+            PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+        }
+
+		
 		yield break;
 
 	}

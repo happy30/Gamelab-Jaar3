@@ -42,6 +42,15 @@ public class ExploreController : MonoBehaviour
         }
 	}
 
+	void FixedUpdate ()
+	{
+		hVelocity = Input.GetAxis("Horizontal");
+		vVelocity = Input.GetAxis("Vertical");
+
+		Vector3 moveTowardsPos = new Vector3(hVelocity, 0, vVelocity);
+		transform.Translate(moveTowardsPos * speed * Time.deltaTime);
+	}
+
     //Waits for input and makes character move
     void Move()
     {
@@ -53,14 +62,7 @@ public class ExploreController : MonoBehaviour
         {
             speed = exploreStats.crouchWalkSpeed;
         }
-        
-
-
-        hVelocity = Input.GetAxis("Horizontal");
-        vVelocity = Input.GetAxis("Vertical");
-
-        Vector3 moveTowardsPos = new Vector3(hVelocity, 0, vVelocity);
-        transform.Translate(moveTowardsPos * speed * Time.deltaTime);
+			
     }
 
     //Checks input for crouching and then fill crouchPos for Camera

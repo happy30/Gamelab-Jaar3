@@ -73,8 +73,8 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
+          <additionalEffect>PickUp</additionalEffect>
+          <additionalEffectParameter>Cube</additionalEffectParameter>
         </Line>
       </lines>
     </Element>
