@@ -22,6 +22,7 @@ public class RushHourBlocks : MonoBehaviour
 	
 	void OnMouseDrag ()
     {
+        CheckRange();
         //Drag block
         Vector3 v3 = Input.mousePosition;
         v3.z = 10;
@@ -57,6 +58,16 @@ public class RushHourBlocks : MonoBehaviour
             transform.position = new Vector3(Mathf.Clamp(v3.x, xBeginPos, xBeginPos), Mathf.Clamp(v3.y, 0, rushHour.gridHeight) , v3.z);
         }*/
 	}
+
+    void CheckRange()
+    {
+        for (int i = 0; i < rushHour.gridWidth; i ++) {
+            if (rushHour.grid[(int)transform.position.x + i, (int)transform.position.y + 1] == true)
+            {
+
+            }
+        }
+    }
 
     void OnMouseUpAsDown()
     {
