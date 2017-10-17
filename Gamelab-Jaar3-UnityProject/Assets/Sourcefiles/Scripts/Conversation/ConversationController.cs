@@ -37,6 +37,8 @@ public class ConversationController : MonoBehaviour
     public bool lineDone;
     public bool choicesShown;
 
+    public bool SetInactiveAfterConversaton;
+
     public Conversation currentConversation;
 
     void Awake()
@@ -199,6 +201,11 @@ public class ConversationController : MonoBehaviour
         currentText = 0;
         cUI.diaBoxCol.box.color = Color.black;
         interact.Trigger(false);
+        if(SetInactiveAfterConversaton)
+        {
+            GameObject.Find("Canvas").GetComponent<MenuUI>().Pause(MenuManager.MenuState.Items);
+            gameObject.SetActive(false);
+        }
     }
 
     //Send the info to the UI

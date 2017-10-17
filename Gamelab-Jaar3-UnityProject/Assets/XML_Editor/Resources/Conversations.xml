@@ -73,6 +73,29 @@
             <Destination2 />
             <Destination3 />
           </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>PICKED UP!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
           <additionalEffect>PickUp</additionalEffect>
           <additionalEffectParameter>Cube</additionalEffectParameter>
         </Line>
@@ -183,6 +206,56 @@
           </choice>
           <additionalEffect />
           <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="ex_longcube">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>PICKED UP LONG CUBE</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>kek</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect>PickUp</additionalEffect>
+          <additionalEffectParameter>LongCube</additionalEffectParameter>
         </Line>
       </lines>
     </Element>

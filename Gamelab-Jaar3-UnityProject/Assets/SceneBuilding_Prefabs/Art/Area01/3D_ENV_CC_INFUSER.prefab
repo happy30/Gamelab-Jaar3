@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4674105424289510}
   - component: {fileID: 95948714709935122}
   m_Layer: 0
-  m_Name: InfuserWhole
+  m_Name: 3D_ENV_CC_INFUSER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

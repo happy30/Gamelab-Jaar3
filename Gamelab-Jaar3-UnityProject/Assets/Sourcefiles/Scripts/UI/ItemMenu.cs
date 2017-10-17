@@ -28,6 +28,9 @@ public class ItemMenu : MonoBehaviour
 
     public Text itemName;
 
+    public Transform heldItem;
+
+
 
 
     void Update()

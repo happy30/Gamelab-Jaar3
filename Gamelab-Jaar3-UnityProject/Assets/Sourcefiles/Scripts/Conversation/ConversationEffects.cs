@@ -22,7 +22,15 @@ public class ConversationEffects : MonoBehaviour
 		GameObject.Find("Canvas").GetComponent<ConversationUI>().FadeOutBlack();
 	}
 
-	public void PickUp(string name)
+
+    public void PickUp(string name)
+    {
+        GetItem(name);
+        //GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.Trigger(false);
+        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().SetInactiveAfterConversaton = true;
+    }
+
+	public void GetItem(string name)
 	{
 		InventoryManager inv = GetComponent<InventoryManager>();
 
