@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//By Jordi
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +14,9 @@ public class ItemMenu : MonoBehaviour
 
     int numObjects;
     int selectedItem;
+
+    int firstInput;
+    int selectedItems;
 
     public InventoryManager inventoryManager;
 
@@ -28,8 +33,6 @@ public class ItemMenu : MonoBehaviour
     void Update()
     {
         currentRot = new Vector3(0, Mathf.LerpAngle(currentRot.y, rotateTo, 7f * Time.deltaTime), 0);
-
-        print(currentRot);
         itemPlace.GetComponent<RectTransform>().localEulerAngles = currentRot;
 
         timer += Time.deltaTime;
@@ -61,6 +64,12 @@ public class ItemMenu : MonoBehaviour
 
         rotateTo = 0;
         itemPlace.localEulerAngles = new Vector3(0, 0, 0);
+
+        if(inventoryManager.inventory.Count > 0)
+        {
+            itemName.text = inventoryManager.inventory[selectedItem].name;
+        }
+        
     }
 
 
@@ -111,7 +120,24 @@ public class ItemMenu : MonoBehaviour
 
     public void Combine()
     {
-        spawnedObjects[selectedItem].GetComponent<RotateItem>().selectSprite.SetActive(true);
+        if(selectedItems == 0)
+        {
+            selectedItems++;
+            firstInput = inventoryManager.inventory[selectedItem].id;
+            spawnedObjects[selectedItem].GetComponent<RotateItem>().selectSprite.SetActive(true);
+        }
+        else
+        {
+            if(inventoryManager.CheckCombination(firstInput, inventoryManager.inventory[selectedItem].id))
+            {
+                ShowItems();
+            }
+            else
+            {
+                spawnedObjects[selectedItem].GetComponent<RotateItem>().selectSprite.SetActive(false);
+                selectedItems = 0;
+            }
+        }
     }
 }
 

@@ -5,7 +5,9 @@ using UnityEngine;
 public class AnimationTrigger : MonoBehaviour
 {
 
-    Animator animator;
+    public Animator animator;
+	public bool isDoor;
+	bool withinDoor;
 
     public void Start()
     {
@@ -13,11 +15,33 @@ public class AnimationTrigger : MonoBehaviour
     }
     public void Activate()
     {
-        if (animator.GetBool("Activate") == false)
-        {
-            animator.SetBool("Activate", true);
-        }
-        else animator.SetBool("Activate", false);
+		if (isDoor == false) 
+		{
+			if (animator.GetBool("Activate") == false)
+			{
+				animator.SetBool("Activate", true);
+			}
+			else animator.SetBool("Activate", false);
+		}
     }
-	
+	void OnTriggerEnter (Collider other)
+	{
+		if (isDoor == true) 
+		{
+			if (other.tag == "Player") 
+			{
+				gameObject.GetComponentInParent (AnimationTrigger).animator.setBool ("Activate", true);
+			}
+		}
+	}
+	void OnTriggerLeave (Collider other)
+	{
+		if (isDoor == true) 
+		{
+			if (other.tag == "Player") 
+			{
+				gameObject.GetComponentInParent (AnimationTrigger).animator.setBool ("Activate", false);
+			}
+		}
+	}
 }

@@ -78,5 +78,126 @@
         </Line>
       </lines>
     </Element>
+<<<<<<< HEAD
+    <Element interactionCodeName="Fireplace_A1_EX_01">
+=======
+    <Element interactionCodeName="ex_longcube">
+>>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+<<<<<<< HEAD
+          <text>Even though this fireplace is fake, it gives off a comforting warmth.</text>
+=======
+          <text>I pick up this long cube</text>
+>>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+<<<<<<< HEAD
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="Portrait_A1_EX_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>This painting looks colorful...Huh? the sides are scratched</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1>take it.</choice1>
+            <choice2>Leave it.</choice2>
+            <choice3 />
+            <Destination1>Portrait_A1_EX_01_CH1</Destination1>
+            <Destination2>Portrait_A1_EX_01_CH2</Destination2>
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="Portrait_A1_EX_01_CH1">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I carefully take the painting off of the wall.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="Portrait_A1_EX_01_CH2">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I overcome my insatiable curiosity and leave the painting alone.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+=======
+          <additionalEffect>PickUp</additionalEffect>
+          <additionalEffectParameter>LongCube</additionalEffectParameter>
+>>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
+        </Line>
+      </lines>
+    </Element>
   </List>
 </Data>

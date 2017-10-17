@@ -41,6 +41,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4511961163635984}
+  - component: {fileID: 65630599897515974}
   m_Layer: 0
   m_Name: 3D_ENV_GEN_TRASHCAN_Prefab
   m_TagString: Interact
@@ -184,6 +185,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1594742001662422}
   m_Mesh: {fileID: 4300000, guid: b46b10ecb342e194db8d57ccb5c8421a, type: 3}
+--- !u!65 &65630599897515974
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1376553352146560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40901086, y: 0.7477056, z: 0.291102}
+  m_Center: {x: 0.00019223243, y: 0.39250737, z: 0.0008866489}
 --- !u!65 &65682323067658252
 BoxCollider:
   m_ObjectHideFlags: 1
