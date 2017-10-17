@@ -78,21 +78,13 @@
         </Line>
       </lines>
     </Element>
-<<<<<<< HEAD
     <Element interactionCodeName="Fireplace_A1_EX_01">
-=======
-    <Element interactionCodeName="ex_longcube">
->>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
       <lines>
         <Line>
           <actors>
             <actor>Mind</actor>
           </actors>
-<<<<<<< HEAD
           <text>Even though this fireplace is fake, it gives off a comforting warmth.</text>
-=======
-          <text>I pick up this long cube</text>
->>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -108,7 +100,6 @@
             <Destination2 />
             <Destination3 />
           </choice>
-<<<<<<< HEAD
           <additionalEffect />
           <additionalEffectParameter />
         </Line>
@@ -192,10 +183,6 @@
           </choice>
           <additionalEffect />
           <additionalEffectParameter />
-=======
-          <additionalEffect>PickUp</additionalEffect>
-          <additionalEffectParameter>LongCube</additionalEffectParameter>
->>>>>>> 8257670c9d5c7212e7c0d09e41fbcf11cd9d6851
         </Line>
       </lines>
     </Element>
