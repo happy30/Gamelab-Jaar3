@@ -30,7 +30,7 @@ public class AnimationTrigger : MonoBehaviour
 		{
 			if (other.tag == "Player") 
 			{
-				gameObject.GetComponentInParent (AnimationTrigger).animator.setBool ("Activate", true);
+				gameObject.GetComponentInParent<AnimationTrigger>().animator.SetBool ("Activate", true);
 			}
 		}
 	}
@@ -40,7 +40,7 @@ public class AnimationTrigger : MonoBehaviour
 		{
 			if (other.tag == "Player") 
 			{
-				gameObject.GetComponentInParent (AnimationTrigger).animator.setBool ("Activate", false);
+				gameObject.GetComponentInParent <AnimationTrigger>().animator.SetBool ("Activate", false);
 			}
 		}
 	}
