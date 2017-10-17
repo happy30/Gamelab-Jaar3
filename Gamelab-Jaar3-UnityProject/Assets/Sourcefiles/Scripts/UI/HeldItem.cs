@@ -14,15 +14,24 @@ public class HeldItem : MonoBehaviour
     GameObject spawnedPrefab;
 
 
+    void Awake()
+    {
+        inv = GameObject.Find("GameManager").GetComponent<InventoryManager>();
+    }
+
     public void ChangeItem(int id)
     {
-        Destroy(spawnedPrefab);
+        if(spawnedPrefab != null)
+        {
+            Destroy(spawnedPrefab);
+        }
+        
         prefab = inv.inventory[id].Prefab;
         text = inv.inventory[id].name;
         itemName.text = text;
         spawnedPrefab = (GameObject)Instantiate(prefab, Vector3.zero, Quaternion.identity);
         spawnedPrefab.transform.SetParent(transform);
-        spawnedPrefab.transform.position = Vector3.zero;
+        spawnedPrefab.transform.localPosition = Vector3.zero;
         spawnedPrefab.transform.localScale = inv.inventory[id].Prefab.transform.localScale;
     }
 }

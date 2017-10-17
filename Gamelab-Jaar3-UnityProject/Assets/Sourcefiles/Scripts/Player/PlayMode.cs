@@ -30,7 +30,7 @@ public class PlayMode : MonoBehaviour
 
 	public static GamePart gamePart;
 	public static GameMode gameMode;
-    public static EscapeRoom escapeRoom;
+	public static EscapeRoom escapeRoom;
 
 
 	public static void ChangeGameMode(GameMode mode)

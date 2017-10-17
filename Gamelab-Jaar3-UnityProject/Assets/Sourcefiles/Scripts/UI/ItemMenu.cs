@@ -19,6 +19,7 @@ public class ItemMenu : MonoBehaviour
     int selectedItems;
 
     public InventoryManager inventoryManager;
+    public HeldItem heldItemController;
 
     public List<GameObject> spawnedObjects = new List<GameObject>();
 
@@ -30,7 +31,10 @@ public class ItemMenu : MonoBehaviour
 
     public Transform heldItem;
 
-
+    void Awake()
+    {
+        heldItemController = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
+    }
 
 
     void Update()
@@ -72,6 +76,8 @@ public class ItemMenu : MonoBehaviour
         {
             itemName.text = inventoryManager.inventory[selectedItem].name;
         }
+
+        heldItemController.ChangeItem(selectedItem);
         
     }
 
@@ -115,6 +121,7 @@ public class ItemMenu : MonoBehaviour
 
             }
             itemName.text = inventoryManager.inventory[selectedItem].name;
+            heldItemController.ChangeItem(selectedItem);
             timer = 0;
         }
 
