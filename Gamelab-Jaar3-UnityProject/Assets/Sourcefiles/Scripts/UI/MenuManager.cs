@@ -62,12 +62,4 @@ public class MenuManager : MonoBehaviour
     {
         SetMenu(MenuState.System);
     }
-
-
-
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 }

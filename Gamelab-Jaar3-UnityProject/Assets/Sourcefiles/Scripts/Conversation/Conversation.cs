@@ -38,6 +38,9 @@ public class Line
 
     [XmlElement("additionalEffectParameter")]
     public string effectParameter;
+
+    [XmlElement("NewInteractionCodeName")]
+    public string newInteractionCodeName;
 }
 
 public class Expression

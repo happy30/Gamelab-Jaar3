@@ -22,6 +22,23 @@ public class ConversationEffects : MonoBehaviour
 		GameObject.Find("Canvas").GetComponent<ConversationUI>().FadeOutBlack();
 	}
 
+    public void CheckItem(string name, string newCode)
+    {
+        print(name + newCode);
+
+        InventoryManager inv = GetComponent<InventoryManager>();
+        foreach (Item item in inv.inventory)
+        {
+            if(item.name == name)
+            {
+                GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
+                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().CloseConversation();
+                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().ActivateConversation(newCode, GetComponent<ConversationStats>().interactedObject.interactType);
+                print("CHANGEING CONVERSAIOTN");
+
+            }
+        }
+    }
 
     public void PickUp(string name)
     {

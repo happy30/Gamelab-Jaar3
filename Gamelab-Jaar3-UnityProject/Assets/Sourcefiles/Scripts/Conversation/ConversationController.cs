@@ -193,7 +193,7 @@ public class ConversationController : MonoBehaviour
     }
 
     //Bye bye.
-    void CloseConversation()
+    public void CloseConversation()
     {
         lineDone = false;
         activated = false;
@@ -259,7 +259,14 @@ public class ConversationController : MonoBehaviour
             }
             else
             {
-                cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+                if(currentText == 0 && currentConversation.lines[currentText].actors.actor == Actors.Actor.Mind)
+                {
+                    cUI.RemovePortrait();
+                }
+                else
+                {
+                    cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+                }
             }
         }
         else if (type == Interact.InteractType.Examine)
@@ -349,18 +356,21 @@ public class ConversationController : MonoBehaviour
             effects.FadeOutBlack();
         }
 
-
-        if(currentConversation.lines[currentText].additionalEffect != "")
+        if(currentConversation.lines[currentText].additionalEffect == "CheckItem")
         {
-            if(currentConversation.lines[currentText].effectParameter == "")
+            effects.CheckItem(currentConversation.lines[currentText].effectParameter, currentConversation.lines[currentText].newInteractionCodeName);
+        }
+        else if (currentConversation.lines[currentText].additionalEffect != "")
+        {
+            if (currentConversation.lines[currentText].effectParameter == "")
             {
-               effects.SendMessage(currentConversation.lines[currentText].additionalEffect);
+                effects.SendMessage(currentConversation.lines[currentText].additionalEffect);
             }
             else
             {
                 effects.SendMessage(currentConversation.lines[currentText].additionalEffect, currentConversation.lines[currentText].effectParameter);
             }
-            
+
         }
 
     }
