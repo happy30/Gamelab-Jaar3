@@ -94,7 +94,8 @@ public class Interact : MonoBehaviour
                     activated = false;
                     GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
                     GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
-                    StartCoroutine(EnableCursor());
+                    //StartCoroutine(EnableCursor());
+                    PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
 
                     foreach (GameObject obj in hideObjects)
                     {
