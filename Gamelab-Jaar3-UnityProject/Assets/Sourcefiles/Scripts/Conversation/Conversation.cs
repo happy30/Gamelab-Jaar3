@@ -33,14 +33,9 @@ public class Line
     [XmlElement("choice")]
     public Choice choice;
 
-    [XmlElement("additionalEffect")]
-    public string additionalEffect;
+    [XmlElement("effect")]
+    public Effect effects;
 
-    [XmlElement("additionalEffectParameter")]
-    public string effectParameter;
-
-    [XmlElement("NewInteractionCodeName")]
-    public string newInteractionCodeName;
 }
 
 public class Expression
@@ -102,7 +97,8 @@ public class Actors
         Assistant2,
         Chiaki,
         Hiyoko,
-        Junko
+        Junko,
+        MrRobot
     };
 }
 
@@ -125,4 +121,29 @@ public class Choice
 
     [XmlElement("Destination3")]
     public string Destination3;
+}
+
+public class Effect
+{
+    public enum AdditionalEffect
+    {
+        None,
+        Strobe,
+        Black,
+        GetItem,
+        PickUp,
+        CheckItem,
+        AddObject,
+        RemoveObject
+    };
+
+
+    [XmlEnum("Effect")]
+    public AdditionalEffect effect;
+
+    [XmlElement("EffectParameter")]
+    public string effectParameter;
+
+    [XmlElement("NewICN")]
+    public string newInteractionCodeName;
 }

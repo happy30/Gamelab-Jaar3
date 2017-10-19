@@ -42,16 +42,15 @@ public class Interact : MonoBehaviour
                         PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
                         GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
                         GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
-                        GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
                         GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject = this;
+                        GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
+                        
 
                         foreach (GameObject obj in hideObjects)
                         {
                             obj.SetActive(false);
                         }
                     }
-					
-
 					
 				}
 				else
@@ -78,8 +77,9 @@ public class Interact : MonoBehaviour
                     PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
                     GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
                     GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
-                    GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
                     GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject = this;
+                    GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
+                    
 
                     foreach (GameObject obj in hideObjects)
                     {

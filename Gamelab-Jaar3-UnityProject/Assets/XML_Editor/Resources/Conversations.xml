@@ -23,9 +23,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -51,8 +53,6 @@
             <Destination2>Portrait_A1_EX_01_CH2</Destination2>
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>
@@ -78,9 +78,6 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
         </Line>
       </lines>
     </Element>
@@ -106,9 +103,6 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
         </Line>
       </lines>
     </Element>
@@ -134,9 +128,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect>CheckItem</additionalEffect>
-          <additionalEffectParameter>MrRobot</additionalEffectParameter>
-          <NewInteractionCodeName>TD_RoboPlace_Filled</NewInteractionCodeName>
+          <effect>
+            <effect>CheckItem</effect>
+            <EffectParameter>MrRobot</EffectParameter>
+            <NewICN>TD_RoboPlace_Filled</NewICN>
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -158,9 +154,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -182,9 +180,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -206,9 +206,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -234,9 +236,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -258,9 +262,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -282,9 +288,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -306,9 +314,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect>Strobe</additionalEffect>
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -330,9 +340,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -354,9 +366,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -382,9 +396,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -406,9 +422,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect>PickUp</additionalEffect>
-          <additionalEffectParameter>RoboHead</additionalEffectParameter>
-          <NewInteractionCodeName />
+          <effect>
+            <effect>PickUp</effect>
+            <EffectParameter>RoboHead</EffectParameter>
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -434,8 +452,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -457,8 +478,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect>PickUp</additionalEffect>
-          <additionalEffectParameter>RoboBody</additionalEffectParameter>
+          <effect>
+            <effect>PickUp</effect>
+            <EffectParameter>RoboBody</EffectParameter>
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -468,7 +492,7 @@
           <actors>
             <actor>Mind</actor>
           </actors>
-          <text>testo!</text>
+          <text>Okay... Let's try placing this here.</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -484,9 +508,197 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-          <NewInteractionCodeName />
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Mhhh... Mhhhh...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Done!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>AddObject</effect>
+            <EffectParameter>0</EffectParameter>
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>Huh... Nothing's happening...?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Hey hey, are you sure you placed it right? Why is nothing happening?</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>I have no idea...?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_Robo1">
+      <lines>
+        <Line>
+          <actors>
+            <actor>MrRobot</actor>
+          </actors>
+          <text>Brrzztt BRRzzZZTTTTT</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>MrRobot</actor>
+          </actors>
+          <text>BRRRRAAAAAAAAAAAHHH</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>

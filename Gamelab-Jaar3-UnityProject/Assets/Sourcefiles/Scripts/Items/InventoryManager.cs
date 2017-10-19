@@ -61,4 +61,19 @@ public class InventoryManager : MonoBehaviour
         }
         return false;
     }
+
+    public void RemoveHeldItem(Item item)
+    {
+        inventory.Remove(item);
+    
+       HeldItem heldItem = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
+
+
+       if (heldItem.spawnedPrefab != null)
+       {
+            heldItem.itemName.text = "";
+            heldItem.CheckIfItemExists();
+            Destroy(heldItem.spawnedPrefab);
+       }
+    }
 }

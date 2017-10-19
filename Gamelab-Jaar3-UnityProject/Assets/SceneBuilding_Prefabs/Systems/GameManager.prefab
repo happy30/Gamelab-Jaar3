@@ -87,8 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4ba851c031315c4ea3ac1dc51b78249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowTextSpeed: 0.03
-  fastTextSpeed: 0.015
+  slowTextSpeed: 0.01
+  fastTextSpeed: 0.005
   interactedObject: {fileID: 0}
 --- !u!114 &114177068185733840
 MonoBehaviour:
@@ -160,17 +160,14 @@ MonoBehaviour:
   inventory: []
   ccItems:
   - id: 0
-    name: Cube
-    Prefab: {fileID: 1836591460042470, guid: 9070805190a5aa249b909df27f136800, type: 2}
-    sprite: {fileID: 0}
+    name: RoboHead
+    Prefab: {fileID: 1255871799219138, guid: ad39259bd5e899d4c8bebb9661948c96, type: 2}
   - id: 1
-    name: LongCube
-    Prefab: {fileID: 1049063054517588, guid: 40902e3464d781f4ca5f3906929005bf, type: 2}
-    sprite: {fileID: 0}
+    name: RoboBody
+    Prefab: {fileID: 1440247504320488, guid: eb751a6e99e9bc245a1d1bb6dbaaaa46, type: 2}
   - id: 2
-    name: Weird Cube
-    Prefab: {fileID: 1292134504443184, guid: ff8dc7fbde2ac5b469d50de340aa7443, type: 2}
-    sprite: {fileID: 0}
+    name: MrRobot
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
   morItems: []
   dirItems: []
   ccCombos:

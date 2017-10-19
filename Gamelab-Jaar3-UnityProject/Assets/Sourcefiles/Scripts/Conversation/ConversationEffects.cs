@@ -22,30 +22,34 @@ public class ConversationEffects : MonoBehaviour
 		GameObject.Find("Canvas").GetComponent<ConversationUI>().FadeOutBlack();
 	}
 
-    public void CheckItem(string name, string newCode)
-    {
-        print(name + newCode);
+	public void CheckItem(string name, string newCode)
+	{
 
-        InventoryManager inv = GetComponent<InventoryManager>();
-        foreach (Item item in inv.inventory)
-        {
-            if(item.name == name)
-            {
-                GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
-                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().CloseConversation();
-                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().ActivateConversation(newCode, GetComponent<ConversationStats>().interactedObject.interactType);
-                print("CHANGEING CONVERSAIOTN");
+		InventoryManager inv = GetComponent<InventoryManager>();
+		foreach (Item item in inv.inventory.ToArray())
+		{
+			if(item.name == name)
+			{
+				GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
+				for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
+				{
+					if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].interactionCodeName == newCode)
+					{
+						GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentConversation = GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i];
+						inv.RemoveHeldItem(item);
+						break;
+					}
+				}
+			}
+		}
+	}
 
-            }
-        }
-    }
-
-    public void PickUp(string name)
-    {
-        GetItem(name);
-        //GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.Trigger(false);
-        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().SetInactiveAfterConversaton = true;
-    }
+	public void PickUp(string name)
+	{
+		GetItem(name);
+		//GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.Trigger(false);
+		GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().SetInactiveAfterConversaton = true;
+	}
 
 	public void GetItem(string name)
 	{
@@ -67,5 +71,20 @@ public class ConversationEffects : MonoBehaviour
 		}
 	}
 
+	public void AddObject(string id)
+	{
+		int obj = int.Parse(id);
+
+		GameObject.Find("SceneSettings").GetComponent<SceneObjects>().ActivateObject(obj);
+			
+	}
+
+	public void RemoveObject(string id)
+	{
+		int obj = int.Parse(id);
+
+		GameObject.Find("SceneSettings").GetComponent<SceneObjects>().DeactivateObject(obj);
+
+	}
 
 }

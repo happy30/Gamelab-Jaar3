@@ -8,15 +8,21 @@ public class HeldItem : MonoBehaviour
     public GameObject prefab;
     public string text;
     public Text itemName;
+    public Image background;
 
     public InventoryManager inv;
 
-    GameObject spawnedPrefab;
+    public GameObject spawnedPrefab;
 
 
     void Awake()
     {
         inv = GameObject.Find("GameManager").GetComponent<InventoryManager>();
+    }
+
+    void Start()
+    {
+        CheckIfItemExists();
     }
 
     public void ChangeItem(int id)
@@ -33,5 +39,18 @@ public class HeldItem : MonoBehaviour
         spawnedPrefab.transform.SetParent(transform);
         spawnedPrefab.transform.localPosition = Vector3.zero;
         spawnedPrefab.transform.localScale = inv.inventory[id].Prefab.transform.localScale;
+    }
+
+    public void CheckIfItemExists()
+    {
+        if(spawnedPrefab == null)
+        {
+            itemName.text = "";
+            //background.color = new Color(background.color.r, background.color.g, background.color.b, 0f);
+        }
+        else
+        {
+            //background.color = new Color(background.color.r, background.color.g, background.color.b, 1f);
+        }
     }
 }
