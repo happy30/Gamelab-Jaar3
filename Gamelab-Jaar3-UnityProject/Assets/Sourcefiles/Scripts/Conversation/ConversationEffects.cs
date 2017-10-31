@@ -24,10 +24,35 @@ public class ConversationEffects : MonoBehaviour
 
 	public void CheckItem(string name, string newCode)
 	{
+        HeldItem heldItem = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
+        InventoryManager inv = GetComponent<InventoryManager>();
+        {
+            if (heldItem.itemName.text == name)
+            {
+                GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
+                for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
+                {
+                    if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].interactionCodeName == newCode)
+                    {
+                        GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentConversation = GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i];
+                        foreach (Item item in inv.inventory.ToArray())
+                        {
+                            if(item.name == heldItem.itemName.text)
+                            {
+                                inv.RemoveHeldItem(item);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-		InventoryManager inv = GetComponent<InventoryManager>();
-		foreach (Item item in inv.inventory.ToArray())
-		{
+
+
+        /*
+		
+		
 			if(item.name == name)
 			{
 				GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
@@ -42,6 +67,7 @@ public class ConversationEffects : MonoBehaviour
 				}
 			}
 		}
+        */
 	}
 
 	public void PickUp(string name)

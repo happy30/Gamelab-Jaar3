@@ -44,11 +44,15 @@ public class ExploreController : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		hVelocity = Input.GetAxis("Horizontal");
-		vVelocity = Input.GetAxis("Vertical");
+        if (PlayMode.gameMode == PlayMode.GameMode.Explore)
+        {
+            hVelocity = Input.GetAxis("Horizontal");
+            vVelocity = Input.GetAxis("Vertical");
 
-		Vector3 moveTowardsPos = new Vector3(hVelocity, 0, vVelocity);
-		transform.Translate(moveTowardsPos * speed * Time.deltaTime);
+            Vector3 moveTowardsPos = new Vector3(hVelocity, 0, vVelocity);
+            transform.Translate(moveTowardsPos * speed * Time.deltaTime);
+        }
+        
 	}
 
     //Waits for input and makes character move
