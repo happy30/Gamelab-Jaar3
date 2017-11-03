@@ -1,5 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 04a8a3362beee07439d27e4ee4bb5a3c
+=======
+<<<<<<< HEAD
+guid: b8859c86436932f4f965aa39a97c0e92
+timeCreated: 1509363141
+=======
+<<<<<<< HEAD
+guid: fba2875c894e0cb4b9e70a7bc83bcd80
+timeCreated: 1509364165
+=======
+guid: f6bf16cbae0cdaa4796813986f8c9ce3
+timeCreated: 1508515412
+>>>>>>> a1a2b83195104df745bd0c239cdbaa5e25343e27
+>>>>>>> 7274e097405dedda060d85b0264c02d4796a5a9c
+licenseType: Free
+>>>>>>> 8ad210b55fd9440303c0485df3d9436d26ca326c
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
