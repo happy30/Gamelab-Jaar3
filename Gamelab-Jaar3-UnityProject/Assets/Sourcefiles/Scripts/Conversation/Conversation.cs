@@ -83,6 +83,7 @@ public class Actors
     public enum Actor
     {
         Mind,
+        Unknown,
         Professor,
         Anastasia,
         Client1,
