@@ -8,6 +8,7 @@ public class AnimationTrigger : MonoBehaviour
     public Animator animator;
 	public bool isDoor;
 	bool withinDoor;
+	public GameObject door;
 
     public void Start()
     {
@@ -30,17 +31,17 @@ public class AnimationTrigger : MonoBehaviour
 		{
 			if (other.tag == "Player") 
 			{
-				gameObject.GetComponentInParent<AnimationTrigger>().animator.SetBool ("Activate", true);
+				door.GetComponent<AnimationTrigger>().animator.SetBool ("Activate", true);
 			}
 		}
 	}
-	void OnTriggerLeave (Collider other)
+	void OnTriggerExit (Collider other)
 	{
 		if (isDoor == true) 
 		{
 			if (other.tag == "Player") 
 			{
-				gameObject.GetComponentInParent <AnimationTrigger>().animator.SetBool ("Activate", false);
+				door.GetComponent<AnimationTrigger>().animator.SetBool ("Activate", false);
 			}
 		}
 	}

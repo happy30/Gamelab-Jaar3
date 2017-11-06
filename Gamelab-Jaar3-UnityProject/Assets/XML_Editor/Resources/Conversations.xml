@@ -186,5 +186,55 @@
         </Line>
       </lines>
     </Element>
+    <Element interactionCodeName="ANA_A1_FREE_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Anastasia</actor>
+          </actors>
+          <text>Good day client 929, please remain calm as I confirm your health state.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Anastasia</actor>
+          </actors>
+          <text>You seem to be in excellent condition. Can you find the brightly colored objects in the room next to you?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <additionalEffect />
+          <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
   </List>
 </Data>
