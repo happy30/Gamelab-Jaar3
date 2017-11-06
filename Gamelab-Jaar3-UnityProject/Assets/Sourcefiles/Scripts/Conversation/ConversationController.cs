@@ -32,10 +32,12 @@ public class ConversationController : MonoBehaviour
     ConversationEffects effects;
     CameraBehaviour cam;
 
-    ConversationContainer cc;
+    public ConversationContainer cc;
 
     public bool lineDone;
     public bool choicesShown;
+
+    public bool SetInactiveAfterConversaton;
 
     public Conversation currentConversation;
 
@@ -185,13 +187,14 @@ public class ConversationController : MonoBehaviour
 
         //currentConversation.lines[currentText].expression.portraitExpression.ToString();
         //Here starts the first line of conversation
+        
         NextLine();
             
 
     }
 
     //Bye bye.
-    void CloseConversation()
+    public void CloseConversation()
     {
         lineDone = false;
         activated = false;
@@ -199,6 +202,11 @@ public class ConversationController : MonoBehaviour
         currentText = 0;
         cUI.diaBoxCol.box.color = Color.black;
         interact.Trigger(false);
+        if(SetInactiveAfterConversaton)
+        {
+            GameObject.Find("Canvas").GetComponent<MenuUI>().Pause(MenuManager.MenuState.Items);
+            gameObject.SetActive(false);
+        }
     }
 
     //Send the info to the UI
@@ -214,11 +222,16 @@ public class ConversationController : MonoBehaviour
     //Get the next line in our conversation
     void NextLine()
     {
+        
+
         //Reset the lien progress
         lineDone = false;
         choicesShown = false;
         currentChar = 0;
         displayLine = "";
+
+        //Check for the effects to happen during conversation
+        CheckEffect();
 
         //Get the new next line
         fullLine = currentConversation.lines[currentText].text;
@@ -252,7 +265,14 @@ public class ConversationController : MonoBehaviour
             }
             else
             {
-                cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+                if(currentText == 0 && currentConversation.lines[currentText].actors.actor == Actors.Actor.Mind)
+                {
+                    cUI.RemovePortrait();
+                }
+                else
+                {
+                    cUI.UpdatePortrait(actor, currentConversation.lines[currentText].expression.portraitExpression.ToString());
+                }
             }
         }
         else if (type == Interact.InteractType.Examine)
@@ -261,7 +281,7 @@ public class ConversationController : MonoBehaviour
         }
         
 
-        CheckEffect();
+        
         activated = true;
     }
 
@@ -342,18 +362,21 @@ public class ConversationController : MonoBehaviour
             effects.FadeOutBlack();
         }
 
-
-        if(currentConversation.lines[currentText].additionalEffect != "")
+        if(currentConversation.lines[currentText].effects.effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
         {
-            if(currentConversation.lines[currentText].effectParameter == "")
+            effects.CheckItem(currentConversation.lines[currentText].effects.effectParameter, currentConversation.lines[currentText].effects.newInteractionCodeName);
+        }
+        else if (currentConversation.lines[currentText].effects.effect != Effect.AdditionalEffect.None)
+        {
+            if (currentConversation.lines[currentText].effects.effectParameter == "")
             {
-               effects.SendMessage(currentConversation.lines[currentText].additionalEffect);
+                effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString());
             }
             else
             {
-                effects.SendMessage(currentConversation.lines[currentText].additionalEffect, currentConversation.lines[currentText].effectParameter);
+                effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString(), currentConversation.lines[currentText].effects.effectParameter);
             }
-            
+
         }
 
     }
@@ -361,9 +384,15 @@ public class ConversationController : MonoBehaviour
     //If the last effect had black, and the next one hasn't then fade out.
     bool CheckForFadeOut()
     {
-        if(currentConversation.lines[currentText].additionalEffect != "Black" && currentText > 0)
+        if(currentText == 1)
         {
-            if(currentConversation.lines[currentText - 1].additionalEffect == "Black")
+            return true;
+        }
+
+
+        if(currentConversation.lines[currentText].effects.effect != Effect.AdditionalEffect.Black && currentText > 0)
+        {
+            if(currentConversation.lines[currentText - 1].effects.effect == Effect.AdditionalEffect.Black)
             {
                 return true;
             }

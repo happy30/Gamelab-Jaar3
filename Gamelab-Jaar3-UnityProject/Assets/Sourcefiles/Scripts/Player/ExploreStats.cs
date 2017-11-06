@@ -22,7 +22,7 @@ public class ExploreStats : MonoBehaviour
 
 
     [Header("HeadBobbing")]
-    [Range(0.0f, 0.15f)]
+    [Range(0.0f, 0.25f)]
     public float bobSpeed;
 
     [Range(0.0f, 0.15f)]

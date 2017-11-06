@@ -1,83 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element interactionCodeName="cc_01">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>Hey you ugly!</text>
-          <expression>
-            <portraitExpression>Enraged</portraitExpression>
-            <voiceActing>true</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Hiyoko</actor>
-          </actors>
-          <text>kBAAAAI</text>
-          <expression>
-            <portraitExpression>Happy</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="ex_cube">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>What a nice cube</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect>PickUp</additionalEffect>
-          <additionalEffectParameter>Cube</additionalEffectParameter>
-        </Line>
-      </lines>
-    </Element>
     <Element interactionCodeName="Fireplace_A1_EX_01">
       <lines>
         <Line>
@@ -100,8 +23,11 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -127,8 +53,6 @@
             <Destination2>Portrait_A1_EX_01_CH2</Destination2>
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>
@@ -154,8 +78,6 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>
@@ -181,8 +103,602 @@
             <Destination2 />
             <Destination3 />
           </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_RoboPlace_Empty">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Mhh... What could this thing here be for?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>CheckItem</effect>
+            <EffectParameter>MrRobot</EffectParameter>
+            <NewICN>TD_RoboPlace_Filled</NewICN>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>... Do we have to put something here?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Hey hey, this might be the key to opening the door don't you think? Maybe we have to place something here.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>You might be right... Let's start looking for more clues.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_Chiaki_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Hey hey, I want to get out of here...</text>
+          <expression>
+            <portraitExpression>Sad</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>Yeah me too... But we're locked up. Do you think this here is the door out?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Yeah I think so... But I have no idea how to open it.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>*ghhaar Grrhaaaa*</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>See... It isn't opening...</text>
+          <expression>
+            <portraitExpression>Sad</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>Too bad... Let's see if there's some kind of puzzle to opening this...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_RoboHead">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Mmhhh.. What is this?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Let's pick it up</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>PickUp</effect>
+            <EffectParameter>RoboHead</EffectParameter>
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_RoboBody">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Whoah that is a big thingy</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I will pick this up!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>PickUp</effect>
+            <EffectParameter>RoboBody</EffectParameter>
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_RoboPlace_Filled">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Okay... Let's try placing this here.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Mhhh... Mhhhh...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Done!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>AddObject</effect>
+            <EffectParameter>0</EffectParameter>
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>Huh... Nothing's happening...?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Chiaki</actor>
+          </actors>
+          <text>Hey hey, are you sure you placed it right? Why is nothing happening?</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Professor</actor>
+          </actors>
+          <text>I have no idea...?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="TD_Robo1">
+      <lines>
+        <Line>
+          <actors>
+            <actor>MrRobot</actor>
+          </actors>
+          <text>Brrzztt BRRzzZZTTTTT</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>MrRobot</actor>
+          </actors>
+          <text>BRRRRAAAAAAAAAAAHHH</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
         </Line>
       </lines>
     </Element>

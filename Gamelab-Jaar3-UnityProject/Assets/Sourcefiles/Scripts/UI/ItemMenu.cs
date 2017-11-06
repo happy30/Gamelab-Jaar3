@@ -19,6 +19,7 @@ public class ItemMenu : MonoBehaviour
     int selectedItems;
 
     public InventoryManager inventoryManager;
+    public HeldItem heldItemController;
 
     public List<GameObject> spawnedObjects = new List<GameObject>();
 
@@ -28,6 +29,12 @@ public class ItemMenu : MonoBehaviour
 
     public Text itemName;
 
+    public Transform heldItem;
+
+    void Awake()
+    {
+        heldItemController = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
+    }
 
 
     void Update()
@@ -68,7 +75,10 @@ public class ItemMenu : MonoBehaviour
         if(inventoryManager.inventory.Count > 0)
         {
             itemName.text = inventoryManager.inventory[selectedItem].name;
+            heldItemController.ChangeItem(selectedItem);
         }
+
+        
         
     }
 
@@ -77,44 +87,46 @@ public class ItemMenu : MonoBehaviour
 
     public void RotateInventory(bool right)
     {
-       
-        if(timer > 0.65f)
+        if (inventoryManager.inventory.Count > 0)
         {
-            if (right)
+            if (timer > 0.65f)
             {
-                rotateTo = (360 / numObjects) + itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles.y;
-
-                if (selectedItem > 0)
+                if (right)
                 {
-                    selectedItem--;
+                    rotateTo = (360 / numObjects) + itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles.y;
+
+                    if (selectedItem > 0)
+                    {
+                        selectedItem--;
+                    }
+                    else
+                    {
+                        selectedItem = inventoryManager.inventory.Count - 1;
+                    }
+
+
                 }
                 else
                 {
-                    selectedItem = inventoryManager.inventory.Count - 1;
+                    rotateTo = -(360 / numObjects) + itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles.y;
+
+                    if (selectedItem < inventoryManager.inventory.Count - 1)
+                    {
+                        selectedItem++;
+                    }
+                    else
+                    {
+                        selectedItem = 0;
+                    }
+
+
+
                 }
-
-
+                itemName.text = inventoryManager.inventory[selectedItem].name;
+                heldItemController.ChangeItem(selectedItem);
+                timer = 0;
             }
-            else
-            {
-                rotateTo = -(360 / numObjects) + itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles.y;
-
-                if (selectedItem < inventoryManager.inventory.Count - 1)
-                {
-                    selectedItem++;
-                }
-                else
-                {
-                    selectedItem = 0;
-                }
-
-                
-
-            }
-            itemName.text = inventoryManager.inventory[selectedItem].name;
-            timer = 0;
         }
-
         //itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles = new Vector3(0, itemPlace.gameObject.GetComponent<RectTransform>().localEulerAngles.y + rotateAmount, 0);
     }
 

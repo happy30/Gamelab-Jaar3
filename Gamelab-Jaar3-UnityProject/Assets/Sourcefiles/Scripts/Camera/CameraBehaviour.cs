@@ -40,10 +40,14 @@ public class CameraBehaviour : MonoBehaviour
                 break;
 
             case PlayMode.GameMode.Conversation:
-                if(conversationStats.interactedObject.interactType == Interact.InteractType.Conversation)
+                if(conversationStats.interactedObject != null)
                 {
-                    ConversationCamera();
+                    if (conversationStats.interactedObject.interactType == Interact.InteractType.Conversation)
+                    {
+                        ConversationCamera();
+                    }
                 }
+                
                 
                 break;
 
