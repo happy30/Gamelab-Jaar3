@@ -17,8 +17,6 @@ public class RushHour : MonoBehaviour
             for (int y = 0; y < blocksArray.Length - 1; y++)
                 grid[(int)blocksArray[x].transform.position.x , (int)blocksArray[x].transform.position.y] = true;
         }
-
-        //CheckArray();
 	}
 
     void Update()
@@ -28,12 +26,4 @@ public class RushHour : MonoBehaviour
         Debug.DrawLine(new Vector3(6, 0, 0), new Vector3(6, 6, 0), Color.red);
         Debug.DrawLine(new Vector3(0, 6, 0), new Vector3(0, 0, 0), Color.red);
     }
-
-    /*void CheckArray()
-    {
-        foreach (bool value in grid)
-        {
-            print(value);
-        }
-    }*/
 }

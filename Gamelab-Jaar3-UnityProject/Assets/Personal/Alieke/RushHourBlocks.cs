@@ -12,6 +12,9 @@ public class RushHourBlocks : MonoBehaviour
 
     RushHour rushHour;
 
+    int widthMin, widthMax;
+    int heigthMin, heigthMax;
+
 	void Start ()
     {
         blockPosition = new Vector2(transform.position.x, transform.position.y);
@@ -22,7 +25,6 @@ public class RushHourBlocks : MonoBehaviour
 	
 	void OnMouseDrag ()
     {
-        CheckRange();
         //Drag block
         Vector3 v3 = Input.mousePosition;
         v3.z = 10;
@@ -30,39 +32,32 @@ public class RushHourBlocks : MonoBehaviour
 
         if (horizontalBlock)
         {
-            transform.position = new Vector3(Mathf.Clamp(v3.x, 0, rushHour.gridWidth), Mathf.Clamp(v3.y, yBeginPos, yBeginPos), v3.z);
+            CheckWidth(widthMin, widthMax);
+            transform.position = new Vector3(Mathf.Clamp(v3.x, widthMin, widthMax), Mathf.Clamp(v3.y, yBeginPos, yBeginPos), v3.z);
         }
         else
         {
+            CheckHeight();
             transform.position = new Vector3(Mathf.Clamp(v3.x, xBeginPos, xBeginPos), Mathf.Clamp(v3.y, 0, rushHour.gridHeight), v3.z);
         }
-
-
-        /*if (horizontalBlock)
-        {
-            for(int x = 0; x < rushHour.gridWidth; x++)
-            {
-                for(int y = 0; y < rushHour.gridHeight; y++)
-                {
-                    transform.position = new Vector3(Mathf.Clamp(v3.x, 0, rushHour.gridWidth), Mathf.Clamp(v3.y, yBeginPos, yBeginPos), v3.z);
-                    rushHour.grid[(int)transform.position.x, (int)transform.position.y] = true;
-                    blockPosition = new Vector2(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y));
-                    if (rushHour.grid[(int)blockPosition.x, (int)blockPosition.y])
-                    {
-                        
-                    }
-                }
-            }
-        } else
-        {
-            transform.position = new Vector3(Mathf.Clamp(v3.x, xBeginPos, xBeginPos), Mathf.Clamp(v3.y, 0, rushHour.gridHeight) , v3.z);
-        }*/
 	}
 
-    void CheckRange()
+    int CheckWidth(int widthMinInt, int widthMaxInt)
     {
-        for (int i = 0; i < rushHour.gridWidth; i ++) {
-            if (rushHour.grid[(int)transform.position.x + i, (int)transform.position.y + 1] == true)
+        for (int i = 0; i < rushHour.gridWidth -1; i ++) {
+            if (rushHour.grid[(int)transform.position.x + i, (int)transform.position.y] == true)
+            {
+                widthMaxInt = i--;
+            }
+        }
+        return (widthMinInt);
+    }
+
+    void CheckHeight()
+    {
+        for (int i = 0; i < rushHour.gridHeight - 1; i++)
+        {
+            if (rushHour.grid[(int)transform.position.x, (int)transform.position.y + i] == true)
             {
 
             }
