@@ -1,6 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d15f3cd483e28ab4eb613bfb64ba9f8c
 timeCreated: 1509975654
+=======
+<<<<<<< HEAD
+guid: bc32dd2fa4bee0b4f8d83eaa2d6e10ba
+timeCreated: 1509974920
+=======
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/SceneBuilding_Prefabs/Art/Area01/3D_ENV_CC_INFUSER.prefab.meta~HEAD.meta
+guid: b570f6e49798f2f4589f2735b307b0c9
+timeCreated: 1509974855
+=======
+guid: 8a729ebc94e185f4cab3686d1b357560
+timeCreated: 1509971849
+>>>>>>> be799e83e283cd53a903e6a331b935f0cd510014:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_KITCH_BUFFET TABLE.meta~a1a2b83195104df745bd0c239cdbaa5e25343e27.meta
+>>>>>>> ba4e399d3bd8d93c97e163636ab0d4eb5affe088
+>>>>>>> 5a1d66b2aa58f3df373325e7e3563aec54c39274
 licenseType: Free
 DefaultImporter:
   userData: 
