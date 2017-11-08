@@ -35,8 +35,16 @@ public class DialogueBoxColorChanger : MonoBehaviour
                 newColor = Color.black;
                 break;
 
-            case Actors.Actor.Professor:
+            case Actors.Actor.Client929:
                 newColor = new Color32(0x56, 0x56, 0x56, 0xFF);
+                break;
+
+            case Actors.Actor.Client274:
+                newColor = new Color32(0xcc, 0x52, 0x00, 0xFF);
+                break;
+
+            case Actors.Actor.Client597:
+                newColor = new Color32(0x66, 0x66, 0x99, 0xFF);
                 break;
 
         }

@@ -370,7 +370,15 @@ public class ConversationController : MonoBehaviour
         {
             if (currentConversation.lines[currentText].effects.effectParameter == "")
             {
-                effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString());
+                if((currentConversation.lines[currentText].effects.newInteractionCodeName != ""))
+                {
+                    effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString(), currentConversation.lines[currentText].effects.newInteractionCodeName);
+                }
+                else
+                {
+                    effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString());
+                }
+                
             }
             else
             {

@@ -70,6 +70,27 @@ public class ConversationEffects : MonoBehaviour
         */
 	}
 
+    public void ProgressScene()
+    {
+        SceneProgression sceneProgression = GameObject.Find("SceneSettings").GetComponent<SceneProgression>();
+        sceneProgression.ProgressionEffect(sceneProgression.progression);
+        sceneProgression.progression++;
+    }
+
+    public void LinkNewConversation(string icn)
+    {
+        GetComponent<ConversationStats>().interactedObject.interactionCodeName = icn;
+        for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
+        {
+            if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].interactionCodeName == icn)
+            {
+                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentConversation = GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i];
+                GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentText = 0;
+            }
+        }
+
+    }
+
 	public void PickUp(string name)
 	{
 		GetItem(name);

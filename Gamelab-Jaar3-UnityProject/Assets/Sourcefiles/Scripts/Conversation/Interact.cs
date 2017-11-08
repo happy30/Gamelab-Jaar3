@@ -11,7 +11,7 @@ public class Interact : MonoBehaviour
 	public string interactionCodeName;
 	public GameObject[] hideObjects;
 	float timer;
-
+    public bool DestroyAfterInteraction;
 
 	public enum InteractType
 	{
@@ -61,10 +61,18 @@ public class Interact : MonoBehaviour
 					GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
 					StartCoroutine(EnableCursor());
 
-					foreach (GameObject obj in hideObjects)
-					{
-						obj.SetActive(true);
-					}
+                    if(!DestroyAfterInteraction)
+                    {
+                        foreach (GameObject obj in hideObjects)
+                        {
+                            obj.SetActive(true);
+                        }
+                    }
+                    else
+                    {
+                        GetComponent<BoxCollider>().enabled = false;
+                    }
+					
 
 					
 				}

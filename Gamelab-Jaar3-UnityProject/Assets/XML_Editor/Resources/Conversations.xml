@@ -1,147 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element interactionCodeName="Fireplace_A1_EX_01">
+    <Element interactionCodeName="144_01_Fight">
       <lines>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Client274</actor>
           </actors>
-          <text>Even though this fireplace is fake, it gives off a comforting warmth.</text>
+          <text>If you're trusting that wench, then you can't be trusted either.</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="Portrait_A1_EX_01">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>This painting looks colorful...Huh? the sides are scratched</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1>take it.</choice1>
-            <choice2>Leave it.</choice2>
-            <choice3 />
-            <Destination1>Portrait_A1_EX_01_CH1</Destination1>
-            <Destination2>Portrait_A1_EX_01_CH2</Destination2>
-            <Destination3 />
-          </choice>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="Portrait_A1_EX_01_CH1">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>I carefully take the painting off of the wall.</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="Portrait_A1_EX_01_CH2">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>I overcome my insatiable curiosity and leave the painting alone.</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="TD_RoboPlace_Empty">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>Mhh... What could this thing here be for?</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>CheckItem</effect>
-            <EffectParameter>MrRobot</EffectParameter>
-            <NewICN>TD_RoboPlace_Filled</NewICN>
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>... Do we have to put something here?</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -162,143 +31,9 @@
         </Line>
         <Line>
           <actors>
-            <actor>Chiaki</actor>
+            <actor>Client274</actor>
           </actors>
-          <text>Hey hey, this might be the key to opening the door don't you think? Maybe we have to place something here.</text>
-          <expression>
-            <portraitExpression>Thinking</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Right</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Professor</actor>
-          </actors>
-          <text>You might be right... Let's start looking for more clues.</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Right</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="TD_Chiaki_01">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>Hey hey, I want to get out of here...</text>
-          <expression>
-            <portraitExpression>Sad</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Professor</actor>
-          </actors>
-          <text>Yeah me too... But we're locked up. Do you think this here is the door out?</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>Yeah I think so... But I have no idea how to open it.</text>
-          <expression>
-            <portraitExpression>Thinking</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>*ghhaar Grrhaaaa*</text>
+          <text>For all I know you're on her side and only pretending to be one of us!</text>
           <expression>
             <portraitExpression>Angry</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -315,6 +50,32 @@
             <Destination3 />
           </choice>
           <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client597</actor>
+          </actors>
+          <text>Would you stop acting like a spoiled toddler?</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
             <effect>Strobe</effect>
             <EffectParameter />
             <NewICN />
@@ -322,15 +83,15 @@
         </Line>
         <Line>
           <actors>
-            <actor>Chiaki</actor>
+            <actor>Client597</actor>
           </actors>
-          <text>See... It isn't opening...</text>
+          <text>I am saying, that Ana holds a great deal of power, and it would be wise to gain her trust while we still can.</text>
           <expression>
-            <portraitExpression>Sad</portraitExpression>
+            <portraitExpression>Smirk</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Left</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -348,11 +109,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Professor</actor>
+            <actor>Client274</actor>
           </actors>
-          <text>Too bad... Let's see if there's some kind of puzzle to opening this...</text>
+          <text>The fuck did you call me!? Are you looking for a fucking fight you degenerate creep?!</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Enraged</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -364,6 +125,162 @@
             <choice3 />
             <Destination1 />
             <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Strobe</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client597</actor>
+          </actors>
+          <text>My my, it must be extraordinarily complicated for you to talk with people if you're unable to follow even my most basics of explanations.</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>These two look like they're about to rip each other apart. I should intervene before things get out of hand.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client929</actor>
+          </actors>
+          <text>Come on guys, can't we resolve this peacefully?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client597</actor>
+          </actors>
+          <text>Ah, great timing 929. Maybe you can talk some sense into this thick-headed aboriginal</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client597</actor>
+          </actors>
+          <text>I don't believe I've ever talked to a more bothersome individual in my life.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client274</actor>
+          </actors>
+          <text>Don't even think of siding with this four-eyes ass. You can't trust him since he trusts Ana.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1>Side with 274</choice1>
+            <choice2>Side with 597</choice2>
+            <choice3 />
+            <Destination1>144_01_SideWith274</Destination1>
+            <Destination2>144_01_SideWith597</Destination2>
             <Destination3 />
           </choice>
           <effect>
@@ -374,13 +291,13 @@
         </Line>
       </lines>
     </Element>
-    <Element interactionCodeName="TD_RoboHead">
+    <Element interactionCodeName="144_01_SideWith274">
       <lines>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Client929</actor>
           </actors>
-          <text>Mmhhh.. What is this?</text>
+          <text>You're right 274, we can't trust Ana. She's the one who's keeping us locked her after all.</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -404,45 +321,15 @@
         </Line>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Client597</actor>
           </actors>
-          <text>Let's pick it up</text>
+          <text>Are you delirious? We don't know if she's us locked. She might even be a prisoner too.</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Angry</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>PickUp</effect>
-            <EffectParameter>RoboHead</EffectParameter>
-            <NewICN />
-          </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="TD_RoboBody">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>Whoah that is a big thingy</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
+            <move>Left</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -460,148 +347,200 @@
         </Line>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Client274</actor>
           </actors>
-          <text>I will pick this up!</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>PickUp</effect>
-            <EffectParameter>RoboBody</EffectParameter>
-            <NewICN />
-          </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="TD_RoboPlace_Filled">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>Okay... Let's try placing this here.</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>Black</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>Mhhh... Mhhhh...</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>Black</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text>Done!</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>AddObject</effect>
-            <EffectParameter>0</EffectParameter>
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Professor</actor>
-          </actors>
-          <text>Huh... Nothing's happening...?</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>None</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>Chiaki</actor>
-          </actors>
-          <text>Hey hey, are you sure you placed it right? Why is nothing happening?</text>
+          <text>The fact that's she's able to monitor us and give us tasks and instructions means that she has more control over this facility than us.</text>
           <expression>
             <portraitExpression>Serious</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client274</actor>
+          </actors>
+          <text>That's enough reason for me, jackass.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client597</actor>
+          </actors>
+          <text>You will regret picking his side, 929. You'll regret it.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I hope I made the right call....</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>LinkNewConversation</effect>
+            <EffectParameter />
+            <NewICN>144_01_Client596</NewICN>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="144_01_Client596">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I shouldn't focus too much on these quarrels anyway. There are more important things right now.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Huh... Who's that?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Client596</actor>
+          </actors>
+          <text>Hey 929, I think you wanna see this. Meet me in the storage room.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
             <move>Right</move>
           </cameraPosition>
           <choice>
@@ -620,9 +559,9 @@
         </Line>
         <Line>
           <actors>
-            <actor>Professor</actor>
+            <actor>Client929</actor>
           </actors>
-          <text>I have no idea...?</text>
+          <text>..Heh..?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -639,116 +578,10 @@
             <Destination3 />
           </choice>
           <effect>
-            <effect>None</effect>
+            <effect>ProgressScene</effect>
             <EffectParameter />
             <NewICN />
           </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="TD_Robo1">
-      <lines>
-        <Line>
-          <actors>
-            <actor>MrRobot</actor>
-          </actors>
-          <text>Brrzztt BRRzzZZTTTTT</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>Strobe</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-        <Line>
-          <actors>
-            <actor>MrRobot</actor>
-          </actors>
-          <text>BRRRRAAAAAAAAAAAHHH</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <effect>
-            <effect>Strobe</effect>
-            <EffectParameter />
-            <NewICN />
-          </effect>
-        </Line>
-      </lines>
-    </Element>
-    <Element interactionCodeName="ANA_A1_FREE_01">
-      <lines>
-        <Line>
-          <actors>
-            <actor>Anastasia</actor>
-          </actors>
-          <text>Good day client 929, please remain calm as I confirm your health state.</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Anastasia</actor>
-          </actors>
-          <text>You seem to be in excellent condition. Can you find the brightly colored objects in the room next to you?</text>
-          <expression>
-            <portraitExpression>None</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choice>
-            <choice1 />
-            <choice2 />
-            <choice3 />
-            <Destination1 />
-            <Destination2 />
-            <Destination3 />
-          </choice>
-          <additionalEffect />
-          <additionalEffectParameter />
         </Line>
       </lines>
     </Element>
