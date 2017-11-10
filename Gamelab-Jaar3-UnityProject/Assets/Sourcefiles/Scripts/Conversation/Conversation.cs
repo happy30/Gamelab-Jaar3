@@ -134,6 +134,7 @@ public class Effect
         GetItem,
         PickUp,
         LinkNewConversation,
+        ChangeInteractionCodeName,
         CheckItem,
         AddObject,
         RemoveObject,

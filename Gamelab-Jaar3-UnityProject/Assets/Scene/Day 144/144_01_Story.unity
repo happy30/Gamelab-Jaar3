@@ -1436,6 +1436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xmlName: 
   interactionCodeName: 
   hideObjects: []
   DestroyAfterInteraction: 0
@@ -49701,11 +49702,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCodeName: 144_01_Fight
+  xmlName: 144_02
+  interactionCodeName: 144_02_Storage
   hideObjects:
   - {fileID: 2101035918}
   - {fileID: 2058075492}
-  DestroyAfterInteraction: 1
+  DestroyAfterInteraction: 0
   interactType: 1
   activated: 0
 --- !u!114 &1687067087
@@ -54942,7 +54944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1849540701
 Transform:
   m_ObjectHideFlags: 0
@@ -54968,6 +54970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xmlName: 
   interactionCodeName: 
   hideObjects: []
   DestroyAfterInteraction: 0
@@ -60942,6 +60945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xmlName: 
   interactionCodeName: 
   hideObjects: []
   DestroyAfterInteraction: 0
@@ -62658,7 +62662,12 @@ Prefab:
         type: 2}
       propertyPath: sceneObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1849540700}
+    - target: {fileID: 82610161344507492, guid: 07a1d6d751241f04484d9709dca4c4b3,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c98c973b150e0c443a6aa73301ca222b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a1d6d751241f04484d9709dca4c4b3, type: 2}
   m_IsPrefabParent: 0

@@ -7,7 +7,8 @@ using UnityEngine;
 [RequireComponent(typeof(ConversationController))]
 public class Interact : MonoBehaviour
 {
-	[Header("Fill These Sascha <3")]
+    [Header("Fill These Sascha <3")]
+    public string xmlName;
 	public string interactionCodeName;
 	public GameObject[] hideObjects;
 	float timer;

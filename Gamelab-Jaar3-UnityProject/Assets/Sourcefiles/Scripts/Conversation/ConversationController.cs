@@ -52,7 +52,7 @@ public class ConversationController : MonoBehaviour
 
     void Start()
     {
-        cc = GameObject.Find("SceneSettings").GetComponent<ConversationLoader1>().cc;
+        cc = GameObject.Find("SceneSettings").GetComponent<ConversationLoader1>().LoadConversation(GetComponent<Interact>().xmlName);
     }
 
     void Update()

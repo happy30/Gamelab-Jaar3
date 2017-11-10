@@ -91,6 +91,11 @@ public class ConversationEffects : MonoBehaviour
 
     }
 
+    public void ChangeInteractionCodeName(string icn)
+    {
+        GetComponent<ConversationStats>().interactedObject.interactionCodeName = icn;
+    }
+
 	public void PickUp(string name)
 	{
 		GetItem(name);
