@@ -241,7 +241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1144539280856824
 GameObject:
   m_ObjectHideFlags: 1
@@ -981,7 +981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1876655268787478
 GameObject:
   m_ObjectHideFlags: 1
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13354239, g: 0.37818426, b: 0.47794116, a: 1}
+  m_Color: {r: 0.13354239, g: 0.37818426, b: 0.47794116, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1882,6 +1882,7 @@ MonoBehaviour:
   prefab: {fileID: 0}
   text: 
   itemName: {fileID: 114962156304122428}
+  background: {fileID: 114084032776287980}
   inv: {fileID: 0}
   spawnedPrefab: {fileID: 0}
 --- !u!114 &114145570395234246
@@ -3409,7 +3410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Empty
+  m_Text: 
 --- !u!114 &114963660904432334
 MonoBehaviour:
   m_ObjectHideFlags: 1

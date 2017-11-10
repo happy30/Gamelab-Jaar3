@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 45164204c07fd1a4885e1f6178ae2a34
 timeCreated: 1510055319
+=======
+guid: b4ff205ddab4af7489df06742ed2e03c
+timeCreated: 1510177233
+>>>>>>> 521b74f5363ec7e45912bffe242be336da954680
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -63,6 +68,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
@@ -71,6 +77,8 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+=======
+>>>>>>> 521b74f5363ec7e45912bffe242be336da954680
   spriteSheet:
     serializedVersion: 2
     sprites: []

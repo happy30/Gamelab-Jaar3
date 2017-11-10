@@ -5,12 +5,12 @@ using UnityEngine;
 public class ConversationLoader1 : MonoBehaviour
 {
 
-    public const string path = "Conversations";
+    public string path = "Conversations";
     public ConversationContainer cc;
 
-    void Awake()
+    public ConversationContainer LoadConversation(string xmlName)
     {
-        cc = ConversationContainer.Load(path);
+        return ConversationContainer.Load(xmlName);
     }
 
 

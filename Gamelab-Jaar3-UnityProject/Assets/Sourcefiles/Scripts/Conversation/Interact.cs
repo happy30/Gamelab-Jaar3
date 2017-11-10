@@ -7,11 +7,12 @@ using UnityEngine;
 [RequireComponent(typeof(ConversationController))]
 public class Interact : MonoBehaviour
 {
-	[Header("Fill These Sascha <3")]
+    [Header("Fill These Sascha <3")]
+    public string xmlName;
 	public string interactionCodeName;
 	public GameObject[] hideObjects;
 	float timer;
-
+    public bool DestroyAfterInteraction;
 
 	public enum InteractType
 	{
@@ -61,10 +62,18 @@ public class Interact : MonoBehaviour
 					GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
 					StartCoroutine(EnableCursor());
 
-					foreach (GameObject obj in hideObjects)
-					{
-						obj.SetActive(true);
-					}
+                    if(!DestroyAfterInteraction)
+                    {
+                        foreach (GameObject obj in hideObjects)
+                        {
+                            obj.SetActive(true);
+                        }
+                    }
+                    else
+                    {
+                        GetComponent<BoxCollider>().enabled = false;
+                    }
+					
 
 					
 				}

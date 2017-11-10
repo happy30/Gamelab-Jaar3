@@ -121,7 +121,7 @@ MonoBehaviour:
   crouchDrop: 0.8
   zoomSpeed: 5
   zoomAmount: 20
-  bobSpeed: 0.1118
+  bobSpeed: 0.1338
   bobAmount: 0.1019
   interactRange: 3
 --- !u!114 &114761434685238726
