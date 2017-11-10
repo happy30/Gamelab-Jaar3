@@ -1,11 +1,5 @@
 fileFormatVersion: 2
 guid: 4e90a613df35d83409e4398bad040e4c
-<<<<<<< HEAD
-timeCreated: 1510055358
-=======
-timeCreated: 1510177256
->>>>>>> 521b74f5363ec7e45912bffe242be336da954680
-licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -13,8 +7,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: wall
-    4300002: wall pointy corner
+    4300000: wall pointy corner
     9500000: //RootNode
   materials:
     importMaterials: 1
