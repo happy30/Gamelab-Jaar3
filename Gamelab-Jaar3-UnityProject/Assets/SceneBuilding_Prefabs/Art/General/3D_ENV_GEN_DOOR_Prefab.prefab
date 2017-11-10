@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1807684730894262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5039687, y: -1.3056686, z: -6.180811}
+  m_LocalPosition: {x: -2.54, y: 2.727, z: -11.521}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
   m_Children:
   - {fileID: 4395496868266882}
@@ -168,8 +168,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 2.1, z: 0.3}
-  m_Center: {x: 0, y: 1.1, z: 0}
+  m_Size: {x: 2, y: 2.1, z: 2.195746}
+  m_Center: {x: 0, y: 1.1000001, z: -0.40212703}
 --- !u!95 &95962786229609732
 Animator:
   serializedVersion: 3
@@ -198,6 +198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a638941d2e1c03d4f9973e2713017567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  isDoor: 1
+  door: {fileID: 1807684730894262}
 --- !u!114 &114471416676375176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,9 +213,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cUI: {fileID: 0}
+  activated: 0
   displayLine: 
   actor: 
   currentText: 0
+  lineDone: 0
+  choicesShown: 0
+  SetInactiveAfterConversaton: 0
 --- !u!114 &114693154508005284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,8 +231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xmlName: 
   interactionCodeName: 
   hideObjects: []
+  DestroyAfterInteraction: 0
   interactType: 2
   activated: 0
 --- !u!137 &137098274577123530
