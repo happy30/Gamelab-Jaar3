@@ -9,12 +9,12 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2017
-		Month: 10
-		Day: 31
-		Hour: 11
-		Minute: 14
-		Second: 14
-		Millisecond: 245
+		Month: 11
+		Day: 8
+		Hour: 15
+		Minute: 39
+		Second: 8
+		Millisecond: 425
 	}
 	Creator: "FBX SDK/FBX Plugins version 2015.0"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -36,13 +36,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2014"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "31/10/2017 10:14:14.243"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "08/11/2017 14:39:08.416"
 			P: "Original|FileName", "KString", "", "", "C:\Users\Marc\Desktop\Walls\Outercorner\3D_ENV_HALL_OUTERCORNERWALL.FBX"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2014"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "31/10/2017 10:14:14.243"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "08/11/2017 14:39:08.416"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2156409184, "", "Scene" {
+	Document: 1277721312, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -226,7 +226,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2152148848, "Geometry::", "Mesh" {
+	Geometry: 2067994480, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.517647058823529,0.0235294117647059,0.0235294117647059
 		}
@@ -290,7 +290,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2492220144, "Model::wall corner", "Mesh" {
+	Model: 2072091616, "Model::wall corner", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -314,11 +314,11 @@ Objects:  {
 Connections:  {
 	
 	;Model::wall corner, Model::RootNode
-	C: "OO",2492220144,0
+	C: "OO",2072091616,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",2492671232,2488694752
+	C: "OO",1278318704,1810527072
 	
 	;Geometry::, Model::wall corner
-	C: "OO",2152148848,2492220144
+	C: "OO",2067994480,2072091616
 }
