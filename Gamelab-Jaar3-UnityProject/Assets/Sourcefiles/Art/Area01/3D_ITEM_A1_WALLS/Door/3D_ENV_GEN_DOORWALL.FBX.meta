@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: a874f1b02f667d44985befe49436cfbc
+guid: f0cfc17496ce9b346976ec8c02e4ba9d
+timeCreated: 1510055360
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -7,10 +9,11 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Client cell
+    4300000: wall
+    4300002: wall door
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:

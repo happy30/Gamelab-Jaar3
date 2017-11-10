@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: a874f1b02f667d44985befe49436cfbc
+guid: f428dc7363b4a284d934bd8bb82360ca
+timeCreated: 1510055361
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -7,10 +9,9 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Client cell
-    9500000: //RootNode
+    4300000: wall pointy corner001
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
@@ -78,7 +79,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
