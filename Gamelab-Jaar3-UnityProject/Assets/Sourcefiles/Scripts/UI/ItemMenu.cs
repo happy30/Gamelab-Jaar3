@@ -34,6 +34,7 @@ public class ItemMenu : MonoBehaviour
     void Awake()
     {
         heldItemController = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
+        inventoryManager = GameObject.Find("GameManager").GetComponent<InventoryManager>();
     }
 
 

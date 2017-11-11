@@ -269,7 +269,7 @@
           </actors>
           <text>It says: "Day 399: I don't know if I can keep living here for much longer...</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Serious</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
