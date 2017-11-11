@@ -103,8 +103,16 @@ public class Interact : MonoBehaviour
                     activated = false;
                     GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
                     GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
-                    //StartCoroutine(EnableCursor());
-                    PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+                    if(DestroyAfterInteraction)
+                    {
+                        PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+                    }
+                    else
+                    {
+                        StartCoroutine(EnableCursor());
+                    }
+                    
+                    //
 
                     foreach (GameObject obj in hideObjects)
                     {
@@ -129,7 +137,7 @@ public class Interact : MonoBehaviour
 	{
 		yield return new WaitForSeconds(0.1f);
 
-        if(PlayMode.gameMode == PlayMode.GameMode.Conversation)
+        if(PlayMode.gameMode == PlayMode.GameMode.Conversation && PlayMode.gameMode != PlayMode.GameMode.Menu)
         {
             PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
         }

@@ -36,7 +36,7 @@ public class MenuUI : MonoBehaviour
                     menuState = MenuManager.MenuState.Flow;
                 }
                 
-                Pause(menuState);
+                Pause(menuState, false);
             }
            
         }
@@ -47,13 +47,21 @@ public class MenuUI : MonoBehaviour
 
 	}
 
-    public void Pause(MenuManager.MenuState state)
+    public void Pause(MenuManager.MenuState state, bool exploreMode)
     {
         //GetComponent<CanvasGroup>().alpha = 0;
         conversation.SetActive(false);
         explore.SetActive(false);
 
-        lastMode = PlayMode.gameMode;
+        if(!exploreMode)
+        {
+            lastMode = PlayMode.gameMode;
+        }
+        else
+        {
+            lastMode = PlayMode.GameMode.Explore;
+        }
+        
         PlayMode.ChangeGameMode(PlayMode.GameMode.Menu);
         menuCanvas.SetActive(true);
         menuCanvas.GetComponent<MenuManager>().SetMenu(state);

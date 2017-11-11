@@ -6,5 +6,10 @@
       <variableID>interactionCodeName</variableID>
       <directory>144_02</directory>
     </Element>
+    <Element displayName="ClientsCell">
+      <className>Conversation</className>
+      <variableID>interactionCodeName</variableID>
+      <directory>CC</directory>
+    </Element>
   </List>
 </Data>

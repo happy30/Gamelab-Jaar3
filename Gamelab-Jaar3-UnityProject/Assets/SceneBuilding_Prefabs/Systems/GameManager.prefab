@@ -160,13 +160,31 @@ MonoBehaviour:
   inventory: []
   ccItems:
   - id: 0
-    name: RoboHead
+    name: Rectangular Piece
     Prefab: {fileID: 1255871799219138, guid: ad39259bd5e899d4c8bebb9661948c96, type: 2}
   - id: 1
-    name: RoboBody
+    name: Triangular Piece
     Prefab: {fileID: 1440247504320488, guid: eb751a6e99e9bc245a1d1bb6dbaaaa46, type: 2}
   - id: 2
-    name: MrRobot
+    name: Square Piece
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 3
+    name: Trash Picker Body
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 4
+    name: Trash Picker Claw
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 5
+    name: Trash Picker
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 6
+    name: Key
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 7
+    name: Painting
+    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+  - id: 8
+    name: Staff Keycard
     Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
   morItems: []
   dirItems: []

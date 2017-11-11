@@ -26,9 +26,15 @@ public class ConversationEffects : MonoBehaviour
 	{
         HeldItem heldItem = GameObject.Find("HeldItemController").GetComponent<HeldItem>();
         InventoryManager inv = GetComponent<InventoryManager>();
+
+        print(name + newCode);
+        print(heldItem.itemName.text);
+
         {
             if (heldItem.itemName.text == name)
             {
+                print("yes is same");
+
                 GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
                 for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
                 {
