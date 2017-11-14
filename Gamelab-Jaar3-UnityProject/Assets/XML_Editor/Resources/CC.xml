@@ -1657,7 +1657,7 @@
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Left</move>
+            <move>Right</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -1811,7 +1811,7 @@
           <actors>
             <actor>Client929</actor>
           </actors>
-          <text>What the fuck is this facility?!</text>
+          <text>What the hell is this facility?!</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -1837,13 +1837,13 @@
           <actors>
             <actor>Client596</actor>
           </actors>
-          <text>Egh, let's get out with this keycard. We might even be able to each other areas in the lobby.</text>
+          <text>Egh, let's get out with this keycard. We might even be able to open other areas in the PH-Area. </text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Thinking</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Right</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -1869,7 +1869,7 @@
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Right</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -1973,15 +1973,45 @@
         </Line>
         <Line>
           <actors>
-            <actor>MrRobot</actor>
+            <actor>Client596</actor>
           </actors>
-          <text>Ni Hao! Watashi Wa Robotto-San-Kun</text>
+          <text>What do you need?</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Serious</portraitExpression>
             <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Right</move>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1>Any clues?</choice1>
+            <choice2>Nothing</choice2>
+            <choice3 />
+            <Destination1>CC_Client32</Destination1>
+            <Destination2>CC_Client33</Destination2>
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="CC_Client32">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Client596</actor>
+          </actors>
+          <text>We need to get a keycard to get out... Let's search for that.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
           </cameraPosition>
           <choice>
             <choice1 />
@@ -1992,9 +2022,39 @@
             <Destination3 />
           </choice>
           <effect>
-            <effect>None</effect>
+            <effect>ChangeInteractionCodeName</effect>
             <EffectParameter />
-            <NewICN />
+            <NewICN>CC_Client3</NewICN>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="CC_Client33">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Client596</actor>
+          </actors>
+          <text>Get us out of here then.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>ChangeInteractionCodeName</effect>
+            <EffectParameter />
+            <NewICN>CC_Client3</NewICN>
           </effect>
         </Line>
       </lines>

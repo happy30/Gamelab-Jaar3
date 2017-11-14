@@ -246,6 +246,8 @@ MonoBehaviour:
   lineDone: 0
   choicesShown: 0
   SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
 --- !u!114 &114106266632617858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,7 +291,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 14a2ca23125087c46bd0315b9af8de0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 856a450ed18310049aa5cd3faf5b8a7c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -312,6 +314,7 @@ MonoBehaviour:
   interactionCodeName: CC_TrashPickerClaw
   hideObjects: []
   DestroyAfterInteraction: 0
+  changeToUse: 0
   interactType: 0
   activated: 0
 --- !u!114 &114358946373236540
@@ -329,6 +332,7 @@ MonoBehaviour:
   interactionCodeName: CC_TrashPickerBody
   hideObjects: []
   DestroyAfterInteraction: 1
+  changeToUse: 0
   interactType: 0
   activated: 0
 --- !u!114 &114946397188711444
@@ -350,6 +354,8 @@ MonoBehaviour:
   lineDone: 0
   choicesShown: 0
   SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
 --- !u!222 &222205954358908604
 CanvasRenderer:
   m_ObjectHideFlags: 1
