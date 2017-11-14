@@ -79,8 +79,8 @@ public class ConversationEffects : MonoBehaviour
     public void ProgressScene()
     {
         SceneProgression sceneProgression = GameObject.Find("SceneSettings").GetComponent<SceneProgression>();
-        sceneProgression.ProgressionEffect(sceneProgression.progression);
         sceneProgression.progression++;
+        sceneProgression.ProgressionEffect(sceneProgression.progression);
     }
 
     public void LinkNewConversation(string icn)
@@ -145,4 +145,23 @@ public class ConversationEffects : MonoBehaviour
 
 	}
 
+    public void ChangeToUse()
+    {
+        print(GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.name);
+        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.changeToUse = true;
+    }
+
+    public void EnterPuzzle(string id)
+    {
+        int puzzleID = int.Parse(id);
+        GameObject.Find("SceneSettings").GetComponent<PuzzleRoomData>().currentID = puzzleID;
+        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.GetComponent<ConversationController>().EnterPuzzleAfterConversation = true;
+        
+    }
+
+    public void EndPuzzle()
+    {
+        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.GetComponent<ConversationController>().ClosePuzzleAfterConversation = true;
+        
+    }
 }

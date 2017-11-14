@@ -8,6 +8,8 @@ public class SceneProgression : MonoBehaviour
     public int progression;
     public int startProgression;
 
+    public AudioClip tenseMp3;
+
     public SceneObjects sceneObjects;
 
     public enum Scene
@@ -41,7 +43,29 @@ public class SceneProgression : MonoBehaviour
                         break;
 
                 }
+                break;
 
+            case Scene._144_02_Escape:
+
+                switch(prog)
+                {
+                    case 3:
+                        sceneObjects.ActivateObject(2);
+                        break;
+
+                    case 4:
+                        GameObject.Find("GameManager").GetComponent<InventoryManager>().RemoveHeldItem(GameObject.Find("GameManager").GetComponent<InventoryManager>().inventory[0]);
+                        GameObject.Find("GameManager").GetComponent<InventoryManager>().inventory.Clear();
+                        GameObject.Find("Coll2").GetComponent<Interact>().interactionCodeName = "CC_ShapePuzzle3";
+                        break;
+
+                    case 5:
+                        //GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
+                        Camera.main.GetComponent<AudioSource>().clip = tenseMp3;
+                        GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+                        break;
+
+                }
 
                 break;
         }

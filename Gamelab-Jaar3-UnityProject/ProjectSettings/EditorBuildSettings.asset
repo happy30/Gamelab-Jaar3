@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/Escapes/Client's Cell.unity
+    guid: ad24083086abc564898b17343d4398d0
+  - enabled: 0
     path: Assets/Scene/Area 1.unity
     guid: 6ff1203c9393830469908d279e73f9d3

@@ -139,6 +139,10 @@ public class Effect
         AddObject,
         RemoveObject,
         ProgressScene,
+        ChangeToUse,
+        EnterPuzzle,
+        EndPuzzle,
+        CheckProgression
     };
 
 

@@ -40,7 +40,11 @@ public class ConversationUI : MonoBehaviour
 
     public void RefreshColor(Actors.Actor act)
     {
-        diaBoxCol.ChangeColorOnActor(act);
+        //if(diaBoxCol.isActiveAndEnabled)
+        //{
+            diaBoxCol.ChangeColorOnActor(act);
+        //}
+        
     }
 
     public void RefreshChoices()
