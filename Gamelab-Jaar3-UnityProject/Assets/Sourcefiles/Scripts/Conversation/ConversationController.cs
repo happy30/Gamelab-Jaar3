@@ -38,6 +38,8 @@ public class ConversationController : MonoBehaviour
 	public bool choicesShown;
 
 	public bool SetInactiveAfterConversaton;
+	public bool EnterPuzzleAfterConversation;
+	public bool ClosePuzzleAfterConversation;
 
 	public Conversation currentConversation;
 
@@ -212,6 +214,17 @@ public class ConversationController : MonoBehaviour
 			GameObject.Find("Canvas").GetComponent<MenuUI>().Pause(MenuManager.MenuState.Items, true);
 			gameObject.SetActive(false);
 		}
+
+		if(EnterPuzzleAfterConversation)
+		{
+			GameObject.Find("SceneSettings").GetComponent<PuzzleRoomData>().StartPuzzle();
+		}
+
+		if(ClosePuzzleAfterConversation)
+		{
+			GameObject.Find("SceneSettings").GetComponent<PuzzleRoomData>().EndPuzzle();
+		}
+
 	}
 
 	//Send the info to the UI

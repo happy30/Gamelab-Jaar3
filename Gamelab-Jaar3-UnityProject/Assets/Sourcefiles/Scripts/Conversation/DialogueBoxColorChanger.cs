@@ -47,6 +47,10 @@ public class DialogueBoxColorChanger : MonoBehaviour
                 newColor = new Color32(0x66, 0x66, 0x99, 0xFF);
                 break;
 
+            case Actors.Actor.Client596:
+                newColor = new Color32(0x00, 0x86, 0xb3, 0xFF);
+                break;
+
         }
         StopAllCoroutines();
         StartCoroutine(ChangeColor(newColor));

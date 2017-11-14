@@ -14,6 +14,9 @@ public class Interact : MonoBehaviour
 	float timer;
     public bool DestroyAfterInteraction;
 
+    [HideInInspector]
+    public bool changeToUse;
+
 	public enum InteractType
 	{
 		Examine,
@@ -56,7 +59,11 @@ public class Interact : MonoBehaviour
 				}
 				else
 				{
-                    
+                    if (changeToUse)
+                    {
+                        interactType = InteractType.Use;
+                    }
+
                     activated = false;
 					GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
 					GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
@@ -99,7 +106,11 @@ public class Interact : MonoBehaviour
                 }
                 else
                 {
-                    
+                    if(changeToUse)
+                    {
+                        interactType = InteractType.Use;
+                    }
+
                     activated = false;
                     GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
                     GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
@@ -125,7 +136,8 @@ public class Interact : MonoBehaviour
 
 
             case InteractType.Use:
-				GetComponent<AnimationTrigger>().Activate();
+                GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject = this;
+                GetComponent<AnimationTrigger>().Activate();
 				break;
 
 		}

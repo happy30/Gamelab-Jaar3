@@ -121,9 +121,9 @@ MonoBehaviour:
   crouchDrop: 0.8
   zoomSpeed: 5
   zoomAmount: 20
-  bobSpeed: 0.1338
-  bobAmount: 0.1019
-  interactRange: 3
+  bobSpeed: 0.184
+  bobAmount: 0.052
+  interactRange: 1.5
 --- !u!114 &114761434685238726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,38 +160,38 @@ MonoBehaviour:
   inventory: []
   ccItems:
   - id: 0
-    name: Rectangular Piece
-    Prefab: {fileID: 1255871799219138, guid: ad39259bd5e899d4c8bebb9661948c96, type: 2}
+    name: Rectangular Shape
+    Prefab: {fileID: 1139382323310720, guid: b63486e86bb48c940aaa8132e5bcf102, type: 2}
   - id: 1
-    name: Triangular Piece
-    Prefab: {fileID: 1440247504320488, guid: eb751a6e99e9bc245a1d1bb6dbaaaa46, type: 2}
+    name: Triangular Shape
+    Prefab: {fileID: 1323103429229388, guid: 6858ca4c3831c97458be4260c1615d78, type: 2}
   - id: 2
-    name: Square Piece
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    name: Square Shape
+    Prefab: {fileID: 1542178005263926, guid: 006b3f8c2da36e440bb910e67e8e6df5, type: 2}
   - id: 3
     name: Trash Picker Body
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    Prefab: {fileID: 1076524395915034, guid: 6743bbde88355af4e8de878b413105b9, type: 2}
   - id: 4
     name: Trash Picker Claw
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    Prefab: {fileID: 1507290628100190, guid: 9e584d6a28da2bc4892e9b974e623ed0, type: 2}
   - id: 5
     name: Trash Picker
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    Prefab: {fileID: 1976031742769456, guid: dda342af7f102184791eaf7c75710f76, type: 2}
   - id: 6
-    name: Key
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    name: Bathroom Key
+    Prefab: {fileID: 1017552627602820, guid: a4e9a9283e7377649bb29f27d21e68fb, type: 2}
   - id: 7
     name: Painting
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    Prefab: {fileID: 1119925889359524, guid: 170868367e1d7b945aa9ea76423c8110, type: 2}
   - id: 8
     name: Staff Keycard
     Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
   morItems: []
   dirItems: []
   ccCombos:
-  - input1: 0
-    input2: 1
-    output: 2
+  - input1: 3
+    input2: 4
+    output: 5
   morCombos: []
   dirCombos: []
 --- !u!114 &114912936466653484

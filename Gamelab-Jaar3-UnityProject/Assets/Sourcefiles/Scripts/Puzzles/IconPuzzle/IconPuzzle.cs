@@ -3,50 +3,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class IconPuzzle : MonoBehaviour
 {
-    public int[] correctOrderArray;
-    public bool correct;
-    public GameObject[] images;
-    private int nextImage = 0;
-	
-	public void CheckOrder ()
+    public GameObject[] asterixes;
+    public int inputs;
+
+    public string code;
+    public string correctCode;
+    public GameObject completeScreen;
+    public GameObject computer;
+    public Texture completedTexture;
+
+    public void AddToString(string number)
     {
-        if (correct)
+        code += number;
+        asterixes[inputs].SetActive(true);
+        inputs++;
+
+        if(inputs > 4)
         {
-            //Get puzzle piece  
+            print("CheckingCode");
+            CheckCode();
+        }
+    }
+
+    public void CheckCode()
+    {
+        print(code);
+        print (correctCode);
+
+        if(code == correctCode)
+        {
+            CompletePuzzle();
         }
         else
         {
-            //WRONG BIATCH ( make some sound )
-            Reset();
+            ResetPuzzle();
         }
     }
 
-    public void FillArray(int number)
+    public void ResetPuzzle()
     {
-        if (correctOrderArray[nextImage] != number)
+        code = "";
+        inputs = 0;
+        foreach(GameObject ast in asterixes)
         {
-            correct = false;
-        }
-        ActiveImage();
-    }
-
-    void ActiveImage()
-    {
-        if (nextImage < images.Length)
-        {
-            images[nextImage].SetActive(true);
-            nextImage++;
+            ast.SetActive(false);
         }
     }
 
-    public void Reset()
+    public void CompletePuzzle()
     {
-        correct = true;
-        for(int i = 0; i < images.Length; i++)
-        {
-            images[i].SetActive(false);
-        }      
+        completeScreen.SetActive(true);
+        GameObject.Find("IconComputer").GetComponent<Renderer>().material.mainTexture = completedTexture;
+        GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().iconPuzzleCompleted = true;
+        GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().interactions[0].Trigger(true);
+        computer.GetComponent<Collider>().enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
     }
 }
