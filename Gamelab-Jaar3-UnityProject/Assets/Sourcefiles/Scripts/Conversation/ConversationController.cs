@@ -37,9 +37,17 @@ public class ConversationController : MonoBehaviour
 	public bool lineDone;
 	public bool choicesShown;
 
-	public bool SetInactiveAfterConversaton;
-	public bool EnterPuzzleAfterConversation;
-	public bool ClosePuzzleAfterConversation;
+    [HideInInspector]
+    public bool SetInactiveAfterConversaton;
+
+    [HideInInspector]
+    public bool EnterPuzzleAfterConversation;
+
+    [HideInInspector]
+    public bool ClosePuzzleAfterConversation;
+
+    public bool textCanBeSkipped;
+    bool skippingText;
 
 	public Conversation currentConversation;
 
@@ -85,8 +93,6 @@ public class ConversationController : MonoBehaviour
 
 			}
 		}
-
-
 	}
 
 
@@ -95,11 +101,27 @@ public class ConversationController : MonoBehaviour
 	{
 		if (displayLine != fullLine)
 		{
-			//ui.sentenceFinishedArrow.SetActive(false);
-			if (!IsInvoking("NextChar"))
-			{
-				Invoke("NextChar", stats.slowTextSpeed);
-			}
+			if(!skippingText)
+            {
+                if (!IsInvoking("NextChar"))
+                {
+                    Invoke("NextChar", stats.slowTextSpeed);
+                }
+            }
+            else
+            {
+                if (!IsInvoking("Next10Char"))
+                {
+                    Invoke("Next10Char", stats.fastTextSpeed);
+                }
+            }
+			
+
+            if(Input.GetButtonDown("Fire1") && textCanBeSkipped)
+            {
+                skippingText = true;
+            }
+
 			SendToUI();
 		}
 		else
@@ -192,9 +214,13 @@ public class ConversationController : MonoBehaviour
 			cam.SetCameraOffset();
 		}
 
+
+        CheckIfTextSkippable();
+
 		//currentConversation.lines[currentText].expression.portraitExpression.ToString();
 		//Here starts the first line of conversation
 		
+
 		NextLine();
 			
 
@@ -208,6 +234,9 @@ public class ConversationController : MonoBehaviour
 		choicesShown = false;
 		currentText = 0;
 		cUI.diaBoxCol.box.color = Color.black;
+
+        stats.AddInteraction(currentConversation.interactionCodeName);
+
 		interact.Trigger(false);
 		if(SetInactiveAfterConversaton)
 		{
@@ -247,6 +276,7 @@ public class ConversationController : MonoBehaviour
 		choicesShown = false;
 		currentChar = 0;
 		displayLine = "";
+        skippingText = false;
 
 		//Check for the effects to happen during conversation
 		CheckEffect();
@@ -378,7 +408,18 @@ public class ConversationController : MonoBehaviour
 		return false;
 	}
 
-
+    public void CheckIfTextSkippable()
+    {
+        foreach (Interaction inter in stats.interactions)
+        {
+            if (inter.interactionCodeName == currentConversation.interactionCodeName)
+            {
+                textCanBeSkipped = true;
+                break;
+            }
+            textCanBeSkipped = false;
+        }
+    }
 
 	//Get the next character in our line
 	void NextChar()
@@ -390,8 +431,21 @@ public class ConversationController : MonoBehaviour
 		}
 	}
 
-	//Check if there is an effect for this line. If so, the ConversationEffects.cs will handle them.
-	void CheckEffect()
+    void Next10Char()
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            if (currentChar < fullLine.Length)
+            {
+                displayLine += fullLine[currentChar];
+                currentChar++;
+            }
+        }
+    }
+
+
+    //Check if there is an effect for this line. If so, the ConversationEffects.cs will handle them.
+    void CheckEffect()
 	{
 		if(CheckForFadeOut())
 		{
