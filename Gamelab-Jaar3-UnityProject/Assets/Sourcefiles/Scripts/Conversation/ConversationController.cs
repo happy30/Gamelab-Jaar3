@@ -115,9 +115,8 @@ public class ConversationController : MonoBehaviour
                     Invoke("Next10Char", stats.fastTextSpeed);
                 }
             }
-			
 
-            if(Input.GetButtonDown("Fire1") && textCanBeSkipped)
+            if(Input.GetButtonDown("Fire1") && textCanBeSkipped & displayLine.Length > 2)
             {
                 skippingText = true;
             }
@@ -172,7 +171,7 @@ public class ConversationController : MonoBehaviour
 	//When the sentence is formed, a click will progress the conversation to the next line.
 	void WaitForInputToGetToNextLine()
 	{
-		if (displayLine == fullLine)
+		if (displayLine == fullLine && displayLine != "")
 		{
 			cUI.ProgressArrowBox.SetActive(true);
 			if (Input.GetButtonDown("Fire1"))
@@ -214,9 +213,6 @@ public class ConversationController : MonoBehaviour
 			cam.SetCameraOffset();
 		}
 
-
-        CheckIfTextSkippable();
-
 		//currentConversation.lines[currentText].expression.portraitExpression.ToString();
 		//Here starts the first line of conversation
 		
@@ -236,6 +232,8 @@ public class ConversationController : MonoBehaviour
 		cUI.diaBoxCol.box.color = Color.black;
 
         stats.AddInteraction(currentConversation.interactionCodeName);
+
+        cUI.RemovePortrait();
 
 		interact.Trigger(false);
 		if(SetInactiveAfterConversaton)
@@ -269,20 +267,24 @@ public class ConversationController : MonoBehaviour
 	//Get the next line in our conversation
 	void NextLine()
 	{
-		
 
-		//Reset the lien progress
-		lineDone = false;
+
+        //Reset the lien progress
+        skippingText = false;
+        lineDone = false;
 		choicesShown = false;
 		currentChar = 0;
 		displayLine = "";
-        skippingText = false;
+        
 
 		//Check for the effects to happen during conversation
 		CheckEffect();
 
-		//Get the new next line
-		fullLine = currentConversation.lines[currentText].text;
+        //Check if we can skip this line
+        CheckIfTextSkippable();
+
+        //Get the new next line
+        fullLine = currentConversation.lines[currentText].text;
 
 		//Get the new actor of that line
 		actor = currentConversation.lines[currentText].actors.actor.ToString();
