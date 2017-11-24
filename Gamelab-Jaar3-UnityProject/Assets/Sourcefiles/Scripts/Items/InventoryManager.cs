@@ -15,10 +15,6 @@ public class InventoryManager : MonoBehaviour
     public List<Combination> morCombos = new List<Combination>();
     public List<Combination> dirCombos = new List<Combination>();
 
-    public bool[,] ccCombinations = new bool[4,4];
-
-
-
 
     public bool CheckCombination(int i1, int i2)
     {

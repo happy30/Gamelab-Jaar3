@@ -18,10 +18,25 @@ public class RotateItem : MonoBehaviour
     void Start()
     {
 
-        _sensitivity = 0.4f;
+        _sensitivity = 250f;
         _rotation = Vector3.zero;
     }
 
+
+    void Update()
+    {
+        if(_isRotating)
+        {
+            float rotX = Input.GetAxis("Mouse X") * _sensitivity * Mathf.Deg2Rad;
+            float rotY = Input.GetAxis("Mouse Y") * _sensitivity * Mathf.Deg2Rad;
+
+            transform.Rotate(Vector3.up, -rotX);
+            transform.Rotate(Vector3.right, rotY);
+        }
+
+    }
+
+    /*
     void Update()
     {
         if (_isRotating)
@@ -40,6 +55,7 @@ public class RotateItem : MonoBehaviour
         }
     }
 
+    */
     void OnMouseDown()
     {
         // rotating flag
@@ -54,5 +70,7 @@ public class RotateItem : MonoBehaviour
         // rotating flag
         _isRotating = false;
     }
+
+    
 }
 
