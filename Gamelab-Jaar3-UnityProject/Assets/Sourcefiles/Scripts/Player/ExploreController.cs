@@ -32,7 +32,7 @@ public class ExploreController : MonoBehaviour
 	void Awake()
 	{
 		exploreStats = GameObject.Find("GameManager").GetComponent<ExploreStats>();
-		exploreUI = GameObject.Find("Canvas").GetComponent<ExploreUI>();
+		exploreUI = GameObject.Find("HUDCanvas").GetComponent<ExploreUI>();
 		settings = GameObject.Find("GameManager").GetComponent<Settings>();
 	}
 
