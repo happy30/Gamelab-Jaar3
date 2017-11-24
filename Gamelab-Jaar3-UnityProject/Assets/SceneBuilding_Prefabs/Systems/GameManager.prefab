@@ -185,7 +185,10 @@ MonoBehaviour:
     Prefab: {fileID: 1119925889359524, guid: 170868367e1d7b945aa9ea76423c8110, type: 2}
   - id: 8
     name: Staff Keycard
-    Prefab: {fileID: 1376237567518756, guid: a00fa98dfb2238544898545f96a78e62, type: 2}
+    Prefab: {fileID: 1264043653146586, guid: 71e92a9dfb9007b4e9d8ea2e4436080f, type: 2}
+  - id: 9
+    name: Studio Key
+    Prefab: {fileID: 1611523228574774, guid: 4117dd58bf8ebb046830406398a5cb2c, type: 2}
   morItems: []
   dirItems: []
   ccCombos:

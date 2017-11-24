@@ -54,7 +54,7 @@ public class ConversationController : MonoBehaviour
 	void Awake()
 	{
 		stats = GameObject.Find("GameManager").GetComponent<ConversationStats>();
-		cUI = GameObject.Find("Canvas").GetComponent<ConversationUI>();
+		cUI = GameObject.Find("HUDCanvas").GetComponent<ConversationUI>();
 		interact = GetComponent<Interact>();
 		effects = GameObject.Find("GameManager").GetComponent<ConversationEffects>();
 		cam = Camera.main.GetComponent<CameraBehaviour>();
@@ -238,7 +238,7 @@ public class ConversationController : MonoBehaviour
 		interact.Trigger(false);
 		if(SetInactiveAfterConversaton)
 		{
-			GameObject.Find("Canvas").GetComponent<MenuUI>().Pause(MenuManager.MenuState.Items, true);
+			GameObject.Find("HUDCanvas").GetComponent<MenuUI>().Pause(MenuManager.MenuState.Items, true);
 			gameObject.SetActive(false);
 		}
 

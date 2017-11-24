@@ -9,17 +9,17 @@ public class ConversationEffects : MonoBehaviour
 
 	public void Strobe()
 	{
-		GameObject.Find("Canvas").GetComponent<ConversationUI>().Strobe();
+		GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().Strobe();
 	}
 
 	public void Black()
 	{
-		GameObject.Find("Canvas").GetComponent<ConversationUI>().Black();
+		GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().Black();
 	}
 
 	public void FadeOutBlack()
 	{
-		GameObject.Find("Canvas").GetComponent<ConversationUI>().FadeOutBlack();
+		GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().FadeOutBlack();
 	}
 
 	public void CheckItem(string name, string newCode)
@@ -33,7 +33,6 @@ public class ConversationEffects : MonoBehaviour
         {
             if (heldItem.itemName.text == name)
             {
-                print("yes is same");
 
                 GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
                 for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)

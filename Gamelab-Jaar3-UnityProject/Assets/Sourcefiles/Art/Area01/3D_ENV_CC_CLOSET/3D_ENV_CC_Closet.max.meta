@@ -4,8 +4,35 @@ timeCreated: 1511525604
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
-  externalObjects: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door left
+    100004: Door Right
+    400000: //RootNode
+    400002: Door left
+    400004: Door Right
+    2300000: //RootNode
+    2300002: Door left
+    2300004: Door Right
+    3300000: //RootNode
+    3300002: Door left
+    3300004: Door Right
+    4300000: 3D_ENV_GEN_CLOSET
+    4300002: Door left
+    4300004: Door Right
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors
+    second: {instanceID: 0}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: back
+    second: {instanceID: 0}
   materials:
     importMaterials: 1
     materialName: 0

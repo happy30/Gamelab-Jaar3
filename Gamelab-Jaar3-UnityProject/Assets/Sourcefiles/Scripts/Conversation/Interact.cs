@@ -12,6 +12,8 @@ public class Interact : MonoBehaviour
 	public string interactionCodeName;
 	public GameObject[] hideObjects;
 	float timer;
+
+
     public bool DestroyAfterInteraction;
 
     [HideInInspector]
@@ -44,8 +46,8 @@ public class Interact : MonoBehaviour
                     {
                         activated = true;
                         PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
-                        GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
-                        GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
+                        GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().ActivateConversationUI();
+                        GameObject.Find("HUDCanvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
                         GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject = this;
                         GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
                         
@@ -65,8 +67,8 @@ public class Interact : MonoBehaviour
                     }
 
                     activated = false;
-					GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
-					GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
+					GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().DeactivateConversationUI();
+					GameObject.Find("HUDCanvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
 					StartCoroutine(EnableCursor());
 
                     if(!DestroyAfterInteraction)
@@ -91,8 +93,8 @@ public class Interact : MonoBehaviour
                 {
                     activated = true;
                     PlayMode.ChangeGameMode(PlayMode.GameMode.Conversation);
-                    GameObject.Find("Canvas").GetComponent<ConversationUI>().ActivateConversationUI();
-                    GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
+                    GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().ActivateConversationUI();
+                    GameObject.Find("HUDCanvas").GetComponent<ExploreUI>().ShowInteractCursor(false);
                     GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject = this;
                     GetComponent<ConversationController>().ActivateConversation(interactionCodeName, interactType);
                     
@@ -112,8 +114,8 @@ public class Interact : MonoBehaviour
                     }
 
                     activated = false;
-                    GameObject.Find("Canvas").GetComponent<ConversationUI>().DeactivateConversationUI();
-                    GameObject.Find("Canvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
+                    GameObject.Find("HUDCanvas").GetComponent<ConversationUI>().DeactivateConversationUI();
+                    GameObject.Find("HUDCanvas").GetComponent<ExploreUI>().ShowInteractCursor(true);
                     if(DestroyAfterInteraction)
                     {
                         PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
