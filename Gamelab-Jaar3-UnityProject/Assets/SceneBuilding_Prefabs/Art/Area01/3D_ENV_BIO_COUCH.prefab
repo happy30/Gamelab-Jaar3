@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23373731638180964}
   - component: {fileID: 95321138752879482}
   m_Layer: 0
-  m_Name: Boi Couch
+  m_Name: 3D_ENV_BIO_COUCH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
