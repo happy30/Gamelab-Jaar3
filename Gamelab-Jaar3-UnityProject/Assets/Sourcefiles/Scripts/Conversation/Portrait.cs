@@ -32,6 +32,7 @@ public class Portrait : MonoBehaviour
         Sprite port = Resources.Load<Sprite>(path);
         portraitSprite.sprite = port;
         portraitString = portrait;
+        GetComponent<CanvasGroup>().alpha = 1;
 
     }
 
@@ -51,6 +52,7 @@ public class Portrait : MonoBehaviour
 
     public void Refresh(bool left)
     {
+        
         if(left)
         {
             anim.SetTrigger("MoveLeft");
