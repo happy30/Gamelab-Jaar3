@@ -76,6 +76,7 @@ public class MenuUI : MonoBehaviour
         {
             explore.SetActive(true);
             conversation.SetActive(true);
+            conversation.GetComponent<Animator>().SetBool("Activated", true);
         }
         else if(lastMode == PlayMode.GameMode.Explore)
         {
