@@ -1,19 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 13879e11c894f2e4ca57e4b9db854e1e
-timeCreated: 1509363026
-=======
-guid: d840c70bbcef8df4aa66d598357c1a97
-timeCreated: 1508515205
->>>>>>> 7274e097405dedda060d85b0264c02d4796a5a9c
+timeCreated: 1511357811
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -54,7 +50,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 1
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -62,6 +58,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50

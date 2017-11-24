@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4223025106631700}
   - component: {fileID: 95613263787152550}
   m_Layer: 0
-  m_Name: Biotope Hole
+  m_Name: 3D_ENV_BIO_ROOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

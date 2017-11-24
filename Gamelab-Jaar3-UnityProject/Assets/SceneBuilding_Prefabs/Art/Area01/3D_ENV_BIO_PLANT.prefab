@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4628556839370492}
   - component: {fileID: 95037020268728676}
   m_Layer: 0
-  m_Name: Weed Plant
+  m_Name: 3D_ENV_BIO_PLANT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
