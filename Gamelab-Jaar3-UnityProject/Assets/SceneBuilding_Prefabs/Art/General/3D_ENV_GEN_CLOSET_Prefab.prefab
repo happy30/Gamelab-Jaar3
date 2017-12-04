@@ -272,8 +272,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xmlName: 
   interactionCodeName: 
   hideObjects: []
+  DestroyAfterInteraction: 0
+  changeToUse: 0
   interactType: 2
   activated: 0
 --- !u!114 &114490186590347960
@@ -287,6 +290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a638941d2e1c03d4f9973e2713017567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  isDoor: 0
+  door: {fileID: 0}
 --- !u!114 &114992648710591414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -305,6 +311,10 @@ MonoBehaviour:
   currentText: 0
   lineDone: 0
   choicesShown: 0
+  SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
+  textCanBeSkipped: 0
 --- !u!137 &137867760282641038
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -314,11 +324,12 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2c85db73913e6cb45b32e21651329f57, type: 2}
+  - {fileID: 2100000, guid: 36ef00365fc86fa4f839a92a67a14e00, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -329,6 +340,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -341,7 +353,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: cd665579bfc460f4e8cb7a9eb4bcc095, type: 3}
+  m_Mesh: {fileID: 4300002, guid: cd665579bfc460f4e8cb7a9eb4bcc095, type: 3}
   m_Bones:
   - {fileID: 4259302906863552}
   - {fileID: 4902414486285108}
