@@ -147,7 +147,10 @@ public class ItemMenu : MonoBehaviour
             }
             else
             {
-                spawnedObjects[selectedItem].GetComponent<RotateItem>().selectSprite.SetActive(false);
+                foreach(GameObject obj in spawnedObjects)
+                {
+                    obj.GetComponent<RotateItem>().selectSprite.SetActive(false);
+                }
                 selectedItems = 0;
             }
         }
