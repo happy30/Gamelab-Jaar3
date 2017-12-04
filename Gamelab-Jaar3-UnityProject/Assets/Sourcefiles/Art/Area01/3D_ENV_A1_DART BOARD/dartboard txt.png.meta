@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_A1_DART BOARD/dartboard txt.png.meta
 guid: 76f2621bf3c67ab43b63263295a83b10
 timeCreated: 1512387421
+=======
+guid: 2e8fc08464314db4bb98e0041700367d
+timeCreated: 1512390803
+>>>>>>> 8610e45fe9ffbc000c3417035e262adcd28ddefa:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_A1_DART BOARD/dartboard txt.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
