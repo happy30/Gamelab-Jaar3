@@ -18,9 +18,6 @@ public class RushHourFake : MonoBehaviour
 		Vector2 pos;
 		RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out pos);
 		block.transform.position = new Vector3(myCanvas.transform.TransformPoint(pos).x, block.transform.position.y, block.transform.position.z);
-
-
-		
 	}
 
 	void Update()
