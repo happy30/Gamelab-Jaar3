@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_AREA1_TEACHING ROOM/Materials.meta
 guid: 8f3cb5107a0b6b14ea5e9c95abe6a589
 folderAsset: yes
 timeCreated: 1511958454
+=======
+guid: e02395090a3f05b47913cdd8313f4f53
+folderAsset: yes
+timeCreated: 1511959726
+>>>>>>> 8eb2ece449208b88bf1d4fe20a80eed57d92f7ab:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_AREA1_TEACHING ROOM/Materials.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
