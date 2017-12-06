@@ -14,6 +14,7 @@ public class SceneProgression : MonoBehaviour
 
     public enum Scene
     {
+		_001_01_Story,
         _144_01_Story,
         _144_02_Escape,
     };
@@ -28,12 +29,28 @@ public class SceneProgression : MonoBehaviour
     void Start()
     {
         progression = startProgression;
+		ProgressionEffect (progression);
     }
 
     public void ProgressionEffect (int prog)
     {
         switch(scene)
         {
+		case Scene._001_01_Story:
+
+			switch (prog) {
+			case 0:
+
+				GetComponent<ClientsCellData> ().interactions [0].Trigger (true);
+				break;
+
+			}
+
+			break;
+					
+					
+
+
             case Scene._144_01_Story:
 
                 switch (prog)

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element interactionCodeName="CC_ExitDoor">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>I am sorry, but you are not allowed to leave your private quarter at this time.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="CC_WakeUp">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>mrionoitng haert reat, chkiecng bolod  spresure, anzinalyg bairn actityiv...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Lal stemsys opmatil, cielnt ninine-two-ne sucesfuc...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>Black</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Good morning patient 929, have you slept well?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>You seem to be in excellent condition, so can you please find the brightlydw colored objects in this room?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>If you are having trouble, don't be afraid to ask me.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>RemoveObject</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>
