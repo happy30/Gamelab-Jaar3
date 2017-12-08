@@ -115,7 +115,7 @@
           <actors>
             <actor>Ana</actor>
           </actors>
-          <text>You seem to be in excellent condition, so can you please find the brightlydw colored objects in this room?</text>
+          <text>You seem to be in excellent condition, so can you please find the brightly colored objects in this room?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -158,7 +158,37 @@
             <Destination3 />
           </choice>
           <effect>
-            <effect>RemoveObject</effect>
+            <effect>None</effect>
+            <EffectParameter />
+            <NewICN />
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element interactionCodeName="CC_PuzzleEplanation">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Please try standing up if you cannot reach your goal</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choice>
+            <choice1 />
+            <choice2 />
+            <choice3 />
+            <Destination1 />
+            <Destination2 />
+            <Destination3 />
+          </choice>
+          <effect>
+            <effect>None</effect>
             <EffectParameter />
             <NewICN />
           </effect>

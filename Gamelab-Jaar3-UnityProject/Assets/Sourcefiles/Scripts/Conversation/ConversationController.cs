@@ -58,17 +58,14 @@ public class ConversationController : MonoBehaviour
 		interact = GetComponent<Interact>();
 		effects = GameObject.Find("GameManager").GetComponent<ConversationEffects>();
 		cam = Camera.main.GetComponent<CameraBehaviour>();
-	}
 
-	void Start()
-	{
 		if(GetComponent<Interact>().interactType != Interact.InteractType.Use)
 		{
 			cc = GameObject.Find("SceneSettings").GetComponent<ConversationLoader1>().LoadConversation(GetComponent<Interact>().xmlName);
 		}
-
-		
 	}
+
+
 
 	void Update()
 	{
