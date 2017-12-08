@@ -161,4 +161,11 @@ public class ExploreController : MonoBehaviour
 		exploreUI.ShowInteractCursor(false);
 	}
 
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "InteractOnTrigger" && PlayMode.gameMode == PlayMode.GameMode.Explore)
+        {
+            col.GetComponent<Interact>().Trigger(true);
+        }
+    }
 }
