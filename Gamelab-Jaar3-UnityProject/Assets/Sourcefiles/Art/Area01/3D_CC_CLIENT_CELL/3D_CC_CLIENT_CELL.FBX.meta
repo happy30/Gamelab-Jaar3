@@ -1,20 +1,37 @@
 fileFormatVersion: 2
-guid: f3c78af797bf0ab41ace5a2b826c4353
+guid: 4f2e39100c501ff48b8a382a5424d437
+timeCreated: 1513345083
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: roof
     400000: //RootNode
+    400002: roof
     2300000: //RootNode
+    2300002: roof
     3300000: //RootNode
-    4300000: Teaching room
+    3300002: roof
+    4300000: CC
+    4300002: roof
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: f9c7da3e8f520bc48b612062783e439a, type: 2}
+      name: CC
+    second: {fileID: 2100000, guid: 4e22b8343cf48fa448590e734cafd6e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 2b56a303f7238e24db32c70a63a69ae1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof
+    second: {fileID: 2100000, guid: bae8d227e7c2e9e4696929d29ca0f8a1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
