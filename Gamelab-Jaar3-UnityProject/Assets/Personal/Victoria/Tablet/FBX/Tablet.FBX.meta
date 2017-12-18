@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f3af84006aa5ae644b0b9419dc07794f
 timeCreated: 1513342611
+=======
+guid: a2f9c56f2c4c87e46be37304e4d77307
+timeCreated: 1513338757
+>>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -16,7 +21,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 2d45112dd3bef5b4abc71eff8255cd14, type: 2}
+=======
+    second: {fileID: 2100000, guid: 197c5910a4173814387b72f70ea3cd3d, type: 2}
+>>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
   materials:
     importMaterials: 1
     materialName: 0
@@ -46,7 +55,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 1
+=======
+    globalScale: 0.2
+>>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
