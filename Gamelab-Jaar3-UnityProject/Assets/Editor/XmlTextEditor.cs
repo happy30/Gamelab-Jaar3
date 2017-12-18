@@ -608,7 +608,7 @@ public class XmlTextEditor : EditorWindow {
                 v = ReferenceField(value, reference);
 
             } else {
-                v = GUILayout.TextField(value.ToString(), GUILayout.Width(100));
+                v = GUILayout.TextField(value.ToString(), GUILayout.Width(300));
             }
             itemvar.SetValue(objRef, v);
             // Debug.Log(itemvar + "  -1-  " + itemvar.GetValue(objRef));

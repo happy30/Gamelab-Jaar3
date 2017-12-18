@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <List>
-    <Element displayName="_144_02">
+    <Element displayName="CC">
       <className>Conversation</className>
-      <variableID>interactionCodeName</variableID>
-      <directory>144_02</directory>
-    </Element>
-    <Element displayName="ClientsCell">
-      <className>Conversation</className>
-      <variableID>interactionCodeName</variableID>
+      <variableID>icn</variableID>
       <directory>CC</directory>
-    </Element>
-    <Element displayName="_001_01">
-      <className>Conversation</className>
-      <variableID>interactionCodeName</variableID>
-      <directory>_001_01</directory>
-    </Element>
-    <Element displayName="_101_01">
-      <className>Conversation</className>
-      <variableID>interactionCodeName</variableID>
-      <directory>_101_01</directory>
     </Element>
   </List>
 </Data>

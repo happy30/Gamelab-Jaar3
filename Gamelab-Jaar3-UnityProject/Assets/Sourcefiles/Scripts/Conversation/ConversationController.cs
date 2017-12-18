@@ -51,6 +51,9 @@ public class ConversationController : MonoBehaviour
 
 	public Conversation currentConversation;
 
+    float slowTextSpeed;
+    float fastTextSpeed;
+
 	void Awake()
 	{
 		stats = GameObject.Find("GameManager").GetComponent<ConversationStats>();
@@ -65,6 +68,11 @@ public class ConversationController : MonoBehaviour
 		}
 	}
 
+    void Start()
+    {
+        slowTextSpeed = stats.slowTextSpeed;
+        fastTextSpeed = stats.fastTextSpeed;
+    }
 
 
 	void Update()
@@ -96,20 +104,21 @@ public class ConversationController : MonoBehaviour
 	//Invoke a method to display characters one at the time.
 	void WaitForLineToBeFullyDisplayed()
 	{
-		if (displayLine != fullLine)
+		//if (displayLine != fullLine)
+        if(currentChar < fullLine.Length)
 		{
 			if(!skippingText)
             {
                 if (!IsInvoking("NextChar"))
                 {
-                    Invoke("NextChar", stats.slowTextSpeed);
+                    Invoke("NextChar", slowTextSpeed);
                 }
             }
             else
             {
                 if (!IsInvoking("Next10Char"))
                 {
-                    Invoke("Next10Char", stats.fastTextSpeed);
+                    Invoke("Next10Char", fastTextSpeed);
                 }
             }
 
@@ -130,7 +139,7 @@ public class ConversationController : MonoBehaviour
 
 	bool CheckIfChoices()
 	{
-		if(currentConversation.lines[currentText].choice.choice1 != "")
+		if(currentConversation.lines[currentText].choices.Length > 0)
 		{
 			return true;
 		}
@@ -140,27 +149,28 @@ public class ConversationController : MonoBehaviour
 
 	void ShowChoices()
 	{
-		Choice choices = currentConversation.lines[currentText].choice;
+		Choices[] choices = currentConversation.lines[currentText].choices;
 
-		string choice1Text;
-		string choice2Text;
-		string choice3Text;
 
-		if (choices.choice1 != "")
+        string choice1Text;
+        string choice2Text;
+        string choice3Text;
+
+		if (choices.Length > 0)
 		{
-			choice1Text = choices.choice1;
+			choice1Text = choices[0].choice;
 			cUI.FillChoices(0, choice1Text);
 		}
 
-		if (choices.choice2 != "")
+		if (choices.Length > 1)
 		{
-			choice2Text = choices.choice2;
+			choice2Text = choices[1].choice;
 			cUI.FillChoices(1, choice2Text);
 		}
 
-		if (choices.choice3 != "")
+		if (choices.Length > 2)
 		{
-			choice3Text = choices.choice3;
+			choice3Text = choices[2].choice;
 			cUI.FillChoices(2, choice3Text);
 		}
 	}
@@ -168,7 +178,7 @@ public class ConversationController : MonoBehaviour
 	//When the sentence is formed, a click will progress the conversation to the next line.
 	void WaitForInputToGetToNextLine()
 	{
-		if (displayLine == fullLine && displayLine != "")
+		if (currentChar <= fullLine.Length && displayLine != "")
 		{
 			cUI.ProgressArrowBox.SetActive(true);
 			if (Input.GetButtonDown("Fire1"))
@@ -199,7 +209,7 @@ public class ConversationController : MonoBehaviour
 		//Get the right conversation from the XML
 		for (int i = 0; i < cc.interactions.Count; i++)
 		{
-			if (cc.interactions[i].interactionCodeName == code)
+			if (cc.interactions[i].icn == code)
 			{
 				currentConversation = cc.interactions[i];
 				break;
@@ -228,7 +238,7 @@ public class ConversationController : MonoBehaviour
 		currentText = 0;
 		cUI.diaBoxCol.box.color = Color.black;
 
-        stats.AddInteraction(currentConversation.interactionCodeName);
+        stats.AddInteraction(currentConversation.icn);
 
         cUI.RemovePortrait();
 
@@ -411,7 +421,7 @@ public class ConversationController : MonoBehaviour
     {
         foreach (Interaction inter in stats.interactions)
         {
-            if (inter.interactionCodeName == currentConversation.interactionCodeName)
+            if (inter.interactionCodeName == currentConversation.icn)
             {
                 textCanBeSkipped = true;
                 break;
@@ -425,7 +435,15 @@ public class ConversationController : MonoBehaviour
 	{
 		if (currentChar < fullLine.Length)
 		{
-			displayLine += fullLine[currentChar];
+            if(fullLine[currentChar].ToString() == "|")
+            {
+                slowTextSpeed = 0.5f;
+            }
+            else
+            {
+                slowTextSpeed = stats.slowTextSpeed;
+                displayLine += fullLine[currentChar];
+            }
 			currentChar++;
 		}
 	}
@@ -436,7 +454,15 @@ public class ConversationController : MonoBehaviour
         {
             if (currentChar < fullLine.Length)
             {
-                displayLine += fullLine[currentChar];
+                if (fullLine[currentChar].ToString() == "|")
+                {
+                    slowTextSpeed = 0.5f;
+                }
+                else
+                {
+                    slowTextSpeed = stats.slowTextSpeed;
+                    displayLine += fullLine[currentChar];
+                }
                 currentChar++;
             }
         }
@@ -451,27 +477,27 @@ public class ConversationController : MonoBehaviour
 			effects.FadeOutBlack();
 		}
 
-		if(currentConversation.lines[currentText].effects.effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
+		if(currentConversation.lines[currentText].effects[0].effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
 		{
-			effects.CheckItem(currentConversation.lines[currentText].effects.effectParameter, currentConversation.lines[currentText].effects.newInteractionCodeName);
+			effects.CheckItem(currentConversation.lines[currentText].effects[0].parameter[0], currentConversation.lines[currentText].effects[0].parameter[1]);
 		}
-		else if (currentConversation.lines[currentText].effects.effect != Effect.AdditionalEffect.None)
+		else if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.None)
 		{
-			if (currentConversation.lines[currentText].effects.effectParameter == "")
+			if (currentConversation.lines[currentText].effects[0].parameter.Length > 0)
 			{
-				if((currentConversation.lines[currentText].effects.newInteractionCodeName != ""))
+				if((currentConversation.lines[currentText].effects[0].parameter.Length > 1))
 				{
-					effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString(), currentConversation.lines[currentText].effects.newInteractionCodeName);
+					effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[1]);
 				}
 				else
 				{
-					effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString());
+					effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
 				}
 				
 			}
 			else
 			{
-				effects.SendMessage(currentConversation.lines[currentText].effects.effect.ToString(), currentConversation.lines[currentText].effects.effectParameter);
+				effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
 			}
 
 		}
@@ -487,9 +513,9 @@ public class ConversationController : MonoBehaviour
 		}
 
 
-		if(currentConversation.lines[currentText].effects.effect != Effect.AdditionalEffect.Black && currentText > 0)
+		if(currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.Black && currentText > 0)
 		{
-			if(currentConversation.lines[currentText - 1].effects.effect == Effect.AdditionalEffect.Black)
+			if(currentConversation.lines[currentText - 1].effects[0].effect == Effect.AdditionalEffect.Black)
 			{
 				return true;
 			}

@@ -37,7 +37,7 @@ public class ConversationEffects : MonoBehaviour
                 GetComponent<ConversationStats>().interactedObject.interactionCodeName = newCode;
                 for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
                 {
-                    if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].interactionCodeName == newCode)
+                    if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].icn == newCode)
                     {
                         GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentConversation = GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i];
                         foreach (Item item in inv.inventory.ToArray())
@@ -87,7 +87,7 @@ public class ConversationEffects : MonoBehaviour
         GetComponent<ConversationStats>().interactedObject.interactionCodeName = icn;
         for (int i = 0; i < GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions.Count; i++)
         {
-            if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].interactionCodeName == icn)
+            if (GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i].icn == icn)
             {
                 GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentConversation = GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().cc.interactions[i];
                 GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().currentText = 0;
