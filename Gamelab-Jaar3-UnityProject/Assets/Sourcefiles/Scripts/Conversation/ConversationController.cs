@@ -359,7 +359,7 @@ public class ConversationController : MonoBehaviour
 			{
 				if(currentConversation.lines[currentText - 1].cameraPosition.move == Movement.Move.Left)
 				{
-					if(currentConversation.lines[currentText].actors.actor == Actors.Actor.Client929)
+					if(currentConversation.lines[currentText].actors.actor == Actors.Actor.Dougal)
 					{
 						print("Remove");
 						cUI.RemovePortrait();
@@ -388,7 +388,7 @@ public class ConversationController : MonoBehaviour
 					}
 					else
 					{
-						if (currentConversation.lines[currentText].actors.actor == Actors.Actor.Client929)
+						if (currentConversation.lines[currentText].actors.actor == Actors.Actor.Dougal)
 						{
 							print("Remove");
 							cUI.RemovePortrait();
