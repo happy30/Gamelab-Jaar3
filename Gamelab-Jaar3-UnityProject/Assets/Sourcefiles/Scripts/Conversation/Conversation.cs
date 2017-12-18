@@ -53,6 +53,8 @@ public class Expression
         Enraged,
         Frightened,
         Serious,
+
+        Special,
     };
 
     [XmlEnum("portraitExpression")]
@@ -84,22 +86,19 @@ public class Actors
     {
         Mind,
         Unknown,
-        Client929,
+        Dougal,
         Ana,
-        Client16,
-        Client274,
-        Client596,
-        Client724,
-        Client411,
-        Client286,
-        Client597,
-        Doctor,
-        Assistant1,
-        Assistant2,
-        Chiaki,
-        Hiyoko,
-        Junko,
-        MrRobot
+        Dust,
+        Blaze,
+        Livie,
+        Violet,
+        Scarlet,
+        Marine,
+        Moss,
+        Auburn,
+        Ash,
+        Amber,
+        Anastasia,
     };
 }
 
