@@ -71,7 +71,7 @@ public class ExploreController : MonoBehaviour
 	//Waits for input and makes character move
 	void Move()
 	{
-		if(!Input.GetKey(KeyCode.LeftControl))
+		if(!Input.GetKey(KeyCode.LeftControl) || exploreStats.forceCrouch)
 		{
 			speed = Input.GetKey(KeyCode.LeftShift) ? exploreStats.runSpeed : exploreStats.walkSpeed;
 			bobSpeed = Input.GetKey(KeyCode.LeftShift) ? runBobSpeed : walkBobSpeed;
@@ -87,11 +87,15 @@ public class ExploreController : MonoBehaviour
 	//Checks input for crouching and then fill crouchPos for Camera
 	void Crouch()
 	{
-		if(Input.GetKey(KeyCode.LeftControl) || camTransform.localPosition.y < 0.99f)
+		if(Input.GetKey(KeyCode.LeftControl) || camTransform.localPosition.y < 0.99f && !exploreStats.forceCrouch)
 		{
 			cameraHeight = Input.GetKey(KeyCode.LeftControl) ? -exploreStats.crouchDrop : 0;
 			crouchPos = new Vector3(0, cameraHeight, 0);
 		}
+        if(exploreStats.forceCrouch)
+        {
+            cameraHeight = -exploreStats.crouchDrop;
+        }
 	}
 
 	//Checks if we're moving, then fill bobPos for Camera

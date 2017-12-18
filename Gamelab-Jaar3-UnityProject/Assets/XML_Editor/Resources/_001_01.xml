@@ -165,7 +165,7 @@
         </Line>
       </lines>
     </Element>
-    <Element interactionCodeName="CC_PuzzleEplanation">
+    <Element interactionCodeName="CC_PuzzleExplanation">
       <lines>
         <Line>
           <actors>
