@@ -1,11 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: f3c78af797bf0ab41ace5a2b826c4353
-timeCreated: 1511958454
-licenseType: Free
-=======
-guid: cbb92e91b810fc244953497369538e32
->>>>>>> 8eb2ece449208b88bf1d4fe20a80eed57d92f7ab
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -14,20 +8,13 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Teaching room
-<<<<<<< HEAD
-=======
     9500000: //RootNode
->>>>>>> 8eb2ece449208b88bf1d4fe20a80eed57d92f7ab
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-<<<<<<< HEAD
-    second: {fileID: 2100000, guid: 4ce6681654625e04e8a444b9912cca49, type: 2}
-=======
     second: {fileID: 2100000, guid: f9c7da3e8f520bc48b612062783e439a, type: 2}
->>>>>>> 8eb2ece449208b88bf1d4fe20a80eed57d92f7ab
   materials:
     importMaterials: 1
     materialName: 0
@@ -99,11 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-<<<<<<< HEAD
-  animationType: 0
-=======
   animationType: 2
->>>>>>> 8eb2ece449208b88bf1d4fe20a80eed57d92f7ab
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
