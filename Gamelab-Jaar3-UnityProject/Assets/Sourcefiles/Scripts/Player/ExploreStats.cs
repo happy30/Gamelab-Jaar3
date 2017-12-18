@@ -15,6 +15,7 @@ public class ExploreStats : MonoBehaviour
     public float crouchSpeed;
     public float crouchWalkSpeed;
     public float crouchDrop;
+    public bool forceCrouch;
 
     [Header("Zoom")]
     public float zoomSpeed;
