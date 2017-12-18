@@ -477,30 +477,36 @@ public class ConversationController : MonoBehaviour
 			effects.FadeOutBlack();
 		}
 
-		if(currentConversation.lines[currentText].effects[0].effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
-		{
-			effects.CheckItem(currentConversation.lines[currentText].effects[0].parameter[0], currentConversation.lines[currentText].effects[0].parameter[1]);
-		}
-		else if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.None)
-		{
-			if (currentConversation.lines[currentText].effects[0].parameter.Length > 0)
-			{
-				if((currentConversation.lines[currentText].effects[0].parameter.Length > 1))
-				{
-					effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[1]);
-				}
-				else
-				{
-					effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
-				}
-				
-			}
-			else
-			{
-				effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
-			}
+        if(currentConversation.lines[currentText].effects.Length > 0)
+        {
+            if (currentConversation.lines[currentText].effects[0].effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
+            {
+                effects.CheckItem(currentConversation.lines[currentText].effects[0].parameter[0], currentConversation.lines[currentText].effects[0].parameter[1]);
+            }
+            else if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.None)
+            {
+                if (currentConversation.lines[currentText].effects[0].parameter.Length > 0)
+                {
+                    if ((currentConversation.lines[currentText].effects[0].parameter.Length > 1))
+                    {
+                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[1]);
+                    }
+                    else
+                    {
+                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
+                    }
 
-		}
+                }
+                else
+                {
+                    effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
+                }
+
+            }
+        }
+
+
+		
 
 	}
 
@@ -513,13 +519,18 @@ public class ConversationController : MonoBehaviour
 		}
 
 
-		if(currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.Black && currentText > 0)
-		{
-			if(currentConversation.lines[currentText - 1].effects[0].effect == Effect.AdditionalEffect.Black)
-			{
-				return true;
-			}
-		}
+        if(currentConversation.lines[currentText].effects.Length > 0)
+        {
+            if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.Black && currentText > 0)
+            {
+                if (currentConversation.lines[currentText - 1].effects[0].effect == Effect.AdditionalEffect.Black)
+                {
+                    return true;
+                }
+            }
+        }
+
+
 		return false;
 	}
 }
