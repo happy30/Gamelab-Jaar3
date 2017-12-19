@@ -1,38 +1,44 @@
 fileFormatVersion: 2
-guid: 65e272e9529ccbe4fbd51ec927bd7707
-timeCreated: 1511525604
+guid: 17c3e75a8b5127e40a400d4fa7546198
+timeCreated: 1513680161
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Door left
-    100004: Door Right
-    400000: //RootNode
-    400002: Door left
-    400004: Door Right
-    2300000: //RootNode
-    2300002: Door left
-    2300004: Door Right
-    3300000: //RootNode
-    3300002: Door left
-    3300004: Door Right
-    4300000: 3D_ENV_GEN_CLOSET
-    4300002: Door left
-    4300004: Door Right
-    7400000: Take 001
+    100000: Cylinder001
+    100002: Cylinder002
+    100004: Cylinder003
+    100006: //RootNode
+    400000: Cylinder001
+    400002: Cylinder002
+    400004: Cylinder003
+    400006: //RootNode
+    2300000: Cylinder001
+    2300002: Cylinder002
+    2300004: Cylinder003
+    3300000: Cylinder001
+    3300002: Cylinder002
+    3300004: Cylinder003
+    4300000: Cylinder001
+    4300002: Cylinder002
+    4300004: Cylinder003
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Doors
-    second: {instanceID: 0}
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 895a33e9e96ca1d469ae189a18af52b9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: back
-    second: {instanceID: 0}
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 347e973a4a6f770418d015d0b05f6480, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: e57b525ff7fef384496dc3e30bde6570, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
