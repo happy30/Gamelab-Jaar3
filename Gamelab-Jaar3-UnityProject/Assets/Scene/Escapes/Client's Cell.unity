@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414735, b: 0.1210785, a: 1}
+  m_IndirectSpecularColor: {r: 0.07063799, g: 0.048527934, b: 0.043325197, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -6133,7 +6133,7 @@ MonoBehaviour:
   hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  interactType: 1
   activated: 0
 --- !u!65 &639371245
 BoxCollider:
@@ -7152,89 +7152,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 824212872}
   m_Mesh: {fileID: 4300014, guid: 50110b3bf8083ab458ed906159592beb, type: 3}
---- !u!1 &840250686
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 840250690}
-  - component: {fileID: 840250688}
-  - component: {fileID: 840250687}
-  - component: {fileID: 840250689}
-  m_Layer: 0
-  m_Name: CC_WakeUp
-  m_TagString: Interact
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &840250687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 840250686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xmlName: _001_01
-  interactionCodeName: CC_WakeUp
-  hideObjects: []
-  DestroyAfterInteraction: 1
-  changeToUse: 0
-  interactType: 1
-  activated: 0
---- !u!114 &840250688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 840250686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cUI: {fileID: 0}
-  activated: 0
-  displayLine: 
-  actor: 
-  currentText: 0
-  lineDone: 0
-  choicesShown: 0
-  SetInactiveAfterConversaton: 0
-  EnterPuzzleAfterConversation: 0
-  ClosePuzzleAfterConversation: 0
-  textCanBeSkipped: 0
---- !u!65 &840250689
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 840250686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &840250690
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 840250686}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0, z: -2.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1422518940}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844462058
 GameObject:
   m_ObjectHideFlags: 0
@@ -10379,36 +10296,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.054163307, y: -0.003799498, z: 0.87210923}
     m_Extent: {x: 0.26859358, y: 0.43004906, z: 0.87423474}
   m_DirtyAABB: 0
---- !u!1 &1422518939
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1422518940}
-  m_Layer: 0
-  m_Name: _001_01_Conversations
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1422518940
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1422518939}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.458, y: 1.476, z: -0.688}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 840250690}
-  - {fileID: 1656053610}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1429250278
 GameObject:
   m_ObjectHideFlags: 0
@@ -11047,12 +10934,12 @@ Prefab:
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 475.67093
+      value: 336.67093
       objectReference: {fileID: 0}
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 248.81671
+      value: 170.81671
       objectReference: {fileID: 0}
     - target: {fileID: 224119465625741616, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -11448,7 +11335,7 @@ Prefab:
         type: 2}
       propertyPath: interactions.Array.data[0]
       value: 
-      objectReference: {fileID: 840250687}
+      objectReference: {fileID: 0}
     - target: {fileID: 114763013822364116, guid: 07a1d6d751241f04484d9709dca4c4b3,
         type: 2}
       propertyPath: scene
@@ -15002,89 +14889,6 @@ Transform:
   m_Father: {fileID: 1104823407}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1656053609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1656053610}
-  - component: {fileID: 1656053613}
-  - component: {fileID: 1656053612}
-  - component: {fileID: 1656053611}
-  m_Layer: 0
-  m_Name: CC_PuzzleExplanation
-  m_TagString: InteractOnTrigger
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1656053610
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656053609}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.49, y: -0.131, z: 2.7}
-  m_LocalScale: {x: 2.0722992, y: 0.32032534, z: 2.0708685}
-  m_Children: []
-  m_Father: {fileID: 1422518940}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1656053611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656053609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xmlName: _001_01
-  interactionCodeName: CC_PuzzleExplanation
-  hideObjects: []
-  DestroyAfterInteraction: 1
-  changeToUse: 0
-  interactType: 1
-  activated: 0
---- !u!114 &1656053612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656053609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cUI: {fileID: 0}
-  activated: 0
-  displayLine: 
-  actor: 
-  currentText: 0
-  lineDone: 0
-  choicesShown: 0
-  SetInactiveAfterConversaton: 0
-  EnterPuzzleAfterConversation: 0
-  ClosePuzzleAfterConversation: 0
-  textCanBeSkipped: 0
---- !u!65 &1656053613
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656053609}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1660854081
 GameObject:
   m_ObjectHideFlags: 0
@@ -16022,7 +15826,7 @@ GameObject:
   m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1854934164
 Transform:

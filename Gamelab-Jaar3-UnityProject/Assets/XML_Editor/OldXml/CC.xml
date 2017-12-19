@@ -87,7 +87,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Hey, take a look at the right. Do we need to slide something in there?</text>
           <expression>
@@ -143,11 +143,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Now we can get out!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -169,11 +169,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Thanks for playing the demo!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -195,11 +195,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>See you later! Cheers!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -285,7 +285,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Hey... There's a key here! We can use this to escape!</text>
           <expression>
@@ -311,11 +311,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Wonderful, go get it!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -337,7 +337,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Okay... This fire is fake right? Let me reach for it...</text>
           <expression>
@@ -363,7 +363,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>AAHUAHUAUAUAGHGH THAT'S HOT.</text>
           <expression>
@@ -389,7 +389,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>You idiot! Why didn't you notice the warmth earlier?!</text>
           <expression>
@@ -415,7 +415,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Owh... Well... Let's find another way to grab this.</text>
           <expression>
@@ -445,7 +445,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>With this trash picker I can probably reach it...!</text>
           <expression>
@@ -471,7 +471,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>I got it.</text>
           <expression>
@@ -497,11 +497,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Woah! Good job!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -523,7 +523,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Thank you-- Owwha It's still hot!</text>
           <expression>
@@ -553,7 +553,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>...</text>
           <expression>
@@ -579,7 +579,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>It won't budge. I will need a key to open this.</text>
           <expression>
@@ -609,7 +609,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>This key should do it!</text>
           <expression>
@@ -635,7 +635,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>... Yes!</text>
           <expression>
@@ -665,7 +665,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>What is this triangular shape doing here?</text>
           <expression>
@@ -691,7 +691,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Oh. It might be a shape for the puzzle.</text>
           <expression>
@@ -721,7 +721,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>What kind of oddity is this?</text>
           <expression>
@@ -747,7 +747,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Mmhh... It looks like someone cracked open another's skull and their brains are spatting out.</text>
           <expression>
@@ -773,7 +773,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>I think I will never ask you again.</text>
           <expression>
@@ -799,11 +799,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>But hey, we have to investigate everything. Maybe there's like a hidden locker behind this painting or something.</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -825,7 +825,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Well... I doubt that but let me take the painting anyway...</text>
           <expression>
@@ -885,7 +885,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>I did it.</text>
           <expression>
@@ -911,11 +911,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Good job.</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -941,7 +941,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Ohh? I think this appeared when I finished the puzzle.</text>
           <expression>
@@ -967,7 +967,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Grab it!</text>
           <expression>
@@ -1027,7 +1027,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Yes I got it!</text>
           <expression>
@@ -1053,7 +1053,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>... I think it fell on the floor.</text>
           <expression>
@@ -1139,7 +1139,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Oh this looks like a shape puzzle I used to play this as a kid.</text>
           <expression>
@@ -1165,7 +1165,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Wow, you had such an interesting life.</text>
           <expression>
@@ -1191,7 +1191,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Wait... How did you... Our memories were wiped.</text>
           <expression>
@@ -1217,7 +1217,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Wh- You're right... How did I.. Oh god I don't know.</text>
           <expression>
@@ -1243,7 +1243,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>That's really suspicious... But for some reason I don't feel like you're lying... I think I've seen this puzzle before too.</text>
           <expression>
@@ -1269,7 +1269,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Of course I'm not lying! Anyhow... We can't do this puzzle right now... Look, the shapes are missing.</text>
           <expression>
@@ -1295,7 +1295,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Yeah... you're right... Maybe they're lying somewhere around here?</text>
           <expression>
@@ -1325,7 +1325,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Alright, We got all the pieces now</text>
           <expression>
@@ -1351,7 +1351,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Hurry up and put them in then!</text>
           <expression>
@@ -1377,7 +1377,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Yeah yeah...</text>
           <expression>
@@ -1403,7 +1403,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>This goes here... That goes there...</text>
           <expression>
@@ -1429,7 +1429,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Last one there and.......</text>
           <expression>
@@ -1455,7 +1455,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>All done!</text>
           <expression>
@@ -1481,7 +1481,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Oh... Something fell out of the puzzle.</text>
           <expression>
@@ -1507,7 +1507,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Another key....?</text>
           <expression>
@@ -1567,7 +1567,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>...</text>
           <expression>
@@ -1593,7 +1593,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>It won't budge. The right key would open it.</text>
           <expression>
@@ -1623,7 +1623,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>I think we've investigated everything except beyond this door.</text>
           <expression>
@@ -1649,11 +1649,11 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Well, hurry up and open it! I want to see what's inside!</text>
           <expression>
-            <portraitExpression>Happy</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -1675,7 +1675,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Okay! It should be open now.</text>
           <expression>
@@ -1705,7 +1705,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>A keycard!</text>
           <expression>
@@ -1731,7 +1731,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Hey... I don't feel alright in this room...</text>
           <expression>
@@ -1757,7 +1757,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>It's like a studio... It looks like staff sat here to monitor us.</text>
           <expression>
@@ -1783,7 +1783,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Oh my god... </text>
           <expression>
@@ -1809,7 +1809,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>What the hell is this facility?!</text>
           <expression>
@@ -1835,7 +1835,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Egh, let's get out with this keycard. We might even be able to open other areas in the PH-Area. </text>
           <expression>
@@ -1861,7 +1861,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Right. Let's go.</text>
           <expression>
@@ -1891,7 +1891,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>Mhh...</text>
           <expression>
@@ -1917,7 +1917,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client929</actor>
+            <actor>Dougal</actor>
           </actors>
           <text>This door won't budge.</text>
           <expression>
@@ -1947,7 +1947,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Don't waste your time with me! Hurry up so we can get out of here!</text>
           <expression>
@@ -1973,7 +1973,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>What do you need?</text>
           <expression>
@@ -2003,7 +2003,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>We need to get a keycard to get out... Let's search for that.</text>
           <expression>
@@ -2033,7 +2033,7 @@
       <lines>
         <Line>
           <actors>
-            <actor>Client596</actor>
+            <actor>Livie</actor>
           </actors>
           <text>Get us out of here then.</text>
           <expression>
