@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4327678036071882}
   - component: {fileID: 95917476958512964}
   m_Layer: 0
-  m_Name: Spraygun
+  m_Name: 3D_ENV_MOR_SPRAYGUN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
