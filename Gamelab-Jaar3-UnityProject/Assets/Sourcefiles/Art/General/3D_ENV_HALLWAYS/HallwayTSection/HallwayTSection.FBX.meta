@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4bc74ba0061b46a4592e80f23e1e87f7
-timeCreated: 1511527552
+guid: 04924e7419d75724daa4d86183224de8
+timeCreated: 1513944918
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,13 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Teaching room
+    4300000: HallwayTsection
+    9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 7bdd49b486b7c7046896acc808d71cb6, type: 2}
+      name: HallwayTMat
+    second: {fileID: 2100000, guid: 92e8ea3222199c6429a29862fe14568e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -87,7 +88,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
