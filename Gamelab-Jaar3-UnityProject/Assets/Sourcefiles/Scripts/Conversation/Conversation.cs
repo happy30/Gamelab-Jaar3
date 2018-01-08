@@ -9,8 +9,8 @@ using System.Xml.Serialization;
 
 public class Conversation
 {
-    [XmlAttribute("interactionCodeName")]
-    public string interactionCodeName;
+    [XmlAttribute("icn")]
+    public string icn;
 
     [XmlArray("lines")]
     public Line[] lines;
@@ -30,11 +30,11 @@ public class Line
     [XmlElement("cameraPosition")]
     public Movement cameraPosition;
 
-    [XmlElement("choice")]
-    public Choice choice;
+    [XmlArray("choices")]
+    public Choices[] choices;
 
-    [XmlElement("effect")]
-    public Effect effects;
+    [XmlArray("effect")]
+    public Effect[] effects;
 
 }
 
@@ -45,7 +45,8 @@ public class Expression
     {
         None,
         Neutral,
-        Happy,
+        Excited,
+        Laughing,
         Sad,
         Smirk,
         Thinking,
@@ -53,6 +54,9 @@ public class Expression
         Enraged,
         Frightened,
         Serious,
+        Embarrassed,
+        Shocked,
+        Special,
     };
 
     [XmlEnum("portraitExpression")]
@@ -84,44 +88,29 @@ public class Actors
     {
         Mind,
         Unknown,
-        Client929,
+        Dougal,
         Ana,
-        Client16,
-        Client274,
-        Client596,
-        Client724,
-        Client411,
-        Client286,
-        Client597,
-        Doctor,
-        Assistant1,
-        Assistant2,
-        Chiaki,
-        Hiyoko,
-        Junko,
-        MrRobot
+        Dust,
+        Blaze,
+        Livie,
+        Violet,
+        Scarlet,
+        Marine,
+        Moss,
+        Auburn,
+        Ash,
+        Amber,
+        Anastasia,
     };
 }
 
-public class Choice
+public class Choices
 {
-    [XmlElement("choice1")]
-    public string choice1;
+    [XmlElement("choices")]
+    public string choice;
 
-    [XmlElement("choice2")]
-    public string choice2;
-
-    [XmlElement("choice3")]
-    public string choice3;
-
-    [XmlElement("Destination1")]
-    public string Destination1;
-
-    [XmlElement("Destination2")]
-    public string Destination2;
-
-    [XmlElement("Destination3")]
-    public string Destination3;
+    [XmlElement("destination")]
+    public string destination;
 }
 
 public class Effect
@@ -149,9 +138,7 @@ public class Effect
     [XmlEnum("Effect")]
     public AdditionalEffect effect;
 
-    [XmlElement("EffectParameter")]
-    public string effectParameter;
+    [XmlArray("Parameters")]
+    public string[] parameter;
 
-    [XmlElement("NewICN")]
-    public string newInteractionCodeName;
 }

@@ -14,6 +14,7 @@ public class SceneProgression : MonoBehaviour
 
     public enum Scene
     {
+		NotSpecified,
 		_001_01_Story,
         _144_01_Story,
         _144_02_Escape,

@@ -23,31 +23,24 @@ public class DialogueBoxColorChanger : MonoBehaviour
     {
         switch(act)
         {
-            case Actors.Actor.Chiaki:
-                newColor = new Color32(0x03, 0x40, 0x45, 0xFF);
-                break;
-
-            case Actors.Actor.Hiyoko:
-                newColor = new Color32(0x67, 0x53, 0x1D, 0xFF);
-                break;
 
             case Actors.Actor.Mind:
                 newColor = Color.black;
                 break;
 
-            case Actors.Actor.Client929:
+            case Actors.Actor.Dougal:
                 newColor = new Color32(0x56, 0x56, 0x56, 0xFF);
                 break;
 
-            case Actors.Actor.Client274:
+            case Actors.Actor.Blaze:
                 newColor = new Color32(0xcc, 0x52, 0x00, 0xFF);
                 break;
 
-            case Actors.Actor.Client597:
+            case Actors.Actor.Moss:
                 newColor = new Color32(0x66, 0x66, 0x99, 0xFF);
                 break;
 
-            case Actors.Actor.Client596:
+            case Actors.Actor.Livie:
                 newColor = new Color32(0x00, 0x86, 0xb3, 0xFF);
                 break;
 

@@ -153,15 +153,15 @@ public class ChoiceManager : MonoBehaviour
                 switch (state)
                 {
                     case cursorState.first:
-                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choice.Destination1;
+                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choices[0].destination;
                         break;
 
                     case cursorState.second:
-                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choice.Destination2;
+                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choices[1].destination;
                         break;
 
                     case cursorState.third:
-                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choice.Destination3;
+                        stats.interactedObject.interactionCodeName = stats.interactedObject.gameObject.GetComponent<ConversationController>().currentConversation.lines[stats.interactedObject.gameObject.GetComponent<ConversationController>().currentText].choices[2].destination;
                         break;
 
                 }

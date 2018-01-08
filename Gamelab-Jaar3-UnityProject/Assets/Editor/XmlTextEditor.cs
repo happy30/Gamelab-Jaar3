@@ -608,7 +608,7 @@ public class XmlTextEditor : EditorWindow {
                 v = ReferenceField(value, reference);
 
             } else {
-                v = GUILayout.TextField(value.ToString(), GUILayout.Width(100));
+                v = EditorGUILayout.TextField(value.ToString(), GUILayout.Width(600));
             }
             itemvar.SetValue(objRef, v);
             // Debug.Log(itemvar + "  -1-  " + itemvar.GetValue(objRef));
@@ -779,7 +779,7 @@ public class XmlTextEditor : EditorWindow {
 
         GUILayout.BeginHorizontal();
         GUILayout.Label(listName, GUILayout.Width(100));
-        GUILayout.Label("Lenght: " + il.Count, GUILayout.Width(100));
+        GUILayout.Label("Amount: " + il.Count, GUILayout.Width(100));
 
         if(GUILayout.Button("+", miniButtonStyle)) {
             if (isArray) 
@@ -857,7 +857,7 @@ public class XmlTextEditor : EditorWindow {
 
         GUILayout.BeginHorizontal();
         GUILayout.Label(listName, GUILayout.Width(100));
-        GUILayout.Label("Lenght: " + stringList.Count, GUILayout.Width(100));
+        GUILayout.Label("Amount: " + stringList.Count, GUILayout.Width(100));
 
         if (GUILayout.Button("+", miniButtonStyle)) {
             addFieldToListString(ref stringList);

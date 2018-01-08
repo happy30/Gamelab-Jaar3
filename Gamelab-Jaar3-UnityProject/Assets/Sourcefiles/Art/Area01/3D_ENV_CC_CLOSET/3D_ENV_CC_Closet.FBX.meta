@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cd665579bfc460f4e8cb7a9eb4bcc095
-timeCreated: 1511531898
+timeCreated: 1513771906
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -14,6 +14,7 @@ ModelImporter:
     100012: connectBone002
     100014: Door left
     100016: Door Right
+    100018: Door right
     400000: //RootNode
     400002: Bone001
     400004: Bone002
@@ -23,16 +24,20 @@ ModelImporter:
     400012: connectBone002
     400014: Door left
     400016: Door Right
+    400018: Door right
     2300000: //RootNode
     2300002: Door left
     2300004: Door Right
+    2300006: Door right
     3300000: //RootNode
     3300002: Door left
     3300004: Door Right
+    3300006: Door right
     4300000: Closet
     4300002: 3D_ENV_GEN_CLOSET
     4300004: Door left
     4300006: Door Right
+    4300008: Door right
     7400000: Opening
     7400002: Closing
     7400004: Closed
