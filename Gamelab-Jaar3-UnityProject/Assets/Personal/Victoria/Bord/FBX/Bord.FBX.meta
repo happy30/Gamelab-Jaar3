@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: f3c78af797bf0ab41ace5a2b826c4353
+guid: 8d789525a36446d408bc5f59c0f82be6
+timeCreated: 1513174165
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -7,14 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Teaching room
+    4300000: Box001
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: f9c7da3e8f520bc48b612062783e439a, type: 2}
+    second: {fileID: 2100000, guid: 19c1207d4580d874d802491d8c79e67c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
