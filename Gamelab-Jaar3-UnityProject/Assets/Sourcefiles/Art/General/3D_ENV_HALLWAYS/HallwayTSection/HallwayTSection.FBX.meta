@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 04924e7419d75724daa4d86183224de8
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_ENV_HALLWAYS/HallwayTSection/HallwayTSection.FBX.meta
+timeCreated: 1513944918
+=======
 timeCreated: 1515416782
+>>>>>>> 588977d86c10e19b6ee72f94b1355014b0ecb24a:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_ENV_HALLWAYS/HallwayTSection/HallwayTSection.FBX.meta
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
