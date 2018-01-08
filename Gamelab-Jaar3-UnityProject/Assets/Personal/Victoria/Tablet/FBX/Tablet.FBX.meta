@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3af84006aa5ae644b0b9419dc07794f
+guid: 000feed4b065bf742af521ff58b77012
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: cae11e7400ac7d04ea5fff00c212e3be, type: 2}
+    second: {fileID: 2100000, guid: d54a50057c8007c4e9a0a444f20f2d20, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +44,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

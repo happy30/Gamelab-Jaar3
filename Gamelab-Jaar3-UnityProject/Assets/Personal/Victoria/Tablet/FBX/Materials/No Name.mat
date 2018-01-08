@@ -12,9 +12,14 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 4
 =======
+<<<<<<< HEAD
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+=======
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 1
 >>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
+>>>>>>> d9ba62c1d9613956a73ed31c13b4906815a09245
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -27,8 +32,12 @@ Material:
 <<<<<<< HEAD
         m_Texture: {fileID: 0}
 =======
+<<<<<<< HEAD
+        m_Texture: {fileID: 0}
+=======
         m_Texture: {fileID: 2800000, guid: 56b38dff147291f44a253b3fa49eea68, type: 3}
 >>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
+>>>>>>> d9ba62c1d9613956a73ed31c13b4906815a09245
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -45,6 +54,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d9ba62c1d9613956a73ed31c13b4906815a09245
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -54,6 +66,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+<<<<<<< HEAD
+=======
 =======
         m_Texture: {fileID: 2800000, guid: fd372101e74046e4d80ae9909032526b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -65,6 +79,7 @@ Material:
     - _MetallicGlossMap:
         m_Texture: {fileID: 2800000, guid: f827f7d43f72ea246bcd581230f240c3, type: 3}
 >>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
+>>>>>>> d9ba62c1d9613956a73ed31c13b4906815a09245
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -97,5 +112,9 @@ Material:
 <<<<<<< HEAD
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
 =======
+<<<<<<< HEAD
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+=======
     - _EmissionColor: {r: 0.845, g: 1, b: 0.817, a: 1}
 >>>>>>> 33b9a75ce090d8411dbef12d0289fecb286b37e1
+>>>>>>> d9ba62c1d9613956a73ed31c13b4906815a09245
