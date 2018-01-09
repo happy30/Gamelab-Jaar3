@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -77,15 +77,17 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +109,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &476920569
 GameObject:
@@ -252,7 +256,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4667399998765222, guid: 2733f38e87d51da41b0759d67d215fb3, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2733f38e87d51da41b0759d67d215fb3, type: 2}
@@ -294,7 +298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4265851129899334, guid: f6b88aa609bb5b04a882e46a39ebc68a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6b88aa609bb5b04a882e46a39ebc68a, type: 2}
@@ -374,7 +378,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &2058565612
 Transform:
   m_ObjectHideFlags: 0
@@ -388,3 +391,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2082117371
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -11.092669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 38.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -67.29217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010839154808572, guid: 9374f96de496104469913ad7591c9768, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9374f96de496104469913ad7591c9768, type: 2}
+  m_IsPrefabParent: 0

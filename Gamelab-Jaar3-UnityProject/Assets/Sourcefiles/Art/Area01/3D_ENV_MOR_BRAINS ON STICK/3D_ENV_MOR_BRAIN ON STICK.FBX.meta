@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 04924e7419d75724daa4d86183224de8
+guid: 59fa7d461ab1fb444bc46b30e5124402
+timeCreated: 1515487007
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -7,14 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: HallwayTsection
+    4300000: Brain on stick
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: HallwayTMat
-    second: {fileID: 2100000, guid: 92e8ea3222199c6429a29862fe14568e, type: 2}
+      name: No Name
+    second: {fileID: 2100000, guid: be02ea04be761674a96506db07ce0b26, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
