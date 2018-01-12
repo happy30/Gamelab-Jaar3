@@ -57,8 +57,8 @@ public class IconPuzzle : MonoBehaviour
     {
         completeScreen.SetActive(true);
         GameObject.Find("IconComputer").GetComponent<Renderer>().material.mainTexture = completedTexture;
-        GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().iconPuzzleCompleted = true;
-        GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().interactions[0].Trigger(true);
+        GameObject.Find("SceneSettings").GetComponent<SceneEventData>().iconPuzzleCompleted = true;
+        GameObject.Find("SceneSettings").GetComponent<SceneEventData>().interactions[0].Trigger(true);
         computer.GetComponent<Collider>().enabled = false;
         Cursor.lockState = CursorLockMode.Locked;
 

@@ -40,6 +40,11 @@ public class ExploreController : MonoBehaviour
 	{
 		walkBobSpeed = exploreStats.bobSpeed;
 		runBobSpeed = exploreStats.bobSpeed * 2f;
+
+        if(exploreStats.forceCrouch)
+        {
+            camTransform.localPosition = new Vector3(camTransform.localPosition.x, -exploreStats.crouchDrop, camTransform.localPosition.z);
+        }
 	}
 	
 	// Update is called once per frame
@@ -87,16 +92,16 @@ public class ExploreController : MonoBehaviour
 	//Checks input for crouching and then fill crouchPos for Camera
 	void Crouch()
 	{
-		if(Input.GetKey(KeyCode.LeftControl) || camTransform.localPosition.y < 0.99f && !exploreStats.forceCrouch)
+		if(Input.GetKey(KeyCode.LeftControl) && !exploreStats.forceCrouch || camTransform.localPosition.y < 0.99f && !exploreStats.forceCrouch)
 		{
 			cameraHeight = Input.GetKey(KeyCode.LeftControl) ? -exploreStats.crouchDrop : 0;
-			crouchPos = new Vector3(0, cameraHeight, 0);
 		}
-        if(exploreStats.forceCrouch)
+        else if(exploreStats.forceCrouch)
         {
             cameraHeight = -exploreStats.crouchDrop;
         }
-	}
+        crouchPos = new Vector3(0, cameraHeight, 0);
+    }
 
 	//Checks if we're moving, then fill bobPos for Camera
 	void HeadBob()

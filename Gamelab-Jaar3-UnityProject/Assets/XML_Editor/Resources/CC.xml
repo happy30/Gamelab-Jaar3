@@ -5,9 +5,9 @@
       <lines>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Dougal</actor>
           </actors>
-          <text>What a nice thingy.</text>
+          <text>What kind of oddity is this?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -20,9 +20,54 @@
         </Line>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Livie</actor>
           </actors>
-          <text>Y|A|Y.</text>
+          <text>Mmhh...| It looks like someone cracked open another's skull and their brains are spatting out.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I will never ask you again...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>But hey, we have to investigate everything. Maybe there's like a hidden locker behind this painting or something.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Well...| I doubt that but let me take the painting anyway...</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -31,7 +76,14 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Painting</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -414,6 +466,948 @@
           </cameraPosition>
           <choices />
           <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_BahtroomKeyGet">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>With this trash picker I can probably reach it...!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>.|.|. I got it!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Woah! Good job.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Owwha It's still hot!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Bathroom Key</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_BathroomDoor">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>CheckItem</effect>
+              <Parameters>
+                <string>Bathrook Key</string>
+                <string>CC_BathroomDoorOpen</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>It won't budge. I will need a key to open this.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_BathroomDoorOpen">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Okay... This should work.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>.|.|. Yes!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeToUse</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_TriangularPiece">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>What is this triangular shape doing here?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Oh, it's for that puzzle.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Triangular Shape</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_IconPuzzle">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>A display showing 4 icons...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>EnterPuzzle</effect>
+              <Parameters>
+                <string>0</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_IconPuzzleDone">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I did it.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>AddObject</effect>
+              <Parameters>
+                <string>0</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Good job.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>EndPuzzle</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_SquareShape">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I think this appeared when I finished the puzzle.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Grab it!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Square Shape</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_RushHour">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Hey, isn't that a red shape I need for the other puzzle?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>EnterPuzzle</effect>
+              <Parameters>
+                <string>1</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_RushHourDone">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Yes I got it!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>AddObject</effect>
+              <Parameters>
+                <string>1</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I think it fell on the floor.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>EndPuzzle</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_RectangularShape">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>This shape fell out of the puzzle.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Picking it up...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Rectangular Shape</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_ShapePuzzle">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>This looks like a shape puzzle I used to play this as a kid.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Wow, you had such an interesting life.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Wait... How did you... Our memories were wiped.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Wh- You're right... How did I.. Oh god I don't know.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>That's really suspicious... But for some reason I don't feel like you're lying... I think I've seen this puzzle before too.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Of course I'm not lying! Anyhow... We can't do this puzzle right now... Look, the shapes are missing.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Yeah... you're right... Maybe they're lying somewhere around here?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_ShapePuzzle2">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Alright, We got all the pieces now</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Hurry up and put them in then!</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Left</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Yeah, yeah...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>This goes here...| That goes there...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Last one there and.|.|.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>All done!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>AddObject</effect>
+              <Parameters>
+                <string>4</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Oh... Something fell out of the puzzle.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeInteractionCodeName</effect>
+              <Parameters>
+                <string>CC_ShapePuzzle3</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Another key?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Studio Key</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_ShapePuzzle3">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Let's see what we can open with the key.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_StaffDoor">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>CheckItem</effect>
+              <Parameters>
+                <string>Studio Key</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>It won't budge. The right key would open it.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_StaffDoorOpen">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I think we've investigated everything except beyond this door.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Well, hurry up and open it! I want to see what's inside!</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Okay! It should be open now.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeToUse</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_StaffKeyCard">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>A keycard!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Hey...| I don't feel alright in this room...</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>It's like a studio... It looks like staff sat here to monitor us.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Oh my god... </text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>What the hell is this facility?!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Egh, let's get out with this keycard. We might even be able to open other areas in the PH-Area.</text>
+          <expression>
+            <portraitExpression>Frightened</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Right. Let's go.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PickUp</effect>
+              <Parameters>
+                <string>Staff Keycard</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>

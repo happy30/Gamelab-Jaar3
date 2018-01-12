@@ -493,13 +493,14 @@ public class ConversationController : MonoBehaviour
                     }
                     else
                     {
-                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
+                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
                     }
 
                 }
                 else
                 {
-                    effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
+                    
+                    effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
                 }
 
             }

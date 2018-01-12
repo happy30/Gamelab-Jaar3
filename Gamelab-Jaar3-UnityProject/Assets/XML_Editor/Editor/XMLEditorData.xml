@@ -6,5 +6,10 @@
       <variableID>icn</variableID>
       <directory>CC</directory>
     </Element>
+    <Element displayName="_001_01">
+      <className>Conversation</className>
+      <variableID>icn</variableID>
+      <directory>_001_01</directory>
+    </Element>
   </List>
 </Data>

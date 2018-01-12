@@ -42,7 +42,7 @@ public class SceneProgression : MonoBehaviour
 			switch (prog) {
 			case 0:
 
-				GetComponent<ClientsCellData> ().interactions [0].Trigger (true);
+				
 				break;
 
 			}
