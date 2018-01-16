@@ -5,9 +5,9 @@
       <lines>
         <Line>
           <actors>
-            <actor>Mind</actor>
+            <actor>Unknown</actor>
           </actors>
-          <text>... ...</text>
+          <text>Mrionoitng haert reat, chkiecng bolod spresure, anzinalyg bairn actityiv..</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -20,6 +20,92 @@
             <Effect>
               <effect>Black</effect>
               <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>None</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Unknown</actor>
+          </actors>
+          <text>.lAl stemsys opmatil, cielnt ninine-two-ne sucesfuc…</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>None</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>StopBGM</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LoadScene</effect>
+              <Parameters>
+                <string>Day 17</string>
+              </Parameters>
             </Effect>
           </effect>
         </Line>

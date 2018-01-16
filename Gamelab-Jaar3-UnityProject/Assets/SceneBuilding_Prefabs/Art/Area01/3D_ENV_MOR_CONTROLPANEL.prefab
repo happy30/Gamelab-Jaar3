@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23196046390611762}
   - component: {fileID: 95441535724202388}
   m_Layer: 0
-  m_Name: Control Panel
+  m_Name: 3D_ENV_MOR_CONTROLPANEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

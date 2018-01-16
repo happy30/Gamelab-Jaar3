@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4003842498529652}
+  - component: {fileID: 114728888013734478}
   - component: {fileID: 114896986566930276}
   - component: {fileID: 114717635195619610}
   - component: {fileID: 114177068185733840}
@@ -119,11 +120,23 @@ MonoBehaviour:
   crouchSpeed: 8
   crouchWalkSpeed: 1
   crouchDrop: 0.8
+  forceCrouch: 1
   zoomSpeed: 5
   zoomAmount: 20
   bobSpeed: 0.184
   bobAmount: 0.052
   interactRange: 1.5
+--- !u!114 &114728888013734478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620071969462552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff645f9bd74bd6f4ba884068181675d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114761434685238726
 MonoBehaviour:
   m_ObjectHideFlags: 1

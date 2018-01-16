@@ -131,7 +131,11 @@ public class Effect
         ChangeToUse,
         EnterPuzzle,
         EndPuzzle,
-        CheckProgression
+        CheckProgression,
+        StopBGM,
+        ChangeBGM,
+        LoadScene,
+        ShowInfoText
     };
 
 
