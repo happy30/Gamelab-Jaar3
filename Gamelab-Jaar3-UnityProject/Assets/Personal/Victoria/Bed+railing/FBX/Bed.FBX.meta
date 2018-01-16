@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c05081cd249ab834dbd7f7e368d90bc2
 timeCreated: 1515797795
+=======
+guid: 0cd4ddc2fd145ae43bbee39d736a1460
+timeCreated: 1516023146
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -21,12 +26,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bed
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 1ec8042bcef333842836c20b16ee94e9, type: 2}
+=======
+    second: {fileID: 2100000, guid: 1a20fd6c01087984cab4aa00e3c52820, type: 2}
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Support
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 07220d2f644f71c44945ac2b3f159073, type: 2}
+=======
+    second: {fileID: 2100000, guid: a167aff091ae30f43a79d8b54d3cd094, type: 2}
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   materials:
     importMaterials: 1
     materialName: 0

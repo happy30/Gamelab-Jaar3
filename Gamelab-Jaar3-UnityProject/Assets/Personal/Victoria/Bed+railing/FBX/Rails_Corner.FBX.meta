@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d9c4418762484a645b3c960d4772b949
 timeCreated: 1515797796
+=======
+guid: 8c85f65be2c71a64ea4fbc9319462067
+timeCreated: 1516023148
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -21,12 +26,20 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Disk
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: 0bbcf9f7dbef57243b9b9162653d995d, type: 2}
+=======
+    second: {fileID: 2100000, guid: 56d42dc2103b8ff448ccd29cfa4417a4, type: 2}
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Turn_Rails
+<<<<<<< HEAD
     second: {fileID: 2100000, guid: bc1a20ec67a189941ae53df6e523feff, type: 2}
+=======
+    second: {fileID: 2100000, guid: 01b6ac9e9db6f0645ba2bd97d2f6d786, type: 2}
+>>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   materials:
     importMaterials: 1
     materialName: 0
