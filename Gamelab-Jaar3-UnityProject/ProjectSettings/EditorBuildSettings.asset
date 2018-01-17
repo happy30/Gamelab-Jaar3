@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scene/Escapes/Client's Cell.unity
-    guid: ad24083086abc564898b17343d4398d0
   - enabled: 0
-    path: Assets/Scene/Area 1.unity
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scene/Area 1/Area 1.unity
     guid: 6ff1203c9393830469908d279e73f9d3
+  - enabled: 1
+    path: Assets/Scene/Day 17/Day 17.unity
+    guid: 01ea15f87b192d04685cc4dff098b788
+  - enabled: 1
+    path: Assets/Scene/Day 1/Day 1.unity
+    guid: f22cc472bc69fff4b82762b6c5ebce5c

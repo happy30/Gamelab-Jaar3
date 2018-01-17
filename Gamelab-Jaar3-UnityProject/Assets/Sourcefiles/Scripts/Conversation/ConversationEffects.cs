@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ConversationEffects : MonoBehaviour
 {
@@ -162,5 +163,22 @@ public class ConversationEffects : MonoBehaviour
     {
         GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.GetComponent<ConversationController>().ClosePuzzleAfterConversation = true;
         
+    }
+
+    public void StopBGM()
+    {
+        Camera.main.GetComponent<AudioManager>().StopBGM();
+    }
+
+    public void LoadScene(string name)
+    {
+        
+        SceneManager.LoadScene(name);
+    }
+
+    public void ShowInfoText(string text)
+    {
+        GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().ShowInfoTextAfterConversation = true;
+        GameObject.Find("HUDCanvas").GetComponent<TextFade>().ShowInfoText(text);
     }
 }
