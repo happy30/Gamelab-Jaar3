@@ -18,7 +18,7 @@ ModelImporter:
       name: HallwayDoorMat
     second: {fileID: 2100000, guid: 6400b39cf004d654793b352a6621f232, type: 2}
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
