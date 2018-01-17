@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414735, b: 0.1210785, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -763,6 +763,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!1 &264497037
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &357228594
@@ -2147,6 +2149,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!23 &497488782
@@ -5804,6 +5807,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &588047724
@@ -6176,6 +6180,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &639371244
@@ -6959,6 +6964,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &768380850
@@ -7139,6 +7145,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &824212875
@@ -7273,6 +7280,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &844462061
@@ -7409,6 +7417,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &876881500
@@ -7612,6 +7621,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &890900927
@@ -7971,6 +7981,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &939551122
@@ -8364,6 +8375,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!23 &1005972714
@@ -9754,6 +9766,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &1353513732
@@ -9858,6 +9871,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!1 &1372246960
@@ -10120,6 +10134,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &1394058078
@@ -10622,6 +10637,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &1457147950
@@ -11060,12 +11076,12 @@ Prefab:
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 311.17093
+      value: 567.1709
       objectReference: {fileID: 0}
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 156.31671
+      value: 300.3167
       objectReference: {fileID: 0}
     - target: {fileID: 224119465625741616, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -11076,6 +11092,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 347.7167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138119225839882, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
@@ -15039,6 +15059,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &1660854085
@@ -15269,6 +15290,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!65 &1695446764
@@ -15911,6 +15933,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &1854934167
@@ -16311,6 +16334,7 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
   slowText: 0
 --- !u!114 &1931346043

@@ -16,6 +16,7 @@ public class SceneProgression : MonoBehaviour
     {
 		NotSpecified,
 		_001_01_Story,
+        _017_01_Story,
         _144_01_Story,
         _144_02_Escape,
     };
@@ -37,18 +38,28 @@ public class SceneProgression : MonoBehaviour
     {
         switch(scene)
         {
-		case Scene._001_01_Story:
+		    case Scene._001_01_Story:
 
-			switch (prog) {
-			case 0:
+			    switch (prog)
+                {
+			        case 0:
+				    break;
 
-				
-				break;
-
-			}
+			    }
 
 			break;
-					
+
+
+            case Scene._017_01_Story:
+                switch (prog)
+                {
+                    case 1:
+
+                        GameObject.Find("Player").GetComponent<ExploreController>().crouchAvailable = true;
+                        break;
+
+                }
+                break;
 					
 
 
@@ -85,7 +96,7 @@ public class SceneProgression : MonoBehaviour
 
                 }
 
-                break;
+            break;
         }
     }
 }
