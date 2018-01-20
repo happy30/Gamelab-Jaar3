@@ -26,6 +26,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1390695868745098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4481556413259132}
+  - component: {fileID: 65566069701839414}
+  - component: {fileID: 114486944158401418}
+  - component: {fileID: 114127202310718018}
+  m_Layer: 0
+  m_Name: 002_PuzzleExplanation
+  m_TagString: InteractOnTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1532315589321634
 GameObject:
   m_ObjectHideFlags: 0
@@ -38,7 +56,7 @@ GameObject:
   - component: {fileID: 114637653777123748}
   - component: {fileID: 65138859232475690}
   m_Layer: 0
-  m_Name: 001_WakeUp
+  m_Name: 017_WakeUp
   m_TagString: Interact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +74,7 @@ GameObject:
   - component: {fileID: 114883743139821036}
   - component: {fileID: 114269187431921084}
   m_Layer: 0
-  m_Name: 002_PuzzleExplanation
+  m_Name: 017_ShapePuzzleDone
   m_TagString: InteractOnTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,6 +126,19 @@ Transform:
   m_Father: {fileID: 4917114728906248}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4481556413259132
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.49, y: -0.131, z: 2.7}
+  m_LocalScale: {x: 2.0722992, y: 0.32032534, z: 2.0708685}
+  m_Children: []
+  m_Father: {fileID: 4917114728906248}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4645498769411174
 Transform:
   m_ObjectHideFlags: 1
@@ -115,11 +146,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1663807742446964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.49, y: -0.131, z: 2.7}
-  m_LocalScale: {x: 2.0722992, y: 0.32032534, z: 2.0708685}
+  m_LocalPosition: {x: -6.49, y: -0.13100004, z: -6.6}
+  m_LocalScale: {x: 2.0723, y: 0.32033, z: 2.07087}
   m_Children: []
   m_Father: {fileID: 4917114728906248}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4917114728906248
 Transform:
@@ -133,6 +164,7 @@ Transform:
   m_Children:
   - {fileID: 4418298999448304}
   - {fileID: 4471281396725384}
+  - {fileID: 4481556413259132}
   - {fileID: 4645498769411174}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -161,6 +193,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65566069701839414
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114127202310718018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlName: _017_01
+  interactionCodeName: 017_PuzzleExplanation
+  hideObjects: []
+  DestroyAfterInteraction: 1
+  changeToUse: 0
+  interactType: 1
+  activated: 0
 --- !u!114 &114269187431921084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlName: _001_01
-  interactionCodeName: CC_PuzzleExplanation
+  xmlName: _017_01
+  interactionCodeName: 017_ShapePuzzleCompleted
   hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
@@ -211,7 +273,31 @@ MonoBehaviour:
   startProgression: 0
   tenseMp3: {fileID: 8300000, guid: 5768cc07b0dbb794897376b9e8b7c30a, type: 3}
   sceneObjects: {fileID: 0}
-  scene: 1
+  scene: 2
+--- !u!114 &114486944158401418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cUI: {fileID: 0}
+  activated: 0
+  displayLine: 
+  actor: 
+  currentText: 0
+  lineDone: 0
+  choicesShown: 0
+  SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
+  textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &114608644611953468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,7 +337,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 1
 --- !u!114 &114637653777123748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -263,8 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlName: _001_01
-  interactionCodeName: 001_WakeUp
+  xmlName: _017_01
+  interactionCodeName: 017_WakeUp
   hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
@@ -303,7 +391,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &114905352215861760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,5 +414,5 @@ MonoBehaviour:
   puzzles: []
   interactions:
   - {fileID: 114637653777123748}
-  - {fileID: 0}
+  - {fileID: 114269187431921084}
   - {fileID: 0}
