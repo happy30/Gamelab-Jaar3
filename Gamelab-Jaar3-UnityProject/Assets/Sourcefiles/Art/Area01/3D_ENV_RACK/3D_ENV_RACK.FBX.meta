@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b4af301fa5ae1dd4fb4afe27f39a19b6
-timeCreated: 1513605864
+guid: 7ab719ff7072e9f4cb697474c6e5aa0e
+timeCreated: 1516626670
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,15 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sphere006
-    4300002: drone
+    4300000: Rack
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: fbe3c2afbb838cf47ae1115763655b28, type: 2}
+    second: {fileID: 2100000, guid: 32cbc77a93906734193efc6237925c80, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23377353107192650}
   - component: {fileID: 95756829809163384}
   m_Layer: 0
-  m_Name: 3D_MOR_MORGUE
+  m_Name: 3D_MOR_MOR_ROOM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,6 +5,9 @@ using UnityEngine;
 public class DroneController : MonoBehaviour
 {
     public Actors.Actor character;
+    public Transform player;
+
+    float rotateSpeed;
 
     public Material[] mats;
     Material mat;
@@ -12,7 +15,9 @@ public class DroneController : MonoBehaviour
 
     void Awake()
     {
+        player = GameObject.Find("Player").transform;
         mat = GetComponent<Renderer>().material;
+        rotateSpeed = 1;
     }
 
 	// Use this for initialization
@@ -67,8 +72,16 @@ public class DroneController : MonoBehaviour
 
 	}
 	
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        FollowPlayer();
 	}
+
+    void FollowPlayer()
+    {
+        transform.parent.LookAt(player);
+    }
+
 }
