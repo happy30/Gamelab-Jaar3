@@ -27,6 +27,9 @@ public class ExploreController : MonoBehaviour
 	public float runBobSpeed;
 	public float bobSpeed;
 
+    [HideInInspector]
+    public bool crouchAvailable;
+
 
 	// Use this for initialization
 	void Awake()
@@ -103,6 +106,14 @@ public class ExploreController : MonoBehaviour
             cameraHeight = -exploreStats.crouchDrop;
         }
         crouchPos = new Vector3(0, cameraHeight, 0);
+
+        if(crouchAvailable && exploreStats.forceCrouch)
+        {
+            if(Input.GetKey(KeyCode.LeftControl))
+            {
+                exploreStats.forceCrouch = false;
+            }
+        }
     }
 
 	//Checks if we're moving, then fill bobPos for Camera

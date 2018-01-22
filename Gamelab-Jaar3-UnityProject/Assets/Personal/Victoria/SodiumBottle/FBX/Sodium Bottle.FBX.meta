@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 81fb9704c31cce14fa6e82ffc38c5ec2
-timeCreated: 1515797794
-=======
-guid: dfdae0bb3f6695f40927513ffdf31eee
-timeCreated: 1516023149
->>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -28,20 +21,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 01 - Default
-<<<<<<< HEAD
     second: {fileID: 2100000, guid: 8c8356c6bf9e8cd4fb7c4fc9b1b6a32d, type: 2}
-=======
-    second: {fileID: 2100000, guid: c952ba0ba199bb64aac63063047fb54b, type: 2}
->>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 02 - Default
-<<<<<<< HEAD
     second: {fileID: 2100000, guid: 4bb8c3d2fc93d4c449878f0c0f78af6d, type: 2}
-=======
-    second: {fileID: 2100000, guid: be718687ea8a6b7429e8ab055d9add55, type: 2}
->>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cd44f78e4b978874eb1051b3f8e3ef7d
-timeCreated: 1515797795
+guid: df7e8a86a8cce7e40b7c81ad43e56b41
+timeCreated: 1516197208
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,14 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Morque
+    4300000: Hairdryer
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 4cb353888f9b18943a29466fb5e8b971, type: 2}
+    second: {fileID: 2100000, guid: 491fa94d906941544a910a4def8db1ac, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
