@@ -31,8 +31,8 @@ public class RushHourFake : MonoBehaviour
 
 	void CompletePuzzle()
 	{
-		GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().iconPuzzleCompleted = true;
-		GameObject.Find("SceneSettings").GetComponent<ClientsCellData>().interactions[1].Trigger(true);
+		GameObject.Find("SceneSettings").GetComponent<SceneEventData>().iconPuzzleCompleted = true;
+		GameObject.Find("SceneSettings").GetComponent<SceneEventData>().interactions[1].Trigger(true);
 		computer.GetComponent<Collider>().enabled = false;
 		sceneBlock.SetActive(false);
 		block.SetActive(false);

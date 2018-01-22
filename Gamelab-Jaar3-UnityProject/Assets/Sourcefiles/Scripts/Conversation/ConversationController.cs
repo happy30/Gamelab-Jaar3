@@ -13,6 +13,7 @@ public class ConversationController : MonoBehaviour
 
 	string code;
 	Interact.InteractType type;
+    ExploreStats exploreStats;
 
 	public bool activated;
 
@@ -46,6 +47,9 @@ public class ConversationController : MonoBehaviour
     [HideInInspector]
     public bool ClosePuzzleAfterConversation;
 
+    [HideInInspector]
+    public bool ShowInfoTextAfterConversation;
+
     public bool textCanBeSkipped;
     bool skippingText;
 
@@ -53,6 +57,8 @@ public class ConversationController : MonoBehaviour
 
     float slowTextSpeed;
     float fastTextSpeed;
+
+    public bool slowText;
 
 	void Awake()
 	{
@@ -70,8 +76,18 @@ public class ConversationController : MonoBehaviour
 
     void Start()
     {
-        slowTextSpeed = stats.slowTextSpeed;
-        fastTextSpeed = stats.fastTextSpeed;
+        if(slowText)
+        {
+            Debug.Log("slow text");
+            slowTextSpeed = 0.1f;
+            fastTextSpeed = 0.1f;
+        }
+        else
+        {
+            slowTextSpeed = stats.slowTextSpeed;
+            fastTextSpeed = stats.fastTextSpeed;
+        }
+        
     }
 
 
@@ -259,6 +275,11 @@ public class ConversationController : MonoBehaviour
 			GameObject.Find("SceneSettings").GetComponent<PuzzleRoomData>().EndPuzzle();
 		}
 
+        if(ShowInfoTextAfterConversation)
+        {
+            GameObject.Find("HUDCanvas").GetComponent<TextFade>().anim.SetTrigger("Activate");
+        }
+
 	}
 
 	//Send the info to the UI
@@ -336,9 +357,6 @@ public class ConversationController : MonoBehaviour
 		{
 			cUI.RemovePortrait();
 		}
-		
-
-		
 		activated = true;
 	}
 
@@ -441,7 +459,11 @@ public class ConversationController : MonoBehaviour
             }
             else
             {
-                slowTextSpeed = stats.slowTextSpeed;
+                if(!slowText)
+                {
+                    slowTextSpeed = stats.slowTextSpeed;
+                }
+                
                 displayLine += fullLine[currentChar];
             }
 			currentChar++;
@@ -477,37 +499,44 @@ public class ConversationController : MonoBehaviour
 			effects.FadeOutBlack();
 		}
 
+
         if(currentConversation.lines[currentText].effects.Length > 0)
         {
-            if (currentConversation.lines[currentText].effects[0].effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
-            {
-                effects.CheckItem(currentConversation.lines[currentText].effects[0].parameter[0], currentConversation.lines[currentText].effects[0].parameter[1]);
-            }
-            else if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.None)
-            {
-                if (currentConversation.lines[currentText].effects[0].parameter.Length > 0)
-                {
-                    if ((currentConversation.lines[currentText].effects[0].parameter.Length > 1))
-                    {
-                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[1]);
-                    }
-                    else
-                    {
-                        effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString());
-                    }
+            Effect[] fx;
+            fx = currentConversation.lines[currentText].effects;
 
-                }
-                else
+            for (int i = 0; i < fx.Length; i++)
+            {
+                if (fx.Length > 0)
                 {
-                    effects.SendMessage(currentConversation.lines[currentText].effects[0].effect.ToString(), currentConversation.lines[currentText].effects[0].parameter[0]);
-                }
+                    if (fx[i].effect == Effect.AdditionalEffect.CheckItem) //additionalEffect == "CheckItem")
+                    {
+                        effects.CheckItem(fx[i].parameter[i], fx[i].parameter[1]);
+                    }
+                    else if (fx[i].effect != Effect.AdditionalEffect.None)
+                    {
+                        if (fx[i].parameter.Length > 0)
+                        {
+                            if ((fx[i].parameter.Length > 1))
+                            {
+                                effects.SendMessage(fx[i].effect.ToString(), fx[i].parameter[1]);
+                            }
+                            else
+                            {
+                                effects.SendMessage(fx[i].effect.ToString(), fx[i].parameter[0]);
+                            }
 
+                        }
+                        else
+                        {
+
+                            effects.SendMessage(fx[i].effect.ToString());
+                        }
+
+                    }
+                }
             }
         }
-
-
-		
-
 	}
 
 	//If the last effect had black, and the next one hasn't then fade out.
@@ -518,19 +547,25 @@ public class ConversationController : MonoBehaviour
 			return true;
 		}
 
+        Effect[] fx;
+        fx = currentConversation.lines[currentText].effects;
 
-        if(currentConversation.lines[currentText].effects.Length > 0)
+        for(int i = 0; i < fx.Length; i++)
         {
-            if (currentConversation.lines[currentText].effects[0].effect != Effect.AdditionalEffect.Black && currentText > 0)
+            if (fx.Length > 0)
             {
-                if (currentConversation.lines[currentText - 1].effects[0].effect == Effect.AdditionalEffect.Black)
+                if (fx[i].effect != Effect.AdditionalEffect.Black && currentText > 0)
                 {
-                    return true;
+                    if(currentConversation.lines[currentText - 1].effects.Length > 0)
+                    {
+                        if (currentConversation.lines[currentText - 1].effects[0].effect == Effect.AdditionalEffect.Black)
+                        {
+                            return true;
+                        }
+                    }
                 }
             }
         }
-
-
 		return false;
 	}
 }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="001_WakeUp">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Unknown</actor>
+          </actors>
+          <text>Mrionoitng haert reat, chkiecng bolod spresure, anzinalyg bairn actityiv..</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>None</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Unknown</actor>
+          </actors>
+          <text>.lAl stemsys opmatil, cielnt ninine-two-ne sucesfuc…</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>None</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>StopBGM</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LoadScene</effect>
+              <Parameters>
+                <string>Day 17</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>

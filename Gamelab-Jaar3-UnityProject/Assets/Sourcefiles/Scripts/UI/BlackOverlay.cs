@@ -23,6 +23,7 @@ public class BlackOverlay : MonoBehaviour
     {
         if(enableFade)
         {
+            overlay.color = new Color(0, 0, 0, 1);
             StartCoroutine(FadeOut());
         }
     }

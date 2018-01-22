@@ -1,0 +1,418 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1388756651213094}
+  m_IsPrefabParent: 1
+--- !u!1 &1388756651213094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4917114728906248}
+  m_Layer: 0
+  m_Name: _001_01_SceneSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1390695868745098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4481556413259132}
+  - component: {fileID: 65566069701839414}
+  - component: {fileID: 114486944158401418}
+  - component: {fileID: 114127202310718018}
+  m_Layer: 0
+  m_Name: 002_PuzzleExplanation
+  m_TagString: InteractOnTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1532315589321634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4471281396725384}
+  - component: {fileID: 114619732880665004}
+  - component: {fileID: 114637653777123748}
+  - component: {fileID: 65138859232475690}
+  m_Layer: 0
+  m_Name: 017_WakeUp
+  m_TagString: Interact
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1663807742446964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4645498769411174}
+  - component: {fileID: 65234468705122640}
+  - component: {fileID: 114883743139821036}
+  - component: {fileID: 114269187431921084}
+  m_Layer: 0
+  m_Name: 017_ShapePuzzleDone
+  m_TagString: InteractOnTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1928755565333034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4418298999448304}
+  - component: {fileID: 114804670244647536}
+  - component: {fileID: 114269653250742592}
+  - component: {fileID: 114608644611953468}
+  - component: {fileID: 114460538973091794}
+  - component: {fileID: 114905352215861760}
+  m_Layer: 0
+  m_Name: SceneSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4418298999448304
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_LocalRotation: {x: -0, y: 0.10369823, z: -0, w: -0.9946088}
+  m_LocalPosition: {x: 1.0099998, y: 0.046000123, z: -0.841}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4917114728906248}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4471281396725384
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532315589321634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18, y: 0, z: -2.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4917114728906248}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4481556413259132
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.49, y: -0.131, z: 2.7}
+  m_LocalScale: {x: 2.0722992, y: 0.32032534, z: 2.0708685}
+  m_Children: []
+  m_Father: {fileID: 4917114728906248}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4645498769411174
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1663807742446964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.49, y: -0.13100004, z: -6.6}
+  m_LocalScale: {x: 2.0723, y: 0.32033, z: 2.07087}
+  m_Children: []
+  m_Father: {fileID: 4917114728906248}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4917114728906248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1388756651213094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.458, y: 1.476, z: -0.688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4418298999448304}
+  - {fileID: 4471281396725384}
+  - {fileID: 4481556413259132}
+  - {fileID: 4645498769411174}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65138859232475690
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532315589321634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65234468705122640
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1663807742446964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65566069701839414
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114127202310718018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlName: _017_01
+  interactionCodeName: 017_PuzzleExplanation
+  hideObjects: []
+  DestroyAfterInteraction: 1
+  changeToUse: 0
+  interactType: 1
+  activated: 0
+--- !u!114 &114269187431921084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1663807742446964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlName: _017_01
+  interactionCodeName: 017_ShapePuzzleCompleted
+  hideObjects: []
+  DestroyAfterInteraction: 1
+  changeToUse: 0
+  interactType: 1
+  activated: 0
+--- !u!114 &114269653250742592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab521a709579e244926f02437f953b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114460538973091794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61576cde19b37645838d9809c404b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progression: 0
+  startProgression: 0
+  tenseMp3: {fileID: 8300000, guid: 5768cc07b0dbb794897376b9e8b7c30a, type: 3}
+  sceneObjects: {fileID: 0}
+  scene: 2
+--- !u!114 &114486944158401418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390695868745098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cUI: {fileID: 0}
+  activated: 0
+  displayLine: 
+  actor: 
+  currentText: 0
+  lineDone: 0
+  choicesShown: 0
+  SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
+  textCanBeSkipped: 0
+  slowText: 0
+--- !u!114 &114608644611953468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7aede43f3b05494b88089e3ef54b4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  puzzleUI: {fileID: 0}
+  currentID: 0
+--- !u!114 &114619732880665004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532315589321634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cUI: {fileID: 0}
+  activated: 0
+  displayLine: 
+  actor: 
+  currentText: 0
+  lineDone: 0
+  choicesShown: 0
+  SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
+  textCanBeSkipped: 0
+  slowText: 1
+--- !u!114 &114637653777123748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532315589321634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlName: _017_01
+  interactionCodeName: 017_WakeUp
+  hideObjects: []
+  DestroyAfterInteraction: 1
+  changeToUse: 0
+  interactType: 1
+  activated: 0
+--- !u!114 &114804670244647536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c450dce9e70ee044980db0578eeb558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: Conversations
+--- !u!114 &114883743139821036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1663807742446964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1438342f1102bb547abf50e2ad24e3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cUI: {fileID: 0}
+  activated: 0
+  displayLine: 
+  actor: 
+  currentText: 0
+  lineDone: 0
+  choicesShown: 0
+  SetInactiveAfterConversaton: 0
+  EnterPuzzleAfterConversation: 0
+  ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
+  textCanBeSkipped: 0
+  slowText: 0
+--- !u!114 &114905352215861760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1928755565333034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a31f962755d1d48a4bd87e70267f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMode: 1
+  rushHourCompleted: 0
+  iconPuzzleCompleted: 0
+  shapePuzzleCompleted: 0
+  shapeCount: 0
+  drowsy: 1
+  puzzles: []
+  interactions:
+  - {fileID: 114637653777123748}
+  - {fileID: 114269187431921084}
+  - {fileID: 0}

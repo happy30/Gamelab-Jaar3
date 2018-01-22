@@ -2064,7 +2064,7 @@ MonoBehaviour:
   hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  interactType: 1
   activated: 0
 --- !u!114 &497488781
 MonoBehaviour:
@@ -10963,12 +10963,12 @@ Prefab:
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 341.67093
+      value: 361.67093
       objectReference: {fileID: 0}
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 173.31671
+      value: 184.81671
       objectReference: {fileID: 0}
     - target: {fileID: 224119465625741616, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -15068,7 +15068,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672339716}
-  m_LocalRotation: {x: -0.16306977, y: 0.68804675, z: -0.68804675, w: -0.16306977}
+  m_LocalRotation: {x: -0.16306975, y: 0.6880467, z: -0.6880467, w: -0.16306975}
   m_LocalPosition: {x: -3.844771, y: -0.3307407, z: -6.0469403}
   m_LocalScale: {x: -1, y: -1, z: -1}
   m_Children: []
