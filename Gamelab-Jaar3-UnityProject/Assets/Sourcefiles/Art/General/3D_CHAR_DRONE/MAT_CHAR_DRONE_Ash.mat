@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: MAT_CHAR_DRONE
+  m_Name: MAT_CHAR_DRONE_Ash
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _PARALLAXMAP
   m_LightmapFlags: 1
@@ -73,4 +73,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_CHAR_DRONE/MAT_CHAR_DRONE_Ash.mat
+    - _EmissionColor: {r: 0.014381501, g: 0.37986967, b: 0.97794116, a: 1}
+=======
+    - _EmissionColor: {r: 0.14705884, g: 0.96470577, b: 1, a: 1}
+>>>>>>> c1be747755bf52b9b1360cfb00ab7a3f135e3314:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_CHAR_DRONE/MAT_CHAR_DRONE.mat

@@ -7,10 +7,18 @@ using UnityEngine;
 [RequireComponent(typeof(ConversationController))]
 public class Interact : MonoBehaviour
 {
+    public enum InteractType
+    {
+        Examine,
+        Conversation,
+        Use
+
+    };
     [Header("Fill These Sascha <3")]
+    public InteractType interactType;
     public string xmlName;
 	public string interactionCodeName;
-	public GameObject[] hideObjects;
+	
 	float timer;
 
 
@@ -19,21 +27,14 @@ public class Interact : MonoBehaviour
     [HideInInspector]
     public bool changeToUse;
 
-	public enum InteractType
-	{
-		Examine,
-		Conversation,
-		Use
-			
-	};
-
-	public InteractType interactType;
+	
 
 	
 	public bool activated;
 
+    public GameObject[] hideObjects;
 
-	public void Trigger(bool on)
+    public void Trigger(bool on)
 	{
 
 		switch(interactType)
