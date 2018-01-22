@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 1986bb1eec2148c44bee7abfcdbe5d06
 folderAsset: yes
 timeCreated: 1515583903
@@ -8,6 +9,11 @@ guid: a88e470e808fa614faa75381b4b773d8
 folderAsset: yes
 timeCreated: 1515585192
 >>>>>>> d72cb78bc96468b7f386689d907e903c1cce0abf
+=======
+guid: af617c00b4da27f4d90b9d75b1d2f287
+folderAsset: yes
+timeCreated: 1515496268
+>>>>>>> parent of 579256b... added client psd's
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
