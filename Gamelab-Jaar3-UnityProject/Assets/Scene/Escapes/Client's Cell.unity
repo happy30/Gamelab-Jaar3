@@ -113,6 +113,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1988462
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.391
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.1842252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854337054625024, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_Name
+      value: Conversation_Drone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &14882071
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,13 +765,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!114 &256829393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,7 +809,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!1 &264497037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,13 +1130,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_ShapePuzzle2
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!114 &357228593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,7 +1159,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &357228594
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2059,13 +2109,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_Painting
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!114 &497488781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,7 +2138,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!23 &497488782
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2169,7 +2221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4751501944743196, guid: 37e6d46b08cdeef4ba1a66e2592b1880, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4751501944743196, guid: 37e6d46b08cdeef4ba1a66e2592b1880, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5715,13 +5767,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_SquareShape
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!114 &588047723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5744,7 +5796,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &588047724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6115,7 +6169,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &639371244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6128,13 +6184,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_KeySlot
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!65 &639371245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6896,13 +6952,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_ExitDoor
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!114 &768380849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6925,7 +6981,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &768380850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7104,7 +7162,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &824212875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7117,13 +7177,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_RectangularShape
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!65 &824212876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7237,7 +7297,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &844462061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7250,13 +7312,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_TriangularPiece
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!65 &844462062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7372,7 +7434,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &876881500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7385,13 +7449,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_UnusedDoor
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!65 &876881501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7545,13 +7609,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_StaffKeyCard
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!114 &890900926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7574,7 +7638,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &890900927
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7903,13 +7969,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_IconPuzzle
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!114 &939551121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7932,7 +7998,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &939551122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8295,13 +8363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_TrashPickerClaw
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!114 &1005972713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8324,7 +8392,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!23 &1005972714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9595,13 +9665,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_ShapePuzzle
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
   activated: 0
+  hideObjects: []
 --- !u!114 &1353513731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9624,7 +9694,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &1353513732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9683,13 +9755,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!114 &1353901420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9727,7 +9799,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!1 &1372246960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9988,7 +10062,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &1394058078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10001,13 +10077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!114 &1394058079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10460,13 +10536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!114 &1457147949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10489,7 +10565,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &1457147950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10909,7 +10987,7 @@ Transform:
   - {fileID: 718870586}
   - {fileID: 657603612}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1535052366
 Prefab:
@@ -10948,7 +11026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4820703874422248, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224576573069541324, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -10963,12 +11041,12 @@ Prefab:
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 361.67093
+      value: 567.1709
       objectReference: {fileID: 0}
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 184.81671
+      value: 300.3167
       objectReference: {fileID: 0}
     - target: {fileID: 224119465625741616, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -10988,6 +11066,10 @@ Prefab:
     - target: {fileID: 1743577861682640, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370091563149606, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 838937798141cbc48ae22cd7dea2ed53, type: 2}
@@ -11200,7 +11282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4112628817999554, guid: 7c34b4aabf9dd8a4db789103c19a52f6, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4112628817999554, guid: 7c34b4aabf9dd8a4db789103c19a52f6, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -11329,7 +11411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4539909647415018, guid: 07a1d6d751241f04484d9709dca4c4b3, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114307238308477258, guid: 07a1d6d751241f04484d9709dca4c4b3,
         type: 2}
@@ -14967,13 +15049,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!114 &1660854084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14996,7 +15078,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &1660854085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15068,7 +15152,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1672339716}
-  m_LocalRotation: {x: -0.16306975, y: 0.6880467, z: -0.6880467, w: -0.16306975}
+  m_LocalRotation: {x: -0.16306977, y: 0.68804675, z: -0.68804675, w: -0.16306977}
   m_LocalPosition: {x: -3.844771, y: -0.3307407, z: -6.0469403}
   m_LocalScale: {x: -1, y: -1, z: -1}
   m_Children: []
@@ -15196,13 +15280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_RushHour
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
   activated: 0
+  hideObjects: []
 --- !u!114 &1695446763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15225,7 +15309,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!65 &1695446764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15908,7 +15994,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &1854934167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15921,13 +16009,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!65 &1854934168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16232,6 +16320,57 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1897160260}
   m_Mesh: {fileID: 4300004, guid: bf027c6f3a9df6b4c86eac8563453d85, type: 3}
+--- !u!1001 &1925711903
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.661
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.1842252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 33644692030361844, guid: c3a67c2bd0edb7c4580d81a6d3910dbc,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300002, guid: b4af301fa5ae1dd4fb4afe27f39a19b6, type: 3}
+    - target: {fileID: 4527462232177964, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c3a67c2bd0edb7c4580d81a6d3910dbc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1931346039
 GameObject:
   m_ObjectHideFlags: 0
@@ -16307,7 +16446,9 @@ MonoBehaviour:
   SetInactiveAfterConversaton: 0
   EnterPuzzleAfterConversation: 0
   ClosePuzzleAfterConversation: 0
+  ShowInfoTextAfterConversation: 0
   textCanBeSkipped: 0
+  slowText: 0
 --- !u!114 &1931346043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16320,13 +16461,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
   activated: 0
+  hideObjects: []
 --- !u!65 &1931346044
 BoxCollider:
   m_ObjectHideFlags: 0
