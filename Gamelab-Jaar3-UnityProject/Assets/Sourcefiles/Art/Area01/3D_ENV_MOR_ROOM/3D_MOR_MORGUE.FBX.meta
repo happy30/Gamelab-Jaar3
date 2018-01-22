@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b4af301fa5ae1dd4fb4afe27f39a19b6
-timeCreated: 1513605864
+guid: 0a297a21bde26274594577647faf42ec
+timeCreated: 1516623220
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,14 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sphere006
+    4300000: Morque
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: fbe3c2afbb838cf47ae1115763655b28, type: 2}
+    second: {fileID: 2100000, guid: af8e0e46fa06b874b9b37fddd6da5258, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

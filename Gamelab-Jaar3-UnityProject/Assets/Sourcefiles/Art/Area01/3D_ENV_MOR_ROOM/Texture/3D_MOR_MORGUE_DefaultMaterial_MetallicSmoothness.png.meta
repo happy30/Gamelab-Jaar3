@@ -1,22 +1,6 @@
 fileFormatVersion: 2
-guid: 2334aee4b2a216d48897cd105c0e2f56
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-timeCreated: 1515591349
-=======
-<<<<<<< HEAD
-timeCreated: 1515797849
-=======
-timeCreated: 1516023197
->>>>>>> 854a97f5020cff731d6ca73d081da926a4ae892a
->>>>>>> d72cb78bc96468b7f386689d907e903c1cce0abf
-=======
-timeCreated: 1516198030
->>>>>>> 0bba48427eb7046e10d0e99cea984dec436f05b9
-=======
-timeCreated: 1515589088
->>>>>>> parent of 579256b... added client psd's
+guid: 81b97019e8271524c857f103ca858814
+timeCreated: 1516623299
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
