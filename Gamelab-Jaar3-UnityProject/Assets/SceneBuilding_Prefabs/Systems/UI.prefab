@@ -91,7 +91,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1020471072508972
 GameObject:
   m_ObjectHideFlags: 1
@@ -848,7 +848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1377604232944058
 GameObject:
   m_ObjectHideFlags: 1
@@ -3051,6 +3051,7 @@ MonoBehaviour:
   myCanvas: {fileID: 223733366645349158}
   block: {fileID: 0}
   shapePuzzle: {fileID: 114933447877960064}
+  originalPos: {x: 0, y: 0}
   placed: 0
   shapeType: 1
 --- !u!114 &114134881999085962
@@ -5368,6 +5369,7 @@ MonoBehaviour:
   myCanvas: {fileID: 223733366645349158}
   block: {fileID: 0}
   shapePuzzle: {fileID: 114933447877960064}
+  originalPos: {x: 0, y: 0}
   placed: 0
   shapeType: 2
 --- !u!114 &114771307413386562
@@ -5587,6 +5589,7 @@ MonoBehaviour:
   myCanvas: {fileID: 223733366645349158}
   block: {fileID: 0}
   shapePuzzle: {fileID: 114933447877960064}
+  originalPos: {x: 0, y: 0}
   placed: 0
   shapeType: 0
 --- !u!114 &114888230604646120
@@ -5698,6 +5701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c287534432bbf4fb9877b8c245c571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  click: {fileID: 0}
 --- !u!114 &114943767949150392
 MonoBehaviour:
   m_ObjectHideFlags: 1
