@@ -27,12 +27,23 @@ public class Interact : MonoBehaviour
     [HideInInspector]
     public bool changeToUse;
 
-	
+    public Renderer highlightRenderer;
 
-	
-	public bool activated;
+    float opacity;
+
+    public bool activated;
 
     public GameObject[] hideObjects;
+
+
+    void Start()
+    {
+        opacity = 0.2f;
+        if(GetComponent<Renderer>() != null)
+        {
+            highlightRenderer = GetComponent<Renderer>();
+        }
+    }
 
     public void Trigger(bool on)
 	{
@@ -55,7 +66,9 @@ public class Interact : MonoBehaviour
 
                         foreach (GameObject obj in hideObjects)
                         {
-                            obj.SetActive(false);
+
+                            StartCoroutine(FadePortrait(false, obj.GetComponent<Renderer>()));
+                            //obj.SetActive(false);
                         }
                     }
 					
@@ -76,7 +89,8 @@ public class Interact : MonoBehaviour
                     {
                         foreach (GameObject obj in hideObjects)
                         {
-                            obj.SetActive(true);
+                            StartCoroutine(FadePortrait(true, obj.GetComponent<Renderer>()));
+                            //obj.SetActive(true);
                         }
                     }
                     else
@@ -161,4 +175,31 @@ public class Interact : MonoBehaviour
 		yield break;
 
 	}
+
+    IEnumerator FadePortrait(bool fadeIn, Renderer hideObject)
+    {
+        
+
+        if(!fadeIn)
+        {
+            while(opacity > 0)
+            {
+                opacity -= Time.deltaTime;
+                hideObject.material.SetFloat("_Opacity", opacity);
+                yield return new WaitForEndOfFrame();
+            }
+            hideObject.material.SetFloat("_Opacity", 0);
+            yield break;
+        }
+        else
+        {
+            while (opacity < 0.2f)
+            {
+                opacity += Time.deltaTime;
+                hideObject.material.SetFloat("_Opacity", opacity);
+                yield return new WaitForEndOfFrame();
+            }
+            yield break;
+        }
+    }
 }

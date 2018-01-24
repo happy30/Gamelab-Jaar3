@@ -10,67 +10,82 @@ public class DroneController : MonoBehaviour
     float rotateSpeed;
 
     public Material[] mats;
-    Material mat;
+
+    Renderer mat;
+    public Renderer holoMat;
+
+    public ParticleSystem[] hologramParticles;
+
 
 
     void Awake()
     {
         player = GameObject.Find("Player").transform;
-        mat = GetComponent<Renderer>().material;
+        mat = GetComponent<Renderer>();
         rotateSpeed = 1;
     }
 
 	// Use this for initialization
 	void Start ()
     {
-	    switch  (character)
+        var main = hologramParticles[0].main;
+        var main2 = hologramParticles[1].main;
+
+
+        switch  (character)
         {
             case Actors.Actor.Dust:
-                mat = mats[0];
+                mat.material = mats[0];
                 break;
 
             case Actors.Actor.Blaze:
-                mat = mats[1];
+                mat.material = mats[1];
+                main.startColor = new ParticleSystem.MinMaxGradient(new Color32(0xcc, 0x52, 0x00, 0xFF));
+                main2.startColor = new ParticleSystem.MinMaxGradient(new Color32(0xcc, 0x52, 0x00, 0xFF));
                 break;
 
             case Actors.Actor.Livie:
-                mat = mats[2];
+                mat.material = mats[2];
+                main.startColor = new ParticleSystem.MinMaxGradient(new Color32(0x00, 0x86, 0xb3, 0xFF));
+                main2.startColor = new ParticleSystem.MinMaxGradient(new Color32(0x00, 0x86, 0xb3, 0xFF));
                 break;
 
             case Actors.Actor.Violet:
-                mat = mats[3];
+                mat.material = mats[3];
                 break;
 
             case Actors.Actor.Scarlet:
-                mat = mats[4];
+                mat.material = mats[4];
                 break;
 
             case Actors.Actor.Marine:
-                mat = mats[5];
+                mat.material = mats[5];
                 break;
 
             case Actors.Actor.Moss:
-                mat = mats[6];
+                mat.material = mats[6];
                 break;
 
             case Actors.Actor.Auburn:
-                mat = mats[7];
+                mat.material = mats[7];
                 break;
 
             case Actors.Actor.Ash:
-                mat = mats[8];
+                mat.material = mats[8];
                 break;
 
             case Actors.Actor.Amber:
-                mat = mats[9];
+                mat.material = mats[9];
                 break;
 
             case Actors.Actor.Unknown:
-                mat = mats[10];
+                mat.material = mats[10];
                 break;
-        }	
+        }
+        holoMat.material = Resources.Load("HologramPortraits/Holo_" + character.ToString(), typeof(Material)) as Material;
 
-	}
+
+    }
 	
 
 	// Update is called once per frame
