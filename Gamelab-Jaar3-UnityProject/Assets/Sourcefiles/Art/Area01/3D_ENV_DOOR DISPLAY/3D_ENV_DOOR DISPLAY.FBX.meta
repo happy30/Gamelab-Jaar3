@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b4af301fa5ae1dd4fb4afe27f39a19b6
-timeCreated: 1513605864
+guid: f6a19217bde063845bc9342d48cc9c00
+timeCreated: 1516714765
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,15 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sphere006
-    4300002: drone
+    4300000: door display
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: fbe3c2afbb838cf47ae1115763655b28, type: 2}
+    second: {fileID: 2100000, guid: e9c0d616e082cd341acc966a0a2510a9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
