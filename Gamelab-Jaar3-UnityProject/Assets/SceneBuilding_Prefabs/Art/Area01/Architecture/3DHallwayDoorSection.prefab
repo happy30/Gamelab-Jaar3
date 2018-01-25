@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 95584208142374696}
   - component: {fileID: 65775400326497998}
   m_Layer: 0
-  m_Name: HallwayDoorSection
+  m_Name: 3DHallwayDoorSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

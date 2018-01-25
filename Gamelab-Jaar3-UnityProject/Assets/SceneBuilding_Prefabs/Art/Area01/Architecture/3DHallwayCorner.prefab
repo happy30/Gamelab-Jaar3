@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 95075139807973564}
   - component: {fileID: 65412804673198838}
   m_Layer: 0
-  m_Name: HallwayCorner
+  m_Name: 3DHallwayCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
