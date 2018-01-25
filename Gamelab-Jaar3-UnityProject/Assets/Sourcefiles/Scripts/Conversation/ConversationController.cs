@@ -455,7 +455,7 @@ public class ConversationController : MonoBehaviour
 		{
             if(fullLine[currentChar].ToString() == "|")
             {
-                slowTextSpeed = 0.5f;
+                slowTextSpeed = 0.15f;
             }
             else
             {

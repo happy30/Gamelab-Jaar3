@@ -134,6 +134,7 @@ public class Interact : MonoBehaviour
                     if(DestroyAfterInteraction)
                     {
                         PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+                        GetComponent<BoxCollider>().enabled = false;
                     }
                     else
                     {

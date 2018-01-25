@@ -21,5 +21,10 @@
       <variableID>icn</variableID>
       <directory>Generic</directory>
     </Element>
+    <Element displayName="_143_01">
+      <className>Conversation</className>
+      <variableID>icn</variableID>
+      <directory>_143_01</directory>
+    </Element>
   </List>
 </Data>

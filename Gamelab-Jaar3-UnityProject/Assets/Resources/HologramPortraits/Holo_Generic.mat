@@ -94,7 +94,7 @@ Material:
     - _Opacity: 0.2
     - _Parallax: 0.02
     - _ScanLineSpeed: 0.4
-    - _ScanlinePower: 3
+    - _ScanlinePower: 4.76
     - _ScanlineSegments: 2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
