@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>This is a test.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>

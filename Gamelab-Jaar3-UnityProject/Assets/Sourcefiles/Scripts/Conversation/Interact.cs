@@ -7,10 +7,18 @@ using UnityEngine;
 [RequireComponent(typeof(ConversationController))]
 public class Interact : MonoBehaviour
 {
+    public enum InteractType
+    {
+        Examine,
+        Conversation,
+        Use
+
+    };
     [Header("Fill These Sascha <3")]
+    public InteractType interactType;
     public string xmlName;
 	public string interactionCodeName;
-	public GameObject[] hideObjects;
+	
 	float timer;
 
 
@@ -19,21 +27,25 @@ public class Interact : MonoBehaviour
     [HideInInspector]
     public bool changeToUse;
 
-	public enum InteractType
-	{
-		Examine,
-		Conversation,
-		Use
-			
-	};
+    public Renderer highlightRenderer;
 
-	public InteractType interactType;
+    float opacity;
 
-	
-	public bool activated;
+    public bool activated;
+
+    public GameObject[] hideObjects;
 
 
-	public void Trigger(bool on)
+    void Start()
+    {
+        opacity = 0.2f;
+        if(GetComponent<Renderer>() != null)
+        {
+            highlightRenderer = GetComponent<Renderer>();
+        }
+    }
+
+    public void Trigger(bool on)
 	{
 
 		switch(interactType)
@@ -54,7 +66,9 @@ public class Interact : MonoBehaviour
 
                         foreach (GameObject obj in hideObjects)
                         {
-                            obj.SetActive(false);
+
+                            StartCoroutine(FadePortrait(false, obj.GetComponent<Renderer>()));
+                            //obj.SetActive(false);
                         }
                     }
 					
@@ -75,7 +89,8 @@ public class Interact : MonoBehaviour
                     {
                         foreach (GameObject obj in hideObjects)
                         {
-                            obj.SetActive(true);
+                            StartCoroutine(FadePortrait(true, obj.GetComponent<Renderer>()));
+                            //obj.SetActive(true);
                         }
                     }
                     else
@@ -119,6 +134,7 @@ public class Interact : MonoBehaviour
                     if(DestroyAfterInteraction)
                     {
                         PlayMode.ChangeGameMode(PlayMode.GameMode.Explore);
+                        GetComponent<BoxCollider>().enabled = false;
                     }
                     else
                     {
@@ -160,4 +176,31 @@ public class Interact : MonoBehaviour
 		yield break;
 
 	}
+
+    IEnumerator FadePortrait(bool fadeIn, Renderer hideObject)
+    {
+        
+
+        if(!fadeIn)
+        {
+            while(opacity > 0)
+            {
+                opacity -= Time.deltaTime;
+                hideObject.material.SetFloat("_Opacity", opacity);
+                yield return new WaitForEndOfFrame();
+            }
+            hideObject.material.SetFloat("_Opacity", 0);
+            yield break;
+        }
+        else
+        {
+            while (opacity < 0.2f)
+            {
+                opacity += Time.deltaTime;
+                hideObject.material.SetFloat("_Opacity", opacity);
+                yield return new WaitForEndOfFrame();
+            }
+            yield break;
+        }
+    }
 }

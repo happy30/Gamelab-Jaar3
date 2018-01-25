@@ -27,8 +27,13 @@ public class ExploreController : MonoBehaviour
 	public float runBobSpeed;
 	public float bobSpeed;
 
-    [HideInInspector]
-    public bool crouchAvailable;
+	[HideInInspector]
+	public bool crouchAvailable;
+
+	Material originalMaterial, tempMaterial;
+	Renderer rend = null;
+
+	public Color highlightColor;
 
 
 	// Use this for initialization
@@ -44,10 +49,10 @@ public class ExploreController : MonoBehaviour
 		walkBobSpeed = exploreStats.bobSpeed;
 		runBobSpeed = exploreStats.bobSpeed * 2f;
 
-        if(exploreStats.forceCrouch)
-        {
-            camTransform.localPosition = new Vector3(camTransform.localPosition.x, -exploreStats.crouchDrop, camTransform.localPosition.z);
-        }
+		if(exploreStats.forceCrouch)
+		{
+			camTransform.localPosition = new Vector3(camTransform.localPosition.x, -exploreStats.crouchDrop, camTransform.localPosition.z);
+		}
 	}
 	
 	// Update is called once per frame
@@ -61,6 +66,14 @@ public class ExploreController : MonoBehaviour
 			MoveCamera();
 			CheckForInteraction();
 		}
+        else
+        {
+            if (rend)
+            {
+                rend.sharedMaterial = originalMaterial;
+                rend = null;
+            }
+        }
 	}
 
 	void FixedUpdate ()
@@ -79,20 +92,20 @@ public class ExploreController : MonoBehaviour
 	//Waits for input and makes character move
 	void Move()
 	{
-        if(exploreStats.forceCrouch)
-        {
-            speed = exploreStats.crouchWalkSpeed;
-        }
-        else if (!Input.GetKey(KeyCode.LeftControl) || exploreStats.forceCrouch)
-        {
-            speed = Input.GetKey(KeyCode.LeftShift) ? exploreStats.runSpeed : exploreStats.walkSpeed;
-            bobSpeed = Input.GetKey(KeyCode.LeftShift) ? runBobSpeed : walkBobSpeed;
+		if(exploreStats.forceCrouch)
+		{
+			speed = exploreStats.crouchWalkSpeed;
+		}
+		else if (!Input.GetKey(KeyCode.LeftControl) || exploreStats.forceCrouch)
+		{
+			speed = Input.GetKey(KeyCode.LeftShift) ? exploreStats.runSpeed : exploreStats.walkSpeed;
+			bobSpeed = Input.GetKey(KeyCode.LeftShift) ? runBobSpeed : walkBobSpeed;
 
-        }
+		}
 
 
 
-    }
+	}
 
 	//Checks input for crouching and then fill crouchPos for Camera
 	void Crouch()
@@ -101,20 +114,20 @@ public class ExploreController : MonoBehaviour
 		{
 			cameraHeight = Input.GetKey(KeyCode.LeftControl) ? -exploreStats.crouchDrop : 0;
 		}
-        else if(exploreStats.forceCrouch)
-        {
-            cameraHeight = -exploreStats.crouchDrop;
-        }
-        crouchPos = new Vector3(0, cameraHeight, 0);
+		else if(exploreStats.forceCrouch)
+		{
+			cameraHeight = -exploreStats.crouchDrop;
+		}
+		crouchPos = new Vector3(0, cameraHeight, 0);
 
-        if(crouchAvailable && exploreStats.forceCrouch)
-        {
-            if(Input.GetKey(KeyCode.LeftControl))
-            {
-                exploreStats.forceCrouch = false;
-            }
-        }
-    }
+		if(crouchAvailable && exploreStats.forceCrouch)
+		{
+			if(Input.GetKey(KeyCode.LeftControl))
+			{
+				exploreStats.forceCrouch = false;
+			}
+		}
+	}
 
 	//Checks if we're moving, then fill bobPos for Camera
 	void HeadBob()
@@ -136,10 +149,10 @@ public class ExploreController : MonoBehaviour
 				if (timer > Mathf.PI * 2)
 				{
 					timer = timer - (Mathf.PI * 2);
-                    playerSFX.pitch = Random.Range(0.8f, 1.2f);
-                    playerSFX.PlayOneShot(footstepConcrete, 0.50f);
+					playerSFX.pitch = Random.Range(0.8f, 1.2f);
+					playerSFX.PlayOneShot(footstepConcrete, 0.50f);
 
-                }
+				}
 			}
 			if (waveslice != 0)
 			{
@@ -152,7 +165,7 @@ public class ExploreController : MonoBehaviour
 			}
 			else
 			{
-                bobPos = new Vector3(camTransform.localPosition.x, 0, camTransform.localPosition.z);
+				bobPos = new Vector3(camTransform.localPosition.x, 0, camTransform.localPosition.z);
 			}
 		}
 		
@@ -168,26 +181,94 @@ public class ExploreController : MonoBehaviour
 	void CheckForInteraction()
 	{
 		RaycastHit hit;
+		Renderer currRend;
 		if(Physics.Raycast(camTransform.position, camTransform.forward, out hit, exploreStats.interactRange))
 		{
-			if(hit.collider.tag == "Interact")
+			if (hit.collider.tag == "Interact")
 			{
+
 				exploreUI.ShowInteractCursor(true);
-				if(Input.GetButtonDown("Fire1"))
+
+				if (Input.GetButtonDown("Fire1"))
 				{
 					hit.collider.GetComponent<Interact>().Trigger(true);
 				}
-				return;
-			}
-		}
-		exploreUI.ShowInteractCursor(false);
-	}
 
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag == "InteractOnTrigger" && PlayMode.gameMode == PlayMode.GameMode.Explore)
-        {
-            col.GetComponent<Interact>().Trigger(true);
+				currRend = hit.collider.gameObject.GetComponent<Interact>().highlightRenderer;
+				if (currRend == rend)
+				{
+                    return;
+				}
+
+				if (currRend && currRend != rend)
+				{
+					if (rend)
+					{
+						rend.sharedMaterial = originalMaterial;
+					}
+
+				}
+
+				if (currRend)
+				{
+					rend = currRend;
+				}
+
+				else
+				{
+                    exploreUI.ShowInteractCursor(false);
+                    return;
+				}
+
+
+				originalMaterial = rend.sharedMaterial;
+
+				tempMaterial = new Material(originalMaterial);
+				rend.material = tempMaterial;
+                rend.material.EnableKeyword("_EMISSION");
+                rend.material.SetTexture("_EmissionMap", null);
+
+               // DynamicGI.SetEmissive(rend, highlightColor);
+
+
+                //rend.material.SetFloat("_EmissionScaleUI", .3f);
+                rend.material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+                rend.material.SetColor("_EmissionColor", highlightColor * 0.5f);
+                
+                return;
+			}
+            else
+            {
+                exploreUI.ShowInteractCursor(false);
+                if (rend)
+                {
+                    rend.sharedMaterial = originalMaterial;
+                    rend = null;
+                }
+            }
+            exploreUI.ShowInteractCursor(false);
+
         }
-    }
+        else
+        {
+            exploreUI.ShowInteractCursor(false);
+            if (rend)
+            {
+                rend.sharedMaterial = originalMaterial;
+                rend = null;
+            }
+        }
+    
+			
+	}
+		
+	
+
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.tag == "InteractOnTrigger" && PlayMode.gameMode == PlayMode.GameMode.Explore)
+		{
+			col.GetComponent<Interact>().Trigger(true);
+		}
+	}
 }
