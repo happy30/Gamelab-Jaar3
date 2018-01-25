@@ -644,13 +644,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &256829393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,13 +1067,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_ShapePuzzle2
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &357228593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,13 +1975,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_Painting
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &497488781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5925,13 +5928,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_KeySlot
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!65 &639371245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6670,13 +6674,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: _001_01
   interactionCodeName: CC_ExitDoor
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &768380849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6895,13 +6900,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_TriangularPiece
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!65 &844462062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7063,13 +7069,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_UnusedDoor
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!65 &876881501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7148,13 +7155,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: CC
   interactionCodeName: CC_StaffKeyCard
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &890900926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7509,13 +7517,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_IconPuzzle
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &939551121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7914,13 +7923,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: CC
   interactionCodeName: CC_TrashPickerClaw
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1005972713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8689,64 +8699,60 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 6.458
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalPosition.y
       value: 1.476
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalPosition.z
       value: -0.688
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4917114728906248, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+    - target: {fileID: 4497369952542358, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114608644611953468, guid: 782bb2b011cda264cae561abd39bd795,
+    - target: {fileID: 114692619323884654, guid: 8f1fc7556ba69fb40a061f5a65da11c5,
         type: 2}
       propertyPath: puzzles.Array.data[0]
       value: 
       objectReference: {fileID: 413859180}
-    - target: {fileID: 114608644611953468, guid: 782bb2b011cda264cae561abd39bd795,
+    - target: {fileID: 114692619323884654, guid: 8f1fc7556ba69fb40a061f5a65da11c5,
         type: 2}
       propertyPath: puzzleUI
       value: 
       objectReference: {fileID: 1727685225}
-    - target: {fileID: 114269653250742592, guid: 782bb2b011cda264cae561abd39bd795,
+    - target: {fileID: 114973825360222368, guid: 8f1fc7556ba69fb40a061f5a65da11c5,
         type: 2}
       propertyPath: sceneObjects.Array.data[0]
       value: 
       objectReference: {fileID: 847331695}
-    - target: {fileID: 114269653250742592, guid: 782bb2b011cda264cae561abd39bd795,
+    - target: {fileID: 114973825360222368, guid: 8f1fc7556ba69fb40a061f5a65da11c5,
         type: 2}
       propertyPath: sceneObjects.Array.data[1]
       value: 
       objectReference: {fileID: 1680124740}
-    - target: {fileID: 1388756651213094, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
-      propertyPath: m_Name
-      value: _017_01_SceneSettings
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 782bb2b011cda264cae561abd39bd795, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 8f1fc7556ba69fb40a061f5a65da11c5, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1296704922
 GameObject:
@@ -8982,13 +8988,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: _017_01
   interactionCodeName: 017_ShapePuzzle
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1353513731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9072,13 +9079,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1353901420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9394,13 +9402,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1394058079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9778,13 +9787,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1457147949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10296,12 +10306,12 @@ Prefab:
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 416.67093
+      value: 418.17093
       objectReference: {fileID: 0}
     - target: {fileID: 224179425081990202, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 215.81671
+      value: 216.31671
       objectReference: {fileID: 0}
     - target: {fileID: 224532377264928384, guid: 838937798141cbc48ae22cd7dea2ed53,
         type: 2}
@@ -14417,13 +14427,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1660854084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14649,13 +14660,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 0
   xmlName: _017_01
   interactionCodeName: 017_ShapePuzzle
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 0
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &1695446763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15313,13 +15325,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!65 &1854934168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15639,13 +15652,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 2
   xmlName: 
   interactionCodeName: 
-  hideObjects: []
   DestroyAfterInteraction: 0
   changeToUse: 0
-  interactType: 2
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!65 &1931346044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16618,7 +16632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2138614145
 Transform:
   m_ObjectHideFlags: 0
@@ -16645,13 +16659,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3acdfce011cb914097d027d2b51a550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactType: 1
   xmlName: _017_01
   interactionCodeName: 017_BackToBed
-  hideObjects: []
   DestroyAfterInteraction: 1
   changeToUse: 0
-  interactType: 1
+  highlightRenderer: {fileID: 0}
   activated: 0
+  hideObjects: []
 --- !u!114 &2138614147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16688,5 +16703,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
+  m_Size: {x: 0.56, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

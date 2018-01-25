@@ -100,7 +100,15 @@ public class CameraBehaviour : MonoBehaviour
     void ConversationCamera()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, 5f * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
+        //transform.eulerAngles = new Vector3(Mathf.Lerp(transform.eulerAngles.x, 0, 5f * Time.deltaTime), transform.eulerAngles.y, transform.eulerAngles.z);
+
+        transform.eulerAngles = AngleLerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y, transform.eulerAngles.z), 5f * Time.deltaTime);
+
+        
+
+
+
+
         player.transform.eulerAngles = new Vector3(player.transform.eulerAngles.x, Mathf.Lerp(player.transform.eulerAngles.y, yRot, 7f * Time.deltaTime), player.transform.eulerAngles.z);
     }
 
@@ -134,5 +142,14 @@ public class CameraBehaviour : MonoBehaviour
             angle += 360;
         }   // if angle negative, convert to 0..360
         return angle;
+    }
+
+    Vector3 AngleLerp(Vector3 StartAngle, Vector3 FinishAngle, float t)
+    {
+        float xLerp = Mathf.LerpAngle(StartAngle.x, FinishAngle.x, t);
+        float yLerp = Mathf.LerpAngle(StartAngle.y, FinishAngle.y, t);
+        float zLerp = Mathf.LerpAngle(StartAngle.z, FinishAngle.z, t);
+        Vector3 Lerped = new Vector3(xLerp, yLerp, zLerp);
+        return Lerped;
     }
 }

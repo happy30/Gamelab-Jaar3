@@ -17,6 +17,7 @@ public class SceneProgression : MonoBehaviour
 		NotSpecified,
 		_001_01_Story,
 		_017_01_Story,
+		_143_01_Story,
 		_144_01_Story,
 		_144_02_Escape,
 	};
@@ -69,7 +70,27 @@ public class SceneProgression : MonoBehaviour
 
 				}
 				break;
-					
+
+			case Scene._143_01_Story:
+
+				switch(prog)
+				{
+                    case 0:
+                        PlayMode.gameMode = PlayMode.GameMode.Explore;
+                        break;
+
+
+					case 1:
+						sceneObjects.sceneObjects[0].GetComponent<Animator>().SetBool("Activate", true);
+
+					break;
+
+                    case 2:
+                        sceneObjects.ActivateObject(1);
+                        sceneObjects.DeactivateObject(0);
+                        break;
+				}
+				break;
 
 
 			case Scene._144_01_Story:
