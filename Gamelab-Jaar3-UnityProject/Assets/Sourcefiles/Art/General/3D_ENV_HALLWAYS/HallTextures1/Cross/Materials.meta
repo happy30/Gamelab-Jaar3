@@ -1,7 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/General/3D_ENV_HALLWAYS/HallTextures1/Cross/Materials.meta
 guid: 4ad1a912782a23241863a1ad8a683d92
 folderAsset: yes
 timeCreated: 1516911587
+=======
+<<<<<<< HEAD
+guid: 782e896c9176b1a4bb6ff3fdda82e8d3
+folderAsset: yes
+timeCreated: 1515591320
+=======
+guid: 0e0638a525b144b44af6ef2e7e417e05
+folderAsset: yes
+timeCreated: 1516732616
+>>>>>>> 93a0349897462b8bcdb2ff5c59c6409d204b66a0
+>>>>>>> adbfa5d9fb1d0871405a9be802d90210a9028db7:Gamelab-Jaar3-UnityProject/Assets/Sourcefiles/Art/Area01/3D_ENV_MOR_CONTROLPANEL/Materials.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

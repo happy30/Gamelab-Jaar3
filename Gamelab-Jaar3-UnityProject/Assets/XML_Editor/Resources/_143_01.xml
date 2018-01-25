@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="143_DiscoverDrone">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>... What is that?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>A metal object is lying on the ground. This hasn't been here before.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I took a closer look. I tried to pick it up from the ground when suddenly...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>||||||||Aaaah??</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>What is going on?!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>The metal object started floating in the air.| It was then when...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>.|.|.| h-hello?! Anyone there?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Am I activated again?| Oh gosh this technology is as unreliable as can be.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Anyone here?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>..L.|.|. Li- Livie?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Oh my gosh! Who's there? Wait is it you...?| ehm.|.|. Have we met before?</text>
+          <expression>
+            <portraitExpression>Frightened</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Gosh! Gosh!| Gosh!!!!| Eitherway, this is amazing!| I got inside.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>I knew I wasn't alone in this hell-hole.|.|.| The technology used is is nice though,| most of the time.</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>What kind of AI is this?| I wonder if it can react to me?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>What's the weather in New York City?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>.||.||.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I guess this is a really dumbed down version of those hologram companions.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>.|.|.| What are you looking at?</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>.|.|.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LinkNewConversation</effect>
+              <Parameters>
+                <string>143_Livie_02</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_02">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Eh... I should introduce myself.|| I'm Livie... as you had guessed. And I think you are Dougal?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>What? How does this program know...?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Okay this is enough, time to shut this toy down.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>W-|What?! Wait... I'm not a toy!</text>
+          <expression>
+            <portraitExpression>Frightened</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>How the-||I'm pretty sure there's a still image of some drawn manga girl in front of me.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>It's my avatar. I hacked into this drone and it created it for me.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Then where is the real you?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>I don't really know.|.|.  to be honest with you I lost most of my memories</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Yet I can remember your name... It's Dougal right?</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>That's right</choices>
+              <destination>143_Livie_Right</destination>
+            </Choices>
+            <Choices>
+              <choices>Wrong (Lie)</choices>
+              <destination>143_Livie_Wrong</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_Right">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Yeah... At least that's what I remember. I've seem to lost most memories too.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Same boat eh? What do you actually remember?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LinkNewConversation</effect>
+              <Parameters>
+                <string>143_Livie_03</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_Wrong">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I don't know my name, actually. I have lost most of my memories as well.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I better play it save and not reveal any information about myself... Where the hell am I?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Same boat eh? What do you actually remember?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LinkNewConversation</effect>
+              <Parameters>
+                <string>143_Livie_03</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_03">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I closed my eyes for a moment and tried to recapture as much as possible.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>.|.|. Ana...?| I was forced to do tasks every day... The puzzles on the panels behind you.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I don't remember anything else... It's also really vague.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>...Aghr... It feels like I haven't eaten for weeks.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>On my way here I discovered a canteen. You should get out and check it out.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Ill see you there.</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>
