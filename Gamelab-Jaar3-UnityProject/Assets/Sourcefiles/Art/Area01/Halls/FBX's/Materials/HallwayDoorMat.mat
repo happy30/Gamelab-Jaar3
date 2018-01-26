@@ -6,11 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: HallwayStraightMat
+  m_Name: HallwayDoorMat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-
-  m_ShaderKeywords: _NORMALMAP
-
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -22,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 91cddf95b2cd6fe4daef757105691b58, type: 3}
+        m_Texture: {fileID: 2800000, guid: f40b5d7121fbbe94ca66c35bd4408b05, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -42,11 +39,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 162ff1d487a63cc48a730634bf35abd4, type: 3}
+        m_Texture: {fileID: 2800000, guid: d0ec701a6618dad4aa8fe0858a6304aa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 95c31fa7f7f480d4195ca5fb768ff069, type: 3}
+        m_Texture: {fileID: 2800000, guid: c626187651e3bb044a1509b3db58ab8e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -63,7 +60,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.7
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0

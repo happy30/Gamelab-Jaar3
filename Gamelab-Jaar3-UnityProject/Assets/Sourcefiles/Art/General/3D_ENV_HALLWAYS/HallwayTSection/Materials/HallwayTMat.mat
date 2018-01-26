@@ -8,11 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: HallwayTMat
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-<<<<<<< HEAD
   m_ShaderKeywords: _NORMALMAP
-=======
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
->>>>>>> 58461911ea177cebb89d0a1f96c25e4417fdfa2a
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

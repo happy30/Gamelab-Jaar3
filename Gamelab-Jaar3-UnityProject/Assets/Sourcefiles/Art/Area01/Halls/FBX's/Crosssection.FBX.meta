@@ -1,5 +1,7 @@
 fileFormatVersion: 2
-guid: 594d73cda3dac104aa4b617dd7454d44
+guid: 3132f340cb29129458494dee6f787284
+timeCreated: 1516915774
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -7,14 +9,14 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Glass Display
+    4300000: HallwayCrosssection
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 95c1495073e47b14c9759e5467a323fe, type: 2}
+      name: HallwayCrossMat
+    second: {fileID: 2100000, guid: 4770db140dbd3b445a244a9a568d1302, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
