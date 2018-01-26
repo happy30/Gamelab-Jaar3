@@ -1,89 +1,49 @@
 fileFormatVersion: 2
-guid: bf6657b427f4bf74a8b5daee3a72eb4e
-timeCreated: 1511266102
+guid: ee3837b55ed0aac40ae4beac381522a0
+timeCreated: 1513598826
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cylinder004
-    100004: Object001
-    100006: Object003
-    100008: Plane001
-    100010: Object012
+    100002: Tree Blossom_MeshPart0
+    100004: Tree Blossom_MeshPart1
+    100006: Tree Blossom_MeshPart2
     400000: //RootNode
-    400002: Cylinder004
-    400004: Object001
-    400006: Object003
-    400008: Plane001
-    400010: Object012
-    2300000: Cylinder004
-    2300002: Object001
-    2300004: Object003
-    2300006: Plane001
-    2300008: Object012
-    3300000: Cylinder004
-    3300002: Object001
-    3300004: Object003
-    3300006: Plane001
-    3300008: Object012
-    4300000: Plane001
-    4300002: Object001
-    4300004: Object003
-    4300006: Cylinder004
-    4300008: Object012
-    6400000: Cylinder004
-    6400002: Object001
-    6400004: Object003
-    6400006: Object012
-    6400008: Plane001
+    400002: Tree Blossom_MeshPart0
+    400004: Tree Blossom_MeshPart1
+    400006: Tree Blossom_MeshPart2
+    2300000: Tree Blossom_MeshPart0
+    2300002: Tree Blossom_MeshPart1
+    2300004: Tree Blossom_MeshPart2
+    3300000: Tree Blossom_MeshPart0
+    3300002: Tree Blossom_MeshPart1
+    3300004: Tree Blossom_MeshPart2
+    4300000: Tree Blossom_MeshPart0
+    4300002: Tree Blossom_MeshPart1
+    4300004: Tree Blossom_MeshPart2
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 07 - Default
-    second: {fileID: 2100000, guid: d537d0fc5d48ef340be82cd0bc9ff703, type: 2}
+      name: 13 - Default
+    second: {fileID: 2100000, guid: e1f2d611695737b46a60dd88d484b32c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 08 - Default
-    second: {fileID: 2100000, guid: 015b00b411c90d5499b06bfc768b41d2, type: 2}
+      name: 20 - Default
+    second: {fileID: 2100000, guid: bb3a07291c3296d42a04ba8af13bc4ad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 09 - Default
-    second: {fileID: 2100000, guid: f0c84c2b421f31f439a033d742a456ec, type: 2}
+      name: 21 - Default
+    second: {fileID: 2100000, guid: b58215c751d9be1448bd092924e0bba7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 'Material #11'
-    second: {fileID: 2100000, guid: 32f01ad938a4c9d4caa653830ee01417, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 'Material #13'
-    second: {fileID: 2100000, guid: 6c633b017891783428c43b34bb45bdae, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 64b2e00a69d9a14448523094d4b7a72b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Poop
-    second: {fileID: 2100000, guid: a19b7086a026dc04ea8431f1d2f08d25, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Swag
-    second: {fileID: 2100000, guid: 006ccebf0380a9a468e35d213a07a5f8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: With
-    second: {fileID: 2100000, guid: d2a0bfcf0d9809442bcf0eab8d037b77, type: 2}
+      name: 'Material #203'
+    second: {fileID: 2100000, guid: eb67042ad957e1b479a87990c2fc5fed, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
