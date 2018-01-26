@@ -92,7 +92,7 @@
           <actors>
             <actor>Mind</actor>
           </actors>
-          <text>The metal object started floating in the air.| It was then when...</text>
+          <text>The metal object started floating in the air.| It was at that moment when...</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -210,9 +210,24 @@
           <actors>
             <actor>Livie</actor>
           </actors>
-          <text>I knew I wasn't alone in this hell-hole.|.|.| The technology used is is nice though,| most of the time.</text>
+          <text>I knew I wasn't alone in this hell-hole.|.|.| The technology used here is nice though,| most of the time.</text>
           <expression>
             <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>The hologram was talking and showing different expressions as if it tried to be a human.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -318,7 +333,7 @@
         </Line>
         <Line>
           <actors>
-            <actor>Livie</actor>
+            <actor>Mind</actor>
           </actors>
           <text />
           <expression>
@@ -411,7 +426,7 @@
           <actors>
             <actor>Dougal</actor>
           </actors>
-          <text>How the-||I'm pretty sure there's a still image of some drawn manga girl in front of me.</text>
+          <text>How the-|| I'm pretty sure there's a still image of some drawn manga girl in front of me.</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -456,7 +471,7 @@
           <actors>
             <actor>Livie</actor>
           </actors>
-          <text>I don't really know.|.|.  to be honest with you I lost most of my memories</text>
+          <text>I don't really know.|.|.  to be honest with you I lost most of my memories.</text>
           <expression>
             <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -624,6 +639,21 @@
       <lines>
         <Line>
           <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Gosh, please tell me why we are here in this facility.</text>
+          <expression>
+            <portraitExpression>Sad</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
             <actor>Mind</actor>
           </actors>
           <text>I closed my eyes for a moment and tried to recapture as much as possible.</text>
@@ -688,21 +718,6 @@
           </actors>
           <text>...Aghr... It feels like I haven't eaten for weeks.</text>
           <expression>
-            <portraitExpression>Thinking</portraitExpression>
-            <voiceActing>false</voiceActing>
-          </expression>
-          <cameraPosition>
-            <move>Middle</move>
-          </cameraPosition>
-          <choices />
-          <effect />
-        </Line>
-        <Line>
-          <actors>
-            <actor>Mind</actor>
-          </actors>
-          <text />
-          <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
@@ -731,7 +746,7 @@
           <actors>
             <actor>Livie</actor>
           </actors>
-          <text>Ill see you there.</text>
+          <text>I'll see you there. We should explore the rest of this facility together after.</text>
           <expression>
             <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -741,6 +756,32 @@
           </cameraPosition>
           <choices />
           <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Okay.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ShowInfoText</effect>
+              <Parameters>
+                <string>Leave the room and search for the Canteen.</string>
+              </Parameters>
+            </Effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>

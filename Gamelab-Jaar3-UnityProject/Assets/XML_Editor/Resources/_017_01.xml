@@ -93,7 +93,7 @@
           <actors>
             <actor>Unknown</actor>
           </actors>
-          <text>Great job! You found the puzzle</text>
+          <text>Great job! You found the puzzle.</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
