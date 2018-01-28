@@ -385,6 +385,310 @@
           <choices />
           <effect />
         </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Man I'm tired, maybe i'll take a nap in my room.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ShowInfoText</effect>
+              <Parameters>
+                <string>Go to your room.</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step7_Fight">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>If you’re trusting that Wench, then you can’t be trusted either.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>For all I know, you’re on her side and just pretending to be one of us.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>Would you stop acting like a spoiled toddler?</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>I am saying that Ana holds a great deal of power, and it would be wise to gain her trust while we still can.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>What the fuck did you call me!? Are you looking for a fucking fight you degenerate creep!?</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>My my, it must be extraordinarily complicated for you to talk with people with that brain of yours.</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>These two look like they're about to rip each other’s drone apart, i should intervene before it’s too late.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Come on guys, can’t we resolve this peacefully.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>Ah great timing Dougal, maybe you can talk some sense into this thick headed aboriginal.</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>I don’t believe i’ve ever talked to a more bothersome individual in my life.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Right</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>Don’t even think of siding with this Four-eyed ass, you can’t trust him if he trusts Ana.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Side with Blaze</choices>
+              <destination>Step7_SideWithBlaze</destination>
+            </Choices>
+            <Choices>
+              <choices>Side with Moss</choices>
+              <destination />
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step7_SideWithBlaze">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>You’re right Blaze, we can’t trust Ana. She’s the one who’s keeping us locked here after all.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>Are you delirious? We don’t know if she’s keeping us locked, she might even be a prisoner too.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>The fact that she’s able monitor us and give us tasks means that she has more control over this facility than us;</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>That’s enough reason for me jackass.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>You’ll regret picking his side Dougal. You will  regret it.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I hope I made the right call.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
       </lines>
     </Element>
   </List>
