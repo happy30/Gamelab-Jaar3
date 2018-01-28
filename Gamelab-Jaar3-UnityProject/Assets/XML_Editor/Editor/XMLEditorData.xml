@@ -36,5 +36,10 @@
       <variableID>icn</variableID>
       <directory>MOR</directory>
     </Element>
+    <Element displayName="_143_03">
+      <className>Conversation</className>
+      <variableID>icn</variableID>
+      <directory>_143_03</directory>
+    </Element>
   </List>
 </Data>

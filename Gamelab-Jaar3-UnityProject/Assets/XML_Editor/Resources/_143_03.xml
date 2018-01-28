@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="Step5_EnterTR">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Welcome to the teaching room, patient 929.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>VOICE_WelcomeToTheTeachingRoom</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Please find a seat and fill out this survey, afterwards, you are free to roam the facility.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Roaming">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Please follow the signs towards the Teaching room, a test is waiting for you.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>A test? I hope it’s not something physical...</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 1: Do you remember anything prior to waking up here?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_Survey2</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_Survey2</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey2">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 2: Would you like to remember anything prior to waking up here?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_Survey5</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_Survey5</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey5">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 3: Do you think it is possible to reform society’s criminals?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_Survey6</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_Survey6</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey6">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 4: Do you trust Ana and her assistants?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_Survey7</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_Survey7</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey7">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 5: Is executing criminals just?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_Survey8</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_Survey8</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_Survey8">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Question 6: If you had power over someone’s memories, would you use that power?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes.</choices>
+              <destination>Step5_SurveyDone</destination>
+            </Choices>
+            <Choices>
+              <choices>No.</choices>
+              <destination>Step5_SurveyDone</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="Step5_SurveyDone">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Ana</actor>
+          </actors>
+          <text>Thank you for completing your task, please leave this room at your own pace.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="FreeTimeBlaze_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>Yo.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Hello Blaze.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>That overseer sent you in there to fill out some survey too?</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>That Ana irritates me, thinking she can boss us around.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>She does give a lot of orders, but they aren’t all that tough.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>You can’t be serious, she’s trouble.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>You shouldn’t listen to a word she’s saying.</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>You talk with Blaze about Ana for a while until he becomes bored with you and walks away.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>
