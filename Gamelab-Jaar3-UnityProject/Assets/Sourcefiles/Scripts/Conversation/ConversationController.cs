@@ -497,6 +497,7 @@ public class ConversationController : MonoBehaviour
 		if(CheckForFadeOut())
 		{
 			effects.FadeOutBlack();
+            print("FadeOutBlack");
 		}
 
 
@@ -547,8 +548,18 @@ public class ConversationController : MonoBehaviour
 			return true;
 		}
 
+
+
+
         Effect[] fx;
         fx = currentConversation.lines[currentText].effects;
+
+        print(fx.Length);
+
+        if(fx.Length < 1)
+        {
+            return true;
+        }
 
         for(int i = 0; i < fx.Length; i++)
         {

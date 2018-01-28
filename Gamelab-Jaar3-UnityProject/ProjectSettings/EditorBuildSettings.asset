@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Area 1/Area 1.unity
     guid: 6ff1203c9393830469908d279e73f9d3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Day 17/Day 17.unity
     guid: 01ea15f87b192d04685cc4dff098b788
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Day 1/Day 1.unity
     guid: f22cc472bc69fff4b82762b6c5ebce5c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Day 143/Day 143.unity
     guid: cb85a7a342664824eaca1b4abd9a09f4
+  - enabled: 1
+    path: Assets/Scene/Day 143/Day 143 PH-Area.unity
+    guid: 6162eb6a5168b7f40a0e7e5b2bb15305

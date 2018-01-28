@@ -153,7 +153,7 @@
           <text>Anyone here?</text>
           <expression>
             <portraitExpression>Thinking</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -781,7 +781,105 @@
               <effect>ProgressScene</effect>
               <Parameters />
             </Effect>
+            <Effect>
+              <effect>ChangeInteractionCodeName</effect>
+              <Parameters>
+                <string>143_Livie_04</string>
+              </Parameters>
+            </Effect>
           </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Exit">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>This door is open. Shall I go out?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes</choices>
+              <destination>143_Exit_Yes</destination>
+            </Choices>
+            <Choices>
+              <choices>No</choices>
+              <destination>143_Exit_No</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Exit_Yes">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Let's see what lies beyond this door.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LoadScene</effect>
+              <Parameters>
+                <string>Day 143 PH-Area</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Exit_No">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>I'm not done here yet.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="143_Livie_04">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Let's explore after you've eaten something...</text>
+          <expression>
+            <portraitExpression>Excited</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
         </Line>
       </lines>
     </Element>

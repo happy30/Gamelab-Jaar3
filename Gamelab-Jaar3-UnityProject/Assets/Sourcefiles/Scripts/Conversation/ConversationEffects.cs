@@ -181,4 +181,15 @@ public class ConversationEffects : MonoBehaviour
 		GameObject.Find("GameManager").GetComponent<ConversationStats>().interactedObject.gameObject.GetComponent<ConversationController>().ShowInfoTextAfterConversation = true;
 		GameObject.Find("HUDCanvas").GetComponent<TextFade>().ShowInfoText(text);
 	}
+
+	public void PlaySFX(string file)
+	{
+		ConversationUI cUI = GameObject.Find("HUDCanvas").GetComponent<ConversationUI>();
+		cUI.PlayVoice(file);
+	}
+
+	public void PlaySFX(string file, string volume)
+	{
+
+	}
 }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="MOR_Moss_01">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>AAAHHHHHHH</text>
+          <expression>
+            <portraitExpression>Frightened</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Moss</actor>
+          </actors>
+          <text>You stupid brat. You startled me.</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>

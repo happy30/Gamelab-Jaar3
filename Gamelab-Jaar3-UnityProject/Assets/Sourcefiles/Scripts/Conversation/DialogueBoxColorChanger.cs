@@ -36,12 +36,12 @@ public class DialogueBoxColorChanger : MonoBehaviour
                 newColor = new Color32(0xcc, 0x52, 0x00, 0xFF);
                 break;
 
-            case Actors.Actor.Moss:
-                newColor = new Color32(0x66, 0x66, 0x99, 0xFF);
-                break;
-
             case Actors.Actor.Livie:
                 newColor = new Color32(0x00, 0x86, 0xb3, 0xFF);
+                break;
+
+            case Actors.Actor.Moss:
+                newColor = new Color32(0xA7, 0xA4, 0x32, 0xFF);
                 break;
 
         }

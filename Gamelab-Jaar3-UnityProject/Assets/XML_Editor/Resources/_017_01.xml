@@ -16,7 +16,14 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect />
+          <effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>VOICE_ANA_Goodmorning</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -178,6 +185,12 @@
               <effect>ProgressScene</effect>
               <Parameters />
             </Effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>VOICE_ANA_Goodjob</string>
+              </Parameters>
+            </Effect>
           </effect>
         </Line>
         <Line>
@@ -260,6 +273,12 @@
             <Effect>
               <effect>Black</effect>
               <Parameters />
+            </Effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>VOICE_ANA_Restwell</string>
+              </Parameters>
             </Effect>
           </effect>
         </Line>

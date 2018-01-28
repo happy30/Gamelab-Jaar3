@@ -7,7 +7,6 @@ public class SceneEventData : MonoBehaviour
     public PlayMode.GameMode startMode;
 
 
-
 	public bool rushHourCompleted;
 	public bool iconPuzzleCompleted;
 	public bool shapePuzzleCompleted;

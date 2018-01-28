@@ -135,7 +135,8 @@ public class Effect
         StopBGM,
         ChangeBGM,
         LoadScene,
-        ShowInfoText
+        ShowInfoText,
+        PlaySFX
     };
 
 

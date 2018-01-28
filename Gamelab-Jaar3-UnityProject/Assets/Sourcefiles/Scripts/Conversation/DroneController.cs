@@ -64,6 +64,8 @@ public class DroneController : MonoBehaviour
 
             case Actors.Actor.Moss:
                 mat.material = mats[6];
+                main.startColor = new ParticleSystem.MinMaxGradient(new Color32(0xe2, 0xf4, 0xf4, 0xFF));
+                main2.startColor = new ParticleSystem.MinMaxGradient(new Color32(0xe2, 0xf4, 0xf4, 0xFF));
                 break;
 
             case Actors.Actor.Auburn:
