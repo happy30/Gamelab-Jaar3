@@ -55,7 +55,7 @@
           <text>But hey, we have to investigate everything. Maybe there's like a hidden locker behind this painting or something.</text>
           <expression>
             <portraitExpression>Excited</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Right</move>
@@ -212,7 +212,7 @@
           </actors>
           <text>I think you need to slide some kinda card in there to open it.</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Neutral</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -315,7 +315,7 @@
           <actors>
             <actor>Dougal</actor>
           </actors>
-          <text>Hey... There's a key here! We can use this to escape!</text>
+          <text>Hey... There's a key here!</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -326,8 +326,11 @@
           <choices />
           <effect>
             <Effect>
-              <effect>None</effect>
-              <Parameters />
+              <effect>CheckItem</effect>
+              <Parameters>
+                <string>Trash Picker</string>
+                <string>CC_BahtroomKeyGet</string>
+              </Parameters>
             </Effect>
           </effect>
         </Line>
@@ -415,7 +418,7 @@
           <actors>
             <actor>Livie</actor>
           </actors>
-          <text />
+          <text>Do you have any common sense?</text>
           <expression>
             <portraitExpression>Angry</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -563,7 +566,7 @@
             <Effect>
               <effect>CheckItem</effect>
               <Parameters>
-                <string>Bathrook Key</string>
+                <string>Bathroom Key</string>
                 <string>CC_BathroomDoorOpen</string>
               </Parameters>
             </Effect>
@@ -711,7 +714,7 @@
             <Effect>
               <effect>AddObject</effect>
               <Parameters>
-                <string>0</string>
+                <string>1</string>
               </Parameters>
             </Effect>
           </effect>
@@ -723,7 +726,7 @@
           <text>Good job.</text>
           <expression>
             <portraitExpression>Excited</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -766,7 +769,7 @@
           </actors>
           <text>Grab it!</text>
           <expression>
-            <portraitExpression>None</portraitExpression>
+            <portraitExpression>Excited</portraitExpression>
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
@@ -829,7 +832,7 @@
             <Effect>
               <effect>AddObject</effect>
               <Parameters>
-                <string>1</string>
+                <string>0</string>
               </Parameters>
             </Effect>
           </effect>
@@ -917,7 +920,15 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect />
+          <effect>
+            <Effect>
+              <effect>CheckItem</effect>
+              <Parameters>
+                <string>Triangular Shape</string>
+                <string>CC_ShapePuzzle2</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
         <Line>
           <actors>
@@ -959,7 +970,7 @@
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Left</move>
           </cameraPosition>
           <choices />
           <effect />
@@ -989,7 +1000,7 @@
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Left</move>
           </cameraPosition>
           <choices />
           <effect />
@@ -1125,7 +1136,7 @@
             <Effect>
               <effect>AddObject</effect>
               <Parameters>
-                <string>4</string>
+                <string>2</string>
               </Parameters>
             </Effect>
           </effect>
@@ -1134,7 +1145,7 @@
           <actors>
             <actor>Dougal</actor>
           </actors>
-          <text>Oh... Something fell out of the puzzle.</text>
+          <text>Heh what's this...?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -1156,7 +1167,7 @@
           <actors>
             <actor>Dougal</actor>
           </actors>
-          <text>Another key?</text>
+          <text>Did something change in the room?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -1167,10 +1178,8 @@
           <choices />
           <effect>
             <Effect>
-              <effect>PickUp</effect>
-              <Parameters>
-                <string>Studio Key</string>
-              </Parameters>
+              <effect>ProgressScene</effect>
+              <Parameters />
             </Effect>
           </effect>
         </Line>
@@ -1405,6 +1414,131 @@
               <effect>PickUp</effect>
               <Parameters>
                 <string>Staff Keycard</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_Livie1">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Hello, do you need anything?</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>What do we do now?</choices>
+              <destination>CC_Livie_What</destination>
+            </Choices>
+            <Choices>
+              <choices>Any clues?</choices>
+              <destination>CC_Livie_Clues</destination>
+            </Choices>
+            <Choices>
+              <choices>Nevermind.</choices>
+              <destination>CC_Livie_Nvm</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_Livie_What">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>We have to get out of here. But the door is locked so we need to find a way to open it.</text>
+          <expression>
+            <portraitExpression>Thinking</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeInteractionCodeName</effect>
+              <Parameters>
+                <string>CC_Livie1</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_Livie_Clues">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>I suspect we have to do something with the puzzles on those panels.</text>
+          <expression>
+            <portraitExpression>Neutral</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Why don't you check them out?</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeInteractionCodeName</effect>
+              <Parameters>
+                <string>CC_Livie1</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="CC_Livie_Nvm">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Livie</actor>
+          </actors>
+          <text>Oh,| well,| get us out of here please.</text>
+          <expression>
+            <portraitExpression>Smirk</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ChangeInteractionCodeName</effect>
+              <Parameters>
+                <string>CC_Livie1</string>
               </Parameters>
             </Effect>
           </effect>

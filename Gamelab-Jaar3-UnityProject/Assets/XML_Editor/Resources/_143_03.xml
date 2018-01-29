@@ -72,7 +72,14 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect />
+          <effect>
+            <Effect>
+              <effect>ShowInfoText</effect>
+              <Parameters>
+                <string>Find the teaching room.</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -82,7 +89,22 @@
           <actors>
             <actor>Mind</actor>
           </actors>
-          <text>Question 1: Do you remember anything prior to waking up here?</text>
+          <text>There's a survey paper here. Supposedly I have to fill it in.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Do you remember anything prior to waking up here?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -100,7 +122,14 @@
               <destination>Step5_Survey2</destination>
             </Choices>
           </choices>
-          <effect />
+          <effect>
+            <Effect>
+              <effect>ChangeBGM</effect>
+              <Parameters>
+                <string>BGM_Escape_02_Quiet</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -260,6 +289,26 @@
           </cameraPosition>
           <choices />
           <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>[Free Time] is now active. Spend time with a person to make friends!</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -590,7 +639,7 @@
             </Choices>
             <Choices>
               <choices>Side with Moss</choices>
-              <destination />
+              <destination>Step7_SideWithBlaze</destination>
             </Choices>
           </choices>
           <effect />
@@ -624,7 +673,7 @@
             <voiceActing>false</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Right</move>
           </cameraPosition>
           <choices />
           <effect />
@@ -669,7 +718,7 @@
             <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
-            <move>Middle</move>
+            <move>Right</move>
           </cameraPosition>
           <choices />
           <effect />

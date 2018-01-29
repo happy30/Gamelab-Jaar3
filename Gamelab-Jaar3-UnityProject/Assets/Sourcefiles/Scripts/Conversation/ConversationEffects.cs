@@ -192,4 +192,10 @@ public class ConversationEffects : MonoBehaviour
 	{
 
 	}
+
+	public void ChangeBGM(string bgm)
+	{
+		Camera.main.GetComponent<AudioSource>().clip = Resources.Load<AudioClip>("BGM/" + bgm);
+		Camera.main.GetComponent<AudioSource>().Play();
+	}
 }

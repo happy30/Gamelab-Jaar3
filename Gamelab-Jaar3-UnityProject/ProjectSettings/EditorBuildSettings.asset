@@ -23,3 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Day 143/Day 143 PH-Area.unity
     guid: 6162eb6a5168b7f40a0e7e5b2bb15305
+  - enabled: 1
+    path: Assets/Scene/Escapes/Morgue/Morgue.unity
+    guid: 531c21a32acddc341b30177bab73167f
+  - enabled: 1
+    path: Assets/Scene/Escapes/Client's Cell.unity
+    guid: 177a0027bb6db494e88fa76db917c5b2
+  - enabled: 1
+    path: Assets/Scene/Day 144/Day 144.unity
+    guid: 93a841a7d9ca8974ebfc5ee3a6c6d89e
+  - enabled: 1
+    path: Assets/Scene/Day 144/Day 144 PH-Area.unity
+    guid: 4f9916440f4c67849a471feba6cdb3b0

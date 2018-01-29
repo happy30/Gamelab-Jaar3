@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <List>
+    <Element icn="144_Door">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Go to PH-Area?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices>
+            <Choices>
+              <choices>Yes</choices>
+              <destination>144_Door2</destination>
+            </Choices>
+            <Choices>
+              <choices>No</choices>
+              <destination>144_Door2</destination>
+            </Choices>
+          </choices>
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="144_Door2">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text />
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>LoadScene</effect>
+              <Parameters>
+                <string>Day 144 PH-Area</string>
+              </Parameters>
+            </Effect>
+          </effect>
+        </Line>
+      </lines>
+    </Element>
+    <Element icn="144_Enter">
+      <lines>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>|||||||When I entered the Biotope I heard two people arguing. What's going on?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+      </lines>
+    </Element>
+  </List>
+</Data>

@@ -107,7 +107,7 @@
           <actors>
             <actor>Livie</actor>
           </actors>
-          <text>.|.|.| h-hello?! Anyone there?</text>
+          <text>.|.|.| G-Good morning...?</text>
           <expression>
             <portraitExpression>None</portraitExpression>
             <voiceActing>false</voiceActing>
@@ -124,6 +124,12 @@
             <Effect>
               <effect>Strobe</effect>
               <Parameters />
+            </Effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>Livie_Goodmorning</string>
+              </Parameters>
             </Effect>
           </effect>
         </Line>
@@ -183,7 +189,7 @@
           <text>Oh my gosh! Who's there? Wait is it you...?| ehm.|.|. Have we met before?</text>
           <expression>
             <portraitExpression>Frightened</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -213,7 +219,7 @@
           <text>I knew I wasn't alone in this hell-hole.|.|.| The technology used here is nice though,| most of the time.</text>
           <expression>
             <portraitExpression>Smirk</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -303,7 +309,7 @@
           <text>.|.|.| What are you looking at?</text>
           <expression>
             <portraitExpression>Angry</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -409,7 +415,7 @@
           <text>W-|What?! Wait... I'm not a toy!</text>
           <expression>
             <portraitExpression>Frightened</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>
@@ -444,7 +450,7 @@
           <text>It's my avatar. I hacked into this drone and it created it for me.</text>
           <expression>
             <portraitExpression>Serious</portraitExpression>
-            <voiceActing>false</voiceActing>
+            <voiceActing>true</voiceActing>
           </expression>
           <cameraPosition>
             <move>Middle</move>

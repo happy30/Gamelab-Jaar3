@@ -10,9 +10,11 @@ public class AudioManager : MonoBehaviour
 	public enum AudioClips
 	{
 		BGM_Eerie,
-		BGM_CC_Escape
+		BGM_CC_Escape,
+
 	};
 
+	public AudioClips clips;
 
 	void Awake()
 	{
@@ -44,4 +46,6 @@ public class AudioManager : MonoBehaviour
 		}
 		yield break;
 	}
+
+
 }

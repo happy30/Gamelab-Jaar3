@@ -9,6 +9,7 @@ public class SceneProgression : MonoBehaviour
 	public int startProgression;
 
 	public AudioClip tenseMp3;
+    public AudioClip freeTime;
 
 	public SceneObjects sceneObjects;
 
@@ -20,6 +21,7 @@ public class SceneProgression : MonoBehaviour
 		_143_01_Story,
         _143_02_Story,
 		_144_01_Story,
+        _144_02_Story,
 		_144_02_Escape,
 	};
 
@@ -110,6 +112,18 @@ public class SceneProgression : MonoBehaviour
                         sceneObjects.ActivateObject(1);
                         sceneObjects.DeactivateObject(0);
                         break;
+
+                    case 3:
+                        sceneObjects.ActivateObject(2);
+                        break;
+
+                    case 4:
+                        GameObject.Find("GamePartChanger").GetComponent<Animator>().SetTrigger("Activate");
+                        GameObject.Find("SegmentData").GetComponent<SegmentData>().segment.text = "Free Time";
+                        Camera.main.GetComponent<AudioSource>().clip = freeTime;
+                        Camera.main.GetComponent<AudioSource>().Play();
+
+                        break;
                 }
                 break;
 
@@ -131,23 +145,30 @@ public class SceneProgression : MonoBehaviour
 				{
 					case 3:
 						sceneObjects.ActivateObject(2);
-						break;
+                        GameObject.Find("3D_ENV_AREA1_SECRET DOOR").GetComponent<Animator>().SetBool("Activate", true);
+                        break;
 
 					case 4:
 						GameObject.Find("GameManager").GetComponent<InventoryManager>().RemoveHeldItem(GameObject.Find("GameManager").GetComponent<InventoryManager>().inventory[0]);
 						GameObject.Find("GameManager").GetComponent<InventoryManager>().inventory.Clear();
-						GameObject.Find("Coll2").GetComponent<Interact>().interactionCodeName = "CC_ShapePuzzle3";
+						//GameObject.Find("Coll2").GetComponent<Interact>().interactionCodeName = "CC_ShapePuzzle3";
 						break;
 
-					case 5:
+                    case 5:
+                        GameObject.Find("3D_ENV_AREA1_SECRET DOOR").GetComponent<Animator>().SetBool("Activate", true);
+                        break;
+                    
+					case 6:
 						//GameObject.Find("Main Camera").GetComponent<AudioSource>().Stop();
-						Camera.main.GetComponent<AudioSource>().clip = tenseMp3;
-						GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
+						//Camera.main.GetComponent<AudioSource>().clip = tenseMp3;
+						//GameObject.Find("Main Camera").GetComponent<AudioSource>().Play();
 						break;
 
 				}
+                break;
 
-			break;
+
+            
 		}
 	}
 }

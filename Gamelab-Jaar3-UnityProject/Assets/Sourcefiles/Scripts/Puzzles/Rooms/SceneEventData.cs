@@ -5,6 +5,7 @@ using UnityEngine;
 public class SceneEventData : MonoBehaviour
 {
     public PlayMode.GameMode startMode;
+    public PlayMode.GamePart gamePart;
 
 
 	public bool rushHourCompleted;
@@ -20,6 +21,9 @@ public class SceneEventData : MonoBehaviour
 
     void Start()
     {
+
+        //AudioPeer.bandBuffer = AudioPeer.freqBand;
+
         switch (startMode)
         {
             case PlayMode.GameMode.Conversation:

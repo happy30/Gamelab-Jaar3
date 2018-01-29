@@ -94,7 +94,14 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect />
+          <effect>
+            <Effect>
+              <effect>PlaySFX</effect>
+              <Parameters>
+                <string>VOICE_WelcomeToTheCanteen</string>
+              </Parameters>
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>
@@ -178,12 +185,7 @@
             <move>Middle</move>
           </cameraPosition>
           <choices />
-          <effect>
-            <Effect>
-              <effect>ProgressScene</effect>
-              <Parameters />
-            </Effect>
-          </effect>
+          <effect />
         </Line>
         <Line>
           <actors>
@@ -201,6 +203,10 @@
           <effect>
             <Effect>
               <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>ProgressScene</effect>
               <Parameters />
             </Effect>
           </effect>
@@ -238,6 +244,200 @@
           </cameraPosition>
           <choices />
           <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>Indeed, what the hell are you doing here?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>I don't even know who I am... Dougal why are you here?</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>Wait.|.|. Do i know you?</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>A merciless scream came out of the person. What is this guy's problem?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>I have no idea why. But you are Blaze, aren't you?</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>Y-||yeah that's me...</text>
+          <expression>
+            <portraitExpression>Serious</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>While I grabbed my breakfast I explained Blaze about how I got here.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>About livie saying she apparently opened my door. And that blaze is the second person I activated.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Mind</actor>
+          </actors>
+          <text>Just like Livie, Blaze can't tell me why he's just a hologram. </text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>Black</effect>
+              <Parameters />
+            </Effect>
+          </effect>
+        </Line>
+        <Line>
+          <actors>
+            <actor>Dougal</actor>
+          </actors>
+          <text>So... That sums it all up. I will look for an exit to this weird facility.</text>
+          <expression>
+            <portraitExpression>None</portraitExpression>
+            <voiceActing>false</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect />
+        </Line>
+        <Line>
+          <actors>
+            <actor>Blaze</actor>
+          </actors>
+          <text>There better be... After I have my goddamn body back!</text>
+          <expression>
+            <portraitExpression>Angry</portraitExpression>
+            <voiceActing>true</voiceActing>
+          </expression>
+          <cameraPosition>
+            <move>Middle</move>
+          </cameraPosition>
+          <choices />
+          <effect>
+            <Effect>
+              <effect>ProgressScene</effect>
+              <Parameters />
+            </Effect>
+            <Effect>
+              <effect>Strobe</effect>
+              <Parameters />
+            </Effect>
+          </effect>
         </Line>
       </lines>
     </Element>

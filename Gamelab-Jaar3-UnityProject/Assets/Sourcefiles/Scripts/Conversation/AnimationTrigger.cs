@@ -10,6 +10,7 @@ public class AnimationTrigger : MonoBehaviour
 	bool withinDoor;
 	public GameObject door;
 
+
     public void Start()
     {
         //animator = GetComponent<Animator>();
